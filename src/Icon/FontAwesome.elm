@@ -46,7 +46,7 @@ cdn : Html msg
 cdn
   = Html.node "link"
     [ Attr.rel "stylesheet"
-    , Attr.href "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    , Attr.href "https://use.fontawesome.com/releases/v5.0.6/css/all.css"
     ]
     []
 
@@ -59,12 +59,12 @@ i : Style msg -> Icon -> Html msg
 i style icon
   = Html.i (toAttributes style icon) []
 
-{-| TODO
--}
-i_ : Style msg -> (Weight -> Icon) -> Html msg
-i_ style icon
--- recommend a separate function like this to those who don't need the icon weights
-  = Html.i (toAttributes style (icon Regular)) []
+-- {-| TODO
+-- -}
+-- i_ : Style msg -> (Weight -> Icon) -> Html msg
+-- i_ style icon
+-- -- recommend a separate function like this to those who don't need the icon weights
+--   = Html.i (toAttributes style (icon Regular)) []
 
 {-| TODO
 -}
@@ -94,7 +94,7 @@ type Layer msg
 -}
 mask : Style msg -> Icon -> Icon -> Html msg
 mask style i i_
-  = Html.i (Attr.attribute "data-fa-mask" (toString i_) :: toAttributes style i) []
+  = Html.i (Attr.attribute "data-fa-mask" (toClassName i_) :: toAttributes style i) []
 
 -- ul : List (Attribute msg) -> List (Html msg) -> Html msg
 -- ul attrs body
@@ -119,11 +119,33 @@ toString icon
                  False ->                   String.cons               c  <| s
             )
     in case String.words (Basics.toString icon) of
+         it :: [           ] -> String.dropLeft 1 <| snakeCase it
+         it :: [ "Solid"   ] -> String.dropLeft 1 <| snakeCase it
+         it :: [ "Regular" ] -> String.dropLeft 1 <| snakeCase it
+         it :: [ "Light"   ] -> String.dropLeft 1 <| snakeCase it
+         _                   -> ""
+
+{-| TODO
+-}
+toClassName : Icon -> String
+toClassName icon
+  = let snakeCase : String -> String
+        snakeCase
+          = flip String.foldr ""
+            (\c s ->
+               case Char.isUpper c of
+                 True  -> String.cons '-' <| String.cons (Char.toLower c) <| s
+                 False ->                   String.cons               c  <| s
+            )
+    in case String.words (Basics.toString icon) of
          it :: [           ] -> "fab fa" ++ snakeCase it
          it :: [ "Solid"   ] -> "fas fa" ++ snakeCase it
          it :: [ "Regular" ] -> "far fa" ++ snakeCase it
          it :: [ "Light"   ] -> "fal fa" ++ snakeCase it
          _                   -> ""
+
+toClass : Icon -> Attribute msg
+toClass = toClassName >> class
 
 {-| TODO
 -}

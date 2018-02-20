@@ -7,7 +7,10 @@
         "src"
     ],
     "exposed-modules": [
-      "Icon.FontAwesome"
+      "Icon.FontAwesome",
+      "Icon.MaterialDesign",
+      "Icon.IonIcons",
+      "Icon.OpenIconic"
     ],
     "dependencies": {
         "elm-lang/core": "5.1.1 <= v < 6.0.0",
