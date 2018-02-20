@@ -25,13 +25,13 @@ module Icon.FontAwesome exposing (..)
 
 -}
 
+-- TODO: support for 4.7
+
 
 -- IMPORTS ---------------------------------------------------------------------
 
 import Html exposing ( Html, Attribute )
 import Html.Attributes as Attr exposing ( class )
-
-import Color exposing ( Color )
 
 import Char
 
@@ -81,14 +81,19 @@ layers attrs
           -- LayerCounter style icon -> Html.span
       )
 
+type alias LayerStyle transform msg
+  = { size       : Maybe Size
+    , transform  : Maybe transform
+    , inverted   : Bool
+    , attributes : List (Attribute msg)
+    }
+
 {-| TODO
 -}
 type Layer msg
-  = LayerIcon    (Style   msg) Icon
-  | LayerText    (Transform  ) String
-    -- BUG: what about colors, and inversion?
-  | LayerCounter (Position ()) String
-    -- BUG: what about colors, and inversion?
+  = LayerIcon    (LayerStyle Transform msg) Icon
+  | LayerText    (LayerStyle Transform msg) String
+  | LayerCounter (LayerStyle Corner    msg) String
 
 {-| TODO
 -}
@@ -155,14 +160,13 @@ toAttributes _ _ = [ Attr.attribute "" "" ]
 {-| TODO
 -}
 type alias Style msg
-  = { color      : Color
-    , size       : Size
+  = { size       : Maybe Size
     , fixedWidth : Bool
     , bordered   : Bool
     , inverted   : Bool
-    , pull       : Maybe (HorizontalPosition ())
+    , pull       : Maybe (ShiftX ())
     , animation  : Maybe Animation
-    , transforms : Transform
+    , transform  : Maybe Transform
     , attributes : List (Attribute msg)
     }
 
@@ -191,10 +195,10 @@ type Animation
 {-| TODO
 -}
 type alias Transform
-  = { scale  : Maybe (             Scale Int)
-    , shiftX : Maybe (HorizontalPosition Int)
-    , shiftY : Maybe (  VerticalPosition Int)
-    , rotate : Maybe (                   Int)
+  = { scale  : Maybe ( Scale Float)
+    , shiftX : Maybe (ShiftX Float)
+    , shiftY : Maybe (ShiftY Float)
+    , rotate : Maybe (       Float)
     }
 
 {-| TODO
@@ -203,21 +207,20 @@ type Scale a
   = Grow   a
   | Shrink a
 
-{-| TODO
--}
-type Position a
-  = Vertical   (  VerticalPosition a)
-  | Horizontal (HorizontalPosition a)
+type alias Corner
+  = ( ShiftX ()
+    , ShiftY ()
+    )
 
 {-| TODO
 -}
-type VerticalPosition a
+type ShiftY a
   = Up    a
   | Down  a
 
 {-| TODO
 -}
-type HorizontalPosition a
+type ShiftX a
   = Left  a
   | Right a
 
