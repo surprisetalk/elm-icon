@@ -3,7 +3,25 @@ module Icon.MaterialDesign exposing (..)
 
 -- DOCS ------------------------------------------------------------------------
 
-{-| TODO
+{-| Learn more at [Material Design Icons](https://materialdesignicons.com/).
+
+# Stylesheet
+@docs stylesheet
+
+# Html
+@docs i
+
+# Attributes
+@docs toAttributes
+@docs toClass, toClassName
+
+# Style
+@docs Style
+@docs Shade, Size, Rotation
+
+# Icons
+@docs toString, Icon 
+
 -}
 
 
@@ -12,19 +30,25 @@ module Icon.MaterialDesign exposing (..)
 import Html exposing ( Html, Attribute )
 import Html.Attributes as Attr exposing ( class )
 
-import Color exposing ( Color )
-
 import Char
 
-import Debug
 
+-- STYLESHEET ------------------------------------------------------------------
 
--- CDN -------------------------------------------------------------------------
+{-| Include Material Design 2.1.19 in your Elm project.
 
-{-| TODO
+    import Icon.MaterialDesign as Icon exposing (stylesheet,Icon(..))
+
+    view : Model -> Html msg
+    view model
+      = div []
+        [ stylesheet
+        , Icon.i myIconStyle Tooth
+        ]
+
 -}
-cdn : Html msg
-cdn
+stylesheet : Html msg
+stylesheet
   = Html.node "link"
     [ Attr.rel "stylesheet"
     , Attr.href "https://cdn.materialdesignicons.com/2.1.19/css/materialdesignicons.min.css"
@@ -34,13 +58,30 @@ cdn
 
 -- ICONS -----------------------------------------------------------------------
 
-{-| TODO
+{-| 
+    import Icon.MaterialDesign as Icon exposing (..)
+
+    myIconStyle : Style
+    myIconStyle
+      = { shade    = Nothing
+        , inactive = False
+        , size     = Nothing
+        , flipH    = False
+        , flipV    = False
+        , rotation = Nothing
+        }
+
+    myTacoIcon : Html msg
+    myTacoIcon
+      = Icon.i myIconStyle Taco
 -}
 i : Style -> Icon -> Html msg
 i style icon
   = Html.i (toAttributes style icon) []
 
-{-| TODO
+{-| 
+    Icon.toString GuyFawkesMask
+    -- "guy-fawkes-mask"
 -}
 toString : Icon -> String
 toString icon
@@ -54,10 +95,12 @@ toString icon
             )
     in String.dropLeft 1 <| snakeCase <| Basics.toString icon
 
-{-| TODO
+{-| 
+    Icon.toClassName CoffeeToGo
+    -- "mdi mdi-coffee-to-go"
 -}
-toClass : Icon -> Attribute msg
-toClass icon
+toClassName : Icon -> String
+toClassName icon
   = let snakeCase : String -> String
         snakeCase
           = flip String.foldr ""
@@ -66,31 +109,61 @@ toClass icon
                  True  -> String.cons '-' <| String.cons (Char.toLower c) <| s
                  False ->                   String.cons               c  <| s
             )
-    in class <| "mdi mdi" ++ snakeCase (Basics.toString icon)
+    in "mdi mdi" ++ snakeCase (Basics.toString icon)
 
-{-| TODO
+{-| 
+    Icon.toClass Apple
+    -- Attribute.class "mdi mdi-apple"
 -}
+toClass : Icon -> Attribute msg
+toClass = toClassName >> class
+
+{-| -}
 toAttributes : Style -> Icon -> List (Attribute msg)
-toAttributes _ _ = [ Attr.attribute "" "" ]
+toAttributes {shade,inactive,size,flipH,flipV,rotation} icon
+  = [ toClass icon
+    , case shade of
+        Just Light -> class "mdi-light"
+        Just Dark  -> class "mdi-dark"
+        Nothing    -> class ""
+    , case inactive of
+        True  -> class "mdi-inactive"
+        False -> class ""
+    , case flipH of
+        True  -> class "mdi-flip-h"
+        False -> class ""
+    , case flipV of
+        True  -> class "mdi-flip-v"
+        False -> class ""
+    , case rotation of
+        Just Rotate45  -> class "mdi-rotate-45"
+        Just Rotate90  -> class "mdi-rotate-90"
+        Just Rotate135 -> class "mdi-rotate-135"
+        Just Rotate180 -> class "mdi-rotate-180"
+        Just Rotate225 -> class "mdi-rotate-225"
+        Just Rotate270 -> class "mdi-rotate-270"
+        Just Rotate315 -> class "mdi-rotate-315"
+        Nothing        -> class ""
+    ]
 
-{-| TODO
--}
+{-| -}
 type alias Style
-  = { color    : Maybe Shade
+  = { shade    : Maybe Shade
     , inactive : Bool
     , size     : Maybe Size
-    , flipX    : Bool
-    , flipY    : Bool
-    , rotation : Rotation
+    , flipH    : Bool
+    , flipV    : Bool
+    , rotation : Maybe Rotation
     }
 
+{-| -}
 type Shade
   = Light
   | Dark
 
+{-| -}
 type Rotation
-  = Rotate0
-  | Rotate45
+  = Rotate45
   | Rotate90
   | Rotate135
   | Rotate180
@@ -98,7 +171,7 @@ type Rotation
   | Rotate270
   | Rotate315
 
-{-| TODO
+{-| Width/height presets in pixels.
 -}
 type Size
   = X18
@@ -106,8 +179,7 @@ type Size
   | X36
   | X48
 
-{-| TODO
--}
+{-| -}
 type Icon
   = AccessPoint
   | AccessPointNetwork

@@ -3,7 +3,20 @@ module Icon.OpenIconic exposing (..)
 
 -- DOCS ------------------------------------------------------------------------
 
-{-| TODO
+{-| Learn more at [Open Iconic](https://useiconic.com/open).
+
+# Stylesheet
+@docs stylesheet
+
+# Html
+@docs i
+
+# Attributes
+@docs toAttributes
+
+# Icons
+@docs toString, Icon 
+
 -}
 
 
@@ -14,12 +27,22 @@ import Html.Attributes as Attr exposing ( class )
 
 import Char
 
--- CDN -------------------------------------------------------------------------
+-- STYLESHEET ------------------------------------------------------------------
 
-{-| TODO
+{-| Include Open Iconic 1.1.1 in your Elm project.
+
+    import Icon.OpenIconic as Icon exposing (stylesheet,Icon(..))
+
+    view : Model -> Html msg
+    view model
+      = div []
+        [ stylesheet
+        , Icon.i Trash
+        ]
+
 -}
-cdn : Html msg
-cdn
+stylesheet : Html msg
+stylesheet
   = Html.node "link"
     [ Attr.rel "stylesheet"
     , Attr.href "https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css"
@@ -29,12 +52,19 @@ cdn
 
 -- ICONS -----------------------------------------------------------------------
 
-{-| TODO
+{-| 
+    import Icon.OpenIconic as Icon exposing (..)
+
+    myPaperclipIcon : Html msg
+    myPaperclipIcon
+      = Icon.i Paperclip
 -}
 i : Icon -> Html msg
 i = flip Html.i [] << toAttributes
 
-{-| TODO
+{-| 
+    Icon.toString PieChart
+    -- "pie-chart"
 -}
 toString : Icon -> String
 toString icon
@@ -48,8 +78,7 @@ toString icon
             )
     in String.dropLeft 1 <| snakeCase <| Basics.toString icon
 
-{-| TODO
--}
+{-| -}
 toAttributes : Icon -> List (Attribute msg)
 toAttributes icon =
   [ class "oi"
@@ -57,6 +86,7 @@ toAttributes icon =
     <| toString icon
   ]
 
+{-| -}
 type Icon
   = AccountLogin
   | AccountLogout

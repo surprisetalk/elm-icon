@@ -3,7 +3,21 @@ module Icon.IonIcons exposing (..)
 
 -- DOCS ------------------------------------------------------------------------
 
-{-| TODO
+{-| Learn more at [IonIcons](http://ionicons.com/).
+
+# Stylesheet
+@docs stylesheet
+
+# Html
+@docs i
+
+# Attributes
+@docs toAttributes
+@docs toClass, toClassName
+
+# Icons
+@docs toString, Icon 
+
 -}
 
 
@@ -14,12 +28,22 @@ import Html.Attributes as Attr exposing ( class )
 
 import Char
 
--- CDN -------------------------------------------------------------------------
+-- STYLESHEET ------------------------------------------------------------------
 
-{-| TODO
+{-| Include IonIcons 2.0.1 in your Elm project.
+
+    import Icon.IonIcons as Icon exposing (stylesheet,Icon(..))
+
+    view : Model -> Html msg
+    view model
+      = div []
+        [ stylesheet
+        , Icon.i Egg
+        ]
+
 -}
-cdn : Html msg
-cdn
+stylesheet : Html msg
+stylesheet
   = Html.node "link"
     [ Attr.rel "stylesheet"
     , Attr.href "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
@@ -29,12 +53,19 @@ cdn
 
 -- ICONS -----------------------------------------------------------------------
 
-{-| TODO
+{-| 
+    import Icon.IonIcons as Icon exposing (..)
+
+    myLeafIcon : Html msg
+    myLeafIcon
+      = Icon.i Leaf
 -}
 i : Icon -> Html msg
 i = flip Html.i [] << toAttributes
 
-{-| TODO
+{-| 
+    Icon.toString HelpBuoy
+    -- "help-buoy"
 -}
 toString : Icon -> String
 toString icon
@@ -48,7 +79,9 @@ toString icon
             )
     in String.dropLeft 1 <| snakeCase <| Basics.toString icon
 
-{-| TODO
+{-| 
+    Icon.toClassName SoupCan
+    -- "ion-soup-can"
 -}
 toClassName : Icon -> String
 toClassName icon
@@ -62,12 +95,18 @@ toClassName icon
             )
     in "ion" ++ snakeCase (Basics.toString icon)
 
+{-| 
+    Icon.toClassName Bug
+    -- Attribute.class "ion-bug"
+-}
 toClass : Icon -> Attribute msg
 toClass = toClassName >> class
 
+{-| -}
 toAttributes : Icon -> List (Attribute msg)
 toAttributes = toClass >> flip (::) []
 
+{-| -}
 type Icon
   = AlertCircled
   | Alert

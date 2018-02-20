@@ -1,6 +1,6 @@
 {
     "version": "1.0.0",
-    "summary": "Easy icons in Elm",
+    "summary": "FontAwesome, Material Icons, IonIcons, and Open Iconic.",
     "repository": "https://github.com/surprisetalk/elm-icon.git",
     "license": "BSD3",
     "source-directories": [

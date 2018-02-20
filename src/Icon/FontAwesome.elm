@@ -3,30 +3,55 @@ module Icon.FontAwesome exposing (..)
 
 -- DOCS ------------------------------------------------------------------------
 
-{-| TODO
+-- TODO: figure out an elegant way to implement Html.Attributes
+-- TODO:  maybe just the important ones? like fontWeight and color
+-- TODO:  this is esp. important for layers
 
-@docs Animation
-@docs HorizontalPosition
-@docs Icon
-@docs Layer
-@docs Position
-@docs Scale
-@docs Size
-@docs Style
-@docs Transform
-@docs VerticalPosition
-@docs Weight
-@docs cdn
-@docs i
-@docs layers
-@docs mask
-@docs toAttributes
-@docs toString
-
--}
+-- TODO: consider splitting this into four different repositories
+-- TODO:   or keep this one, but also make elm-fontawesome, elm-ionicons, etc
 
 -- TODO: support for 4.7
+-- TODO: Icon.FontAwesome.Old
 
+{-| Learn more at [FontAwesome](https://fontawesome.com/).
+
+# Table of Contents
+- [Stylesheet](#stylesheet)
+- [Html](#html)
+- [Attributes](#attributes)
+- [Style](#style)
+- [Combinations](#combinations)
+- [Icons](#icons)
+
+# Stylesheet
+@docs stylesheet
+
+# Html
+@docs i
+@docs ul, li
+
+# Attributes
+@docs toAttributes
+@docs toClass, toClassName
+
+# Style
+@docs Style
+@docs Size, Animation
+@docs Transform, Scale, ShiftX, ShiftY
+
+# Combinations
+
+## Layers
+@docs layers
+@docs Layer, LayerStyle, Corner
+
+## Mask
+@docs mask
+
+# Icons
+@docs toString, Weight, Icon 
+
+-}
 
 -- IMPORTS ---------------------------------------------------------------------
 
@@ -35,15 +60,23 @@ import Html.Attributes as Attr exposing ( class )
 
 import Char
 
-import Debug
 
+-- STYLESHEET ------------------------------------------------------------------
 
--- CDN -------------------------------------------------------------------------
+{-| Include FontAwesome 5.0.6 in your Elm project.
 
-{-| TODO
+    import Icon.FontAwesome as Icon exposing (stylesheet,Icon(..))
+
+    view : Model -> Html msg
+    view model
+      = div []
+        [ stylesheet
+        , Icon.i myIconStyle Meh
+        ]
+
 -}
-cdn : Html msg
-cdn
+stylesheet : Html msg
+stylesheet
   = Html.node "link"
     [ Attr.rel "stylesheet"
     , Attr.href "https://use.fontawesome.com/releases/v5.0.6/css/all.css"
@@ -53,63 +86,158 @@ cdn
 
 -- ICONS -----------------------------------------------------------------------
 
-{-| TODO
+{-| 
+    import Icon.FontAwesome as Icon exposing (..)
+
+    myIconStyle : Style
+    myIconStyle
+      = { size       = Nothing
+        , fixedWidth = False
+        , bordered   = False
+        , inverted   = False
+        , pull       = Nothing
+        , animation  = Nothing
+        , transform  = Nothing
+        }
+
+    myFlaskIcon : Html msg
+    myFlaskIcon 
+      = Icon.i myIconStyle (Flask Regular)
+      
+    i_ : Style -> (Weight -> Icon) -> Html msg
+    i_ style icon 
+      = Icon.i style (icon Regular)
+      
+    myEasyFlaskIcon : Html msg
+      = i_ myIconStyle Flask
 -}
-i : Style msg -> Icon -> Html msg
+i : Style -> Icon -> Html msg
 i style icon
   = Html.i (toAttributes style icon) []
-
--- {-| TODO
--- -}
--- i_ : Style msg -> (Weight -> Icon) -> Html msg
--- i_ style icon
--- -- recommend a separate function like this to those who don't need the icon weights
---   = Html.i (toAttributes style (icon Regular)) []
 
 {-| TODO
 -}
 layers : List (Attribute msg) -> List (Layer msg) -> Html msg
 layers attrs
--- BUG: we should be able to use styles on the composite icon
-  = Html.span [ class "fa-layers fa-fw" ]
+  = Html.span (class "fa-layers fa-fw" :: attrs)
     << List.map
       (\layer ->
         case layer of
-          _ -> Html.text "TODO"
-          -- LayerIcon    style icon -> i style icon
-          -- LayerText    style text -> Html.span 
-          -- LayerCounter style icon -> Html.span
+          LayerIcon {size,transform,inverted} icon ->
+            flip i icon
+            { size       = size
+            , fixedWidth = False
+            , bordered   = False
+            , inverted   = inverted
+            , pull       = Nothing
+            , animation  = Nothing
+            , transform  = transform
+            }
+          LayerText {size,transform,inverted} text ->
+            flip Html.span [ Html.text text ]
+            [ class "fa-layers-text"
+            , case size of
+                Just ExtraSmall -> class "fa-xs"
+                Just Small      -> class "fa-sm"
+                Just Large      -> class "fa-lg"
+                Just X2         -> class "fa-2x"
+                Just X3         -> class "fa-3x"
+                Just X4         -> class "fa-4x"
+                Just X5         -> class "fa-5x"
+                Just X6         -> class "fa-6x"
+                Just X7         -> class "fa-7x"
+                Just X8         -> class "fa-8x"
+                Just X9         -> class "fa-9x"
+                Just X10        -> class "fa-10x"
+                Nothing         -> class ""
+            , Attr.attribute "data-fa-transform"
+              <| case transform of
+                  Nothing ->
+                    ""
+                  Just {scale,shiftX,shiftY,rotate} ->
+                    String.join " "
+                    [ case scale of
+                        Just (Grow   n) ->   "grow-" ++ Basics.toString (n * 10 |> round |> toFloat |> flip (/) 10)
+                        Just (Shrink n) -> "shrink-" ++ Basics.toString (n * 10 |> round |> toFloat |> flip (/) 10)
+                        Nothing         -> ""
+                    , case shiftX of
+                        Just (Left  n) ->  "left-" ++ Basics.toString (n * 10 |> round |> toFloat |> flip (/) 10)
+                        Just (Right n) -> "right-" ++ Basics.toString (n * 10 |> round |> toFloat |> flip (/) 10)
+                        Nothing        -> ""
+                    , case shiftY of
+                        Just (Up    n) ->   "up-" ++ Basics.toString (n * 10 |> round |> toFloat |> flip (/) 10)
+                        Just (Down  n) -> "down-" ++ Basics.toString (n * 10 |> round |> toFloat |> flip (/) 10)
+                        Nothing        -> ""
+                    , case rotate of
+                        Just n  -> "rotate-" ++ Basics.toString (n * 10 |> round |> toFloat |> flip (/) 10)
+                        Nothing -> ""
+                    ]
+            ]
+          LayerCounter {size,transform,inverted} text ->
+            flip Html.span [ Html.text text ]
+            [ class "fa-layers-counter"
+            , case size of
+                Just ExtraSmall -> class "fa-xs"
+                Just Small      -> class "fa-sm"
+                Just Large      -> class "fa-lg"
+                Just X2         -> class "fa-2x"
+                Just X3         -> class "fa-3x"
+                Just X4         -> class "fa-4x"
+                Just X5         -> class "fa-5x"
+                Just X6         -> class "fa-6x"
+                Just X7         -> class "fa-7x"
+                Just X8         -> class "fa-8x"
+                Just X9         -> class "fa-9x"
+                Just X10        -> class "fa-10x"
+                Nothing         -> class ""
+            , case transform of
+                Nothing -> class ""
+                Just BottomLeft  -> class "fa-layers-bottom-left"
+                Just BottomRight -> class "fa-layers-bottom-right"
+                Just    TopLeft  -> class "fa-layers-top-left"
+                Just    TopRight -> class "fa-layers-top-right"
+            ]
       )
 
-type alias LayerStyle transform msg
+{-| TODO
+-}
+type alias LayerStyle transform
+-- TODO: color would be helpful here
+-- TODO:  i want to avoid adding (Attribute msg)
   = { size       : Maybe Size
     , transform  : Maybe transform
     , inverted   : Bool
-    , attributes : List (Attribute msg)
     }
 
 {-| TODO
 -}
 type Layer msg
-  = LayerIcon    (LayerStyle Transform msg) Icon
-  | LayerText    (LayerStyle Transform msg) String
-  | LayerCounter (LayerStyle Corner    msg) String
+  = LayerIcon    (LayerStyle Transform) Icon
+  | LayerText    (LayerStyle Transform) String
+  | LayerCounter (LayerStyle Corner   ) String
 
 {-| TODO
 -}
-mask : Style msg -> Icon -> Icon -> Html msg
+mask : Style -> Icon -> Icon -> Html msg
 mask style i i_
   = Html.i (Attr.attribute "data-fa-mask" (toClassName i_) :: toAttributes style i) []
 
--- ul : List (Attribute msg) -> List (Html msg) -> Html msg
--- ul attrs body
---   = Html.ul (class "fa-ul" :: attrs) body
+{-| TODO
+-}
+ul : List (Attribute msg) -> List (Html msg) -> Html msg
+ul attrs body
+  = Html.ul (class "fa-ul" :: attrs) body
 
--- li : Style -> Icon -> List (Attribute msg) -> List (Html msg) -> Html msg
--- -- KLUDGE: we could also just make this accept plain html...
--- li style i attrs body
---   = Html.li attrs
---     <| span [ class "fa-li" ] [ icon style i ]
+{-| TODO
+-}
+li : Style -> Icon -> List (Attribute msg) -> List (Html msg) -> Html msg
+-- KLUDGE: we could also just make this accept plain html...
+li style icon attrs body
+  = Html.li attrs
+    [ Html.span [ class "fa-li" ]
+      [ i style icon
+      ]
+    ]
 
 {-| TODO
 -}
@@ -149,17 +277,19 @@ toClassName icon
          it :: [ "Light"   ] -> "fal fa" ++ snakeCase it
          _                   -> ""
 
+{-| TODO
+-}
 toClass : Icon -> Attribute msg
 toClass = toClassName >> class
 
 {-| TODO
 -}
-toAttributes : Style msg -> Icon -> List (Attribute msg)
+toAttributes : Style -> Icon -> List (Attribute msg)
 toAttributes _ _ = [ Attr.attribute "" "" ]
 
 {-| TODO
 -}
-type alias Style msg
+type alias Style
   = { size       : Maybe Size
     , fixedWidth : Bool
     , bordered   : Bool
@@ -167,7 +297,6 @@ type alias Style msg
     , pull       : Maybe (ShiftX ())
     , animation  : Maybe Animation
     , transform  : Maybe Transform
-    , attributes : List (Attribute msg)
     }
 
 {-| TODO
@@ -207,10 +336,13 @@ type Scale a
   = Grow   a
   | Shrink a
 
-type alias Corner
-  = ( ShiftX ()
-    , ShiftY ()
-    )
+{-| TODO
+-}
+type Corner
+  = BottomLeft
+  | BottomRight
+  | TopLeft
+  | TopRight
 
 {-| TODO
 -}
@@ -231,8 +363,7 @@ type Weight
   | Regular
   | Light
 
-{-| TODO
--}
+{-| -}
 type Icon
   = AccessibleIcon
   | Accusoft
