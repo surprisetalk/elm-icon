@@ -1,12 +1,10 @@
 
 # Elm Icons
 
-TODO: description
-
-| Provider           | Styling Helpers      | # of Icons |
-| ------------------ |:--------------------:| ----------:|
-| [FontAwesome]()    | <ul><li>[x]</li><li> |        994 |
-| [Material Icons]() | <ul><li>[x]</li><li> |       2119 |
-| [IonIcons]()       | <ul><li>[ ]</li><li> |        733 |
-| [Open Iconic]()    | <ul><li>[ ]</li><li> |        223 |
+| Icon Provider                                      | Stylesheet (CDN)   | Styling Helpers    | # of Icons |
+| -------------------------------------------------- |:------------------:|:------------------:| ----------:|
+| [FontAwesome](https://fontawesome.com)             | :white_check_mark: | :white_check_mark: |        994 |
+| [Material Icons](https://materialdesignicons.com/) | :white_check_mark: | :white_check_mark: |       2119 |
+| [IonIcons](http://ionicons.com/)                   | :white_check_mark: |                    |        733 |
+| [Open Iconic](https://useiconic.com/open)          | :white_check_mark: |                    |        223 |
 
