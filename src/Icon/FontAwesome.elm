@@ -31,19 +31,23 @@ module Icon.FontAwesome exposing (..)
 @docs ul, li
 
 # Attributes
-@docs toAttributes
 @docs toClass, toClassName
 
 # Style
 @docs Style
 @docs Size, Animation
-@docs Transform, Scale, ShiftX, ShiftY
+@docs style
+
+## Transform
+@docs Transform
+@docs Scale, ShiftX, ShiftY
+@docs transform
 
 # Combinations
 
 ## Layers
+@docs Layer, Corner
 @docs layers
-@docs Layer, LayerStyle, Corner
 
 ## Mask
 @docs mask
@@ -102,20 +106,25 @@ stylesheet
 
     myFlaskIcon : Html msg
     myFlaskIcon 
-      = Icon.i myIconStyle (Flask Regular)
+      = Icon.i [ Icon.style myIconStyle ] (Flask Regular)
       
-    i_ : Style -> (Weight -> Icon) -> Html msg
-    i_ style icon 
-      = Icon.i style (icon Regular)
+    i_ : (Weight -> Icon) -> Html msg
+    i_ icon 
+      = Icon.i [ Icon.style myIconStyle ] (icon Regular)
       
     myEasyFlaskIcon : Html msg
       = i_ myIconStyle Flask
 -}
-i : Style -> Icon -> Html msg
-i style icon
-  = Html.i (toAttributes style icon) []
+i : List (Attribute msg) -> Icon -> Html msg
+i attrs icon
+  = Html.i (toClass icon :: attrs) []
 
-{-| TODO
+{-| Compose multiple icons into a single icon!
+
+    layers []
+    [ LayerIcon    [ transform myTransform ] (Envelope Regular)
+    , LayerCounter [                       ] TopRight "42"
+    ]
 -}
 layers : List (Attribute msg) -> List (Layer msg) -> Html msg
 layers attrs
@@ -123,123 +132,69 @@ layers attrs
     << List.map
       (\layer ->
         case layer of
-          LayerIcon {size,transform,inverted} icon ->
-            flip i icon
-            { size       = size
-            , fixedWidth = False
-            , bordered   = False
-            , inverted   = inverted
-            , pull       = Nothing
-            , animation  = Nothing
-            , transform  = transform
-            }
-          LayerText {size,transform,inverted} text ->
+          LayerIcon attrs icon ->
+            i attrs icon
+          LayerText attrs text ->
             flip Html.span [ Html.text text ]
-            [ class "fa-layers-text"
-            , case size of
-                Just ExtraSmall -> class "fa-xs"
-                Just Small      -> class "fa-sm"
-                Just Large      -> class "fa-lg"
-                Just X2         -> class "fa-2x"
-                Just X3         -> class "fa-3x"
-                Just X4         -> class "fa-4x"
-                Just X5         -> class "fa-5x"
-                Just X6         -> class "fa-6x"
-                Just X7         -> class "fa-7x"
-                Just X8         -> class "fa-8x"
-                Just X9         -> class "fa-9x"
-                Just X10        -> class "fa-10x"
-                Nothing         -> class ""
-            , Attr.attribute "data-fa-transform"
-              <| case transform of
-                  Nothing ->
-                    ""
-                  Just {scale,shiftX,shiftY,rotate} ->
-                    String.join " "
-                    [ case scale of
-                        Just (Grow   n) ->   "grow-" ++ Basics.toString (n * 10 |> round |> toFloat |> flip (/) 10)
-                        Just (Shrink n) -> "shrink-" ++ Basics.toString (n * 10 |> round |> toFloat |> flip (/) 10)
-                        Nothing         -> ""
-                    , case shiftX of
-                        Just (Left  n) ->  "left-" ++ Basics.toString (n * 10 |> round |> toFloat |> flip (/) 10)
-                        Just (Right n) -> "right-" ++ Basics.toString (n * 10 |> round |> toFloat |> flip (/) 10)
-                        Nothing        -> ""
-                    , case shiftY of
-                        Just (Up    n) ->   "up-" ++ Basics.toString (n * 10 |> round |> toFloat |> flip (/) 10)
-                        Just (Down  n) -> "down-" ++ Basics.toString (n * 10 |> round |> toFloat |> flip (/) 10)
-                        Nothing        -> ""
-                    , case rotate of
-                        Just n  -> "rotate-" ++ Basics.toString (n * 10 |> round |> toFloat |> flip (/) 10)
-                        Nothing -> ""
-                    ]
-            ]
-          LayerCounter {size,transform,inverted} text ->
+            <| (++) attrs
+            <| [ class "fa-layers-text"
+              ]
+          LayerCounter attrs c text ->
             flip Html.span [ Html.text text ]
-            [ class "fa-layers-counter"
-            , case size of
-                Just ExtraSmall -> class "fa-xs"
-                Just Small      -> class "fa-sm"
-                Just Large      -> class "fa-lg"
-                Just X2         -> class "fa-2x"
-                Just X3         -> class "fa-3x"
-                Just X4         -> class "fa-4x"
-                Just X5         -> class "fa-5x"
-                Just X6         -> class "fa-6x"
-                Just X7         -> class "fa-7x"
-                Just X8         -> class "fa-8x"
-                Just X9         -> class "fa-9x"
-                Just X10        -> class "fa-10x"
-                Nothing         -> class ""
-            , case transform of
-                Nothing -> class ""
-                Just BottomLeft  -> class "fa-layers-bottom-left"
-                Just BottomRight -> class "fa-layers-bottom-right"
-                Just    TopLeft  -> class "fa-layers-top-left"
-                Just    TopRight -> class "fa-layers-top-right"
-            ]
+            <| (++) attrs
+            <| [ class "fa-layers-counter"
+              , case c of
+                  BottomLeft  -> class "fa-layers-bottom-left"
+                  BottomRight -> class "fa-layers-bottom-right"
+                  TopLeft     -> class "fa-layers-top-left"
+                  TopRight    -> class "fa-layers-top-right"
+              ]
       )
 
-{-| TODO
--}
-type alias LayerStyle transform
--- TODO: color would be helpful here
--- TODO:  i want to avoid adding (Attribute msg)
-  = { size       : Maybe Size
-    , transform  : Maybe transform
-    , inverted   : Bool
-    }
-
-{-| TODO
--}
+{-| -}
 type Layer msg
-  = LayerIcon    (LayerStyle Transform) Icon
-  | LayerText    (LayerStyle Transform) String
-  | LayerCounter (LayerStyle Corner   ) String
+  = LayerIcon    (List (Attribute msg))        Icon
+  | LayerText    (List (Attribute msg))        String
+  | LayerCounter (List (Attribute msg)) Corner String
 
-{-| TODO
+{-| Compose two icons, where one is subtracted from the other.
+
+    mask []
+    FacebookF         -- cutout icon (see-thru)
+    (Circle Regular)  -- outer icon (opaque)
 -}
-mask : Style -> Icon -> Icon -> Html msg
-mask style i i_
-  = Html.i (Attr.attribute "data-fa-mask" (toClassName i_) :: toAttributes style i) []
+mask : List (Attribute msg) -> Icon -> Icon -> Html msg
+mask attrs icon icon_
+  = i (Attr.attribute "data-fa-mask" (toClassName icon_) :: attrs) icon
 
-{-| TODO
+{-| Creates an icon list! Use this to make unordered lists with your favorite icons as bullets.
 -}
 ul : List (Attribute msg) -> List (Html msg) -> Html msg
 ul attrs body
   = Html.ul (class "fa-ul" :: attrs) body
 
-{-| TODO
+{-| 
+    myList 
+      = Icon.li 
+        [              ]  -- Html.li attributes
+        [              ]  -- Icon.i  attributes
+        (Square Regular)  -- Icon.i  body
+        [ text "Howdy" ]  -- Html.li body
+        
 -}
-li : Style -> Icon -> List (Attribute msg) -> List (Html msg) -> Html msg
+li : List (Attribute msg) -> List (Attribute msg) -> Icon -> List (Html msg) -> Html msg
 -- KLUDGE: we could also just make this accept plain html...
-li style icon attrs body
+li attrs attrs_ icon body
   = Html.li attrs
-    [ Html.span [ class "fa-li" ]
-      [ i style icon
+    <| flip (++) body
+    <| [ Html.span [ class "fa-li" ]
+        [ i attrs_ icon
+        ]
       ]
-    ]
 
-{-| TODO
+{-| 
+    Icon.toString (HandLizard Solid)
+    -- "hand-lizard"
 -}
 toString : Icon -> String
 toString icon
@@ -258,7 +213,18 @@ toString icon
          it :: [ "Light"   ] -> String.dropLeft 1 <| snakeCase it
          _                   -> ""
 
-{-| TODO
+{-| 
+    Icon.toClassName (PaintBrush Regular)
+    -- "far fa-paint-brush"
+
+    Icon.toClassName (PaintBrush Solid)
+    -- "fas fa-paint-brush"
+
+    Icon.toClassName (PaintBrush Light)
+    -- "fal fa-paint-brush"
+
+    Icon.toClassName PiedPiper
+    -- "fab fa-pied-piper"
 -}
 toClassName : Icon -> String
 toClassName icon
@@ -277,18 +243,44 @@ toClassName icon
          it :: [ "Light"   ] -> "fal fa" ++ snakeCase it
          _                   -> ""
 
-{-| TODO
--}
+{-| -}
 toClass : Icon -> Attribute msg
 toClass = toClassName >> class
 
 {-| TODO
 -}
-toAttributes : Style -> Icon -> List (Attribute msg)
-toAttributes _ _ = [ Attr.attribute "" "" ]
+style : Style -> Attribute msg
+-- TODO: consider replacing this with a few different (a -> Attribute msg) functions that can be used individually
+-- TODO:   eg size : Size -> Attribute msg
+style _ = Attr.attribute "" ""
 
-{-| TODO
--}
+-- TODO: not sure if I like the individual attributes or not
+
+size : Size -> Attribute msg
+size _ = class "TODO"
+
+fixedWidth : Attribute msg
+fixedWidth = class "TODO"
+
+bordered : Attribute msg
+bordered = class "TODO"
+
+inverted : Attribute msg
+inverted = class "TODO"
+
+pullLeft : Attribute msg
+pullLeft = class "TODO"
+
+pullRight : Attribute msg
+pullRight = class "TODO"
+
+spin : Attribute msg
+spin = class "TODO"
+
+pulse : Attribute msg
+pulse = class "TODO"
+
+{-| -}
 type alias Style
   = { size       : Maybe Size
     , fixedWidth : Bool
@@ -296,7 +288,6 @@ type alias Style
     , inverted   : Bool
     , pull       : Maybe (ShiftX ())
     , animation  : Maybe Animation
-    , transform  : Maybe Transform
     }
 
 {-| TODO
@@ -324,11 +315,35 @@ type Animation
 {-| TODO
 -}
 type alias Transform
+-- TODO: i think we can make a better api for this
   = { scale  : Maybe ( Scale Float)
     , shiftX : Maybe (ShiftX Float)
     , shiftY : Maybe (ShiftY Float)
     , rotate : Maybe (       Float)
     }
+
+{-| TODO
+-}
+transform : Transform -> Attribute msg
+transform {scale,shiftX,shiftY,rotate}
+  = Attr.attribute "data-fa-transform"
+    <| String.join " "
+      [ case scale of
+          Just (Grow   n) ->   "grow-" ++ Basics.toString (n * 10 |> round |> toFloat |> flip (/) 10)
+          Just (Shrink n) -> "shrink-" ++ Basics.toString (n * 10 |> round |> toFloat |> flip (/) 10)
+          Nothing         -> ""
+      , case shiftX of
+          Just (Left  n) ->  "left-" ++ Basics.toString (n * 10 |> round |> toFloat |> flip (/) 10)
+          Just (Right n) -> "right-" ++ Basics.toString (n * 10 |> round |> toFloat |> flip (/) 10)
+          Nothing        -> ""
+      , case shiftY of
+          Just (Up    n) ->   "up-" ++ Basics.toString (n * 10 |> round |> toFloat |> flip (/) 10)
+          Just (Down  n) -> "down-" ++ Basics.toString (n * 10 |> round |> toFloat |> flip (/) 10)
+          Nothing        -> ""
+      , case rotate of
+          Just n  -> "rotate-" ++ Basics.toString (n * 10 |> round |> toFloat |> flip (/) 10)
+          Nothing -> ""
+      ]
 
 {-| TODO
 -}
@@ -355,6 +370,25 @@ type ShiftY a
 type ShiftX a
   = Left  a
   | Right a
+
+{-| TODO
+-}
+type Styled icon brand
+-- TODO: Styled Icon Brand
+-- TODO: we could possible do something like this
+  = Solid   icon
+  | Regular icon
+  | Light   icon
+  | Brand   brand
+
+{-| TODO
+-}
+type Styled weight
+-- TODO: Family ()
+-- TODO: Family Weight
+-- TODO: we could possible do something like this
+  = StyledIcon  weight Icon
+  | StyledBrand        Brand
 
 {-| TODO
 -}

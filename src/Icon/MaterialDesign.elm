@@ -12,12 +12,12 @@ module Icon.MaterialDesign exposing (..)
 @docs i
 
 # Attributes
-@docs toAttributes
 @docs toClass, toClassName
 
 # Style
 @docs Style
 @docs Shade, Size, Rotation
+@docs style
 
 # Icons
 @docs toString, Icon 
@@ -43,7 +43,7 @@ import Char
     view model
       = div []
         [ stylesheet
-        , Icon.i myIconStyle Tooth
+        , Icon.i [ Icon.style myIconStyle ] Tooth
         ]
 
 -}
@@ -73,11 +73,11 @@ stylesheet
 
     myTacoIcon : Html msg
     myTacoIcon
-      = Icon.i myIconStyle Taco
+      = Icon.i [ Icon.style myIconStyle ] Taco
 -}
-i : Style -> Icon -> Html msg
-i style icon
-  = Html.i (toAttributes style icon) []
+i : List (Attribute msg) -> Icon -> Html msg
+i attrs icon
+  = Html.i (toClass icon :: attrs) []
 
 {-| 
     Icon.toString GuyFawkesMask
@@ -119,31 +119,32 @@ toClass : Icon -> Attribute msg
 toClass = toClassName >> class
 
 {-| -}
-toAttributes : Style -> Icon -> List (Attribute msg)
-toAttributes {shade,inactive,size,flipH,flipV,rotation} icon
-  = [ toClass icon
-    , case shade of
-        Just Light -> class "mdi-light"
-        Just Dark  -> class "mdi-dark"
-        Nothing    -> class ""
+style : Style -> Attribute msg
+style {shade,inactive,size,flipH,flipV,rotation}
+  = Attr.classList
+  <| List.map (flip (,) True)
+    [ case shade of
+        Just Light -> "mdi-light"
+        Just Dark  -> "mdi-dark"
+        Nothing    -> ""
     , case inactive of
-        True  -> class "mdi-inactive"
-        False -> class ""
+        True  -> "mdi-inactive"
+        False -> ""
     , case flipH of
-        True  -> class "mdi-flip-h"
-        False -> class ""
+        True  -> "mdi-flip-h"
+        False -> ""
     , case flipV of
-        True  -> class "mdi-flip-v"
-        False -> class ""
+        True  -> "mdi-flip-v"
+        False -> ""
     , case rotation of
-        Just Rotate45  -> class "mdi-rotate-45"
-        Just Rotate90  -> class "mdi-rotate-90"
-        Just Rotate135 -> class "mdi-rotate-135"
-        Just Rotate180 -> class "mdi-rotate-180"
-        Just Rotate225 -> class "mdi-rotate-225"
-        Just Rotate270 -> class "mdi-rotate-270"
-        Just Rotate315 -> class "mdi-rotate-315"
-        Nothing        -> class ""
+        Just Rotate45  -> "mdi-rotate-45"
+        Just Rotate90  -> "mdi-rotate-90"
+        Just Rotate135 -> "mdi-rotate-135"
+        Just Rotate180 -> "mdi-rotate-180"
+        Just Rotate225 -> "mdi-rotate-225"
+        Just Rotate270 -> "mdi-rotate-270"
+        Just Rotate315 -> "mdi-rotate-315"
+        Nothing        -> ""
     ]
 
 {-| -}
@@ -155,6 +156,30 @@ type alias Style
     , flipV    : Bool
     , rotation : Maybe Rotation
     }
+
+-- TODO: not sure if I like the individual attributes or not
+
+light : Attribute msg
+light = class "TODO"
+
+dark : Attribute msg
+dark = class "TODO"
+
+inactive : Attribute msg
+inactive = class "TODO"
+
+size : Size -> Attribute msg
+size _ = class "TODO"
+
+flipH : Attribute msg
+flipH = class "TODO"
+
+flipV : Attribute msg
+flipV = class "TODO"
+
+rotate : Rotation -> Attribute msg
+rotate _ = class "TODO"
+
 
 {-| -}
 type Shade

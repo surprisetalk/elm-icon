@@ -12,7 +12,6 @@ module Icon.IonIcons exposing (..)
 @docs i
 
 # Attributes
-@docs toAttributes
 @docs toClass, toClassName
 
 # Icons
@@ -101,10 +100,6 @@ toClassName icon
 -}
 toClass : Icon -> Attribute msg
 toClass = toClassName >> class
-
-{-| -}
-toAttributes : Icon -> List (Attribute msg)
-toAttributes = toClass >> flip (::) []
 
 {-| -}
 type Icon
