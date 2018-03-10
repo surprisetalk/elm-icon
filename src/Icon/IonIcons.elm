@@ -60,7 +60,7 @@ stylesheet
       = Icon.i Leaf
 -}
 i : Icon -> Html msg
-i = flip Html.i [] << toAttributes
+i icon = Html.i [ toClass icon ] []
 
 {-| 
     Icon.toString HelpBuoy

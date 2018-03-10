@@ -13,6 +13,7 @@ module Icon.MaterialDesign exposing (..)
 
 # Attributes
 @docs toClass, toClassName
+@docs dark, flipH, flipV, inactive, light, rotate, size
 
 # Style
 @docs Style
@@ -159,24 +160,38 @@ type alias Style
 
 -- TODO: not sure if I like the individual attributes or not
 
+{-| TODO
+-}
 light : Attribute msg
 light = class "TODO"
 
+{-| TODO
+-}
 dark : Attribute msg
 dark = class "TODO"
 
+{-| TODO
+-}
 inactive : Attribute msg
 inactive = class "TODO"
 
+{-| TODO
+-}
 size : Size -> Attribute msg
 size _ = class "TODO"
 
+{-| TODO
+-}
 flipH : Attribute msg
 flipH = class "TODO"
 
+{-| TODO
+-}
 flipV : Attribute msg
 flipV = class "TODO"
 
+{-| TODO
+-}
 rotate : Rotation -> Attribute msg
 rotate _ = class "TODO"
 

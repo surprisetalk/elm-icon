@@ -32,6 +32,7 @@ module Icon.FontAwesome exposing (..)
 
 # Attributes
 @docs toClass, toClassName
+@docs bordered, fixedWidth, inverted, pullLeft, pullRight, pulse, size, spin
 
 # Style
 @docs Style
@@ -113,7 +114,7 @@ stylesheet
       = Icon.i [ Icon.style myIconStyle ] (icon Regular)
       
     myEasyFlaskIcon : Html msg
-      = i_ myIconStyle Flask
+      = i_ Flask
 -}
 i : List (Attribute msg) -> Icon -> Html msg
 i attrs icon
@@ -256,27 +257,43 @@ style _ = Attr.attribute "" ""
 
 -- TODO: not sure if I like the individual attributes or not
 
+{-| TODO
+-}
 size : Size -> Attribute msg
 size _ = class "TODO"
 
+{-| TODO
+-}
 fixedWidth : Attribute msg
 fixedWidth = class "TODO"
 
+{-| TODO
+-}
 bordered : Attribute msg
 bordered = class "TODO"
 
+{-| TODO
+-}
 inverted : Attribute msg
 inverted = class "TODO"
 
+{-| TODO
+-}
 pullLeft : Attribute msg
 pullLeft = class "TODO"
 
+{-| TODO
+-}
 pullRight : Attribute msg
 pullRight = class "TODO"
 
+{-| TODO
+-}
 spin : Attribute msg
 spin = class "TODO"
 
+{-| TODO
+-}
 pulse : Attribute msg
 pulse = class "TODO"
 
@@ -371,24 +388,24 @@ type ShiftX a
   = Left  a
   | Right a
 
-{-| TODO
--}
-type Styled icon brand
--- TODO: Styled Icon Brand
--- TODO: we could possible do something like this
-  = Solid   icon
-  | Regular icon
-  | Light   icon
-  | Brand   brand
-
-{-| TODO
--}
-type Styled weight
--- TODO: Family ()
--- TODO: Family Weight
--- TODO: we could possible do something like this
-  = StyledIcon  weight Icon
-  | StyledBrand        Brand
+-- {-| TODO
+-- -}
+-- type Styled icon brand
+-- -- TODO: Styled Icon Brand
+-- -- TODO: we could possible do something like this
+--   = Solid   icon
+--   | Regular icon
+--   | Light   icon
+--   | Brand   brand
+-- 
+-- {-| TODO
+-- -}
+-- type Styled weight
+-- -- TODO: Family ()
+-- -- TODO: Family Weight
+-- -- TODO: we could possible do something like this
+--   = StyledIcon  weight Icon
+--   | StyledBrand        Brand
 
 {-| TODO
 -}
