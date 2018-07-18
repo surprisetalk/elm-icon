@@ -1,16 +1,6 @@
 
 # Elm Icons
 
-    .-----------------------------------------------------.
-    | Icon Provider  | Version | CDN | Style | # of Icons |
-    |----------------|---------|-----|-------|------------|
-    | FontAwesome    | 5.0.6   |  ✔  |   ✔   |     994    |
-    | FontAwesome    | 4.7.0   |  ✔  |   ✔   |            |
-    | Material Icons | 2.1.19  |  ✔  |   ✔   |    2119    |
-    | IonIcons       | 2.0.1   |  ✔  |       |     733    |
-    | Open Iconic    | 1.1.1   |  ✔  |       |     223    |
-    '-----------------------------------------------------'
-
 ```elm
 import Icon.FontAwesome as Icon exposing (stylesheet,Icon(..))
 
@@ -21,6 +11,16 @@ view model
     , Icon.i [] Meh
     ]
 ```
+
+    .-----------------------------------------------------.
+    | Icon Provider  | Version | CDN | Style | # of Icons |
+    |----------------|---------|-----|-------|------------|
+    | FontAwesome    | 5.0.6   |  ✓  |   ✓   |     994    |
+    | FontAwesome    | 4.7.0   |  ✓  |   ✓   |            |
+    | Material Icons | 2.1.19  |  ✓  |   ✓   |    2119    |
+    | IonIcons       | 2.0.1   |  ✓  |       |     733    |
+    | Open Iconic    | 1.1.1   |  ✓  |       |     223    |
+    '-----------------------------------------------------'
 
 - TODO
   - [ ] every Icon should be a function
