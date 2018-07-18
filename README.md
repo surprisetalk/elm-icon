@@ -28,7 +28,7 @@ view model
 - □ every Icon should be a function
 - □ copy documentation from [elm-feather](http://package.elm-lang.org/packages/1602/elm-feather/2.2.0/FeatherIcons)
   - include images!
-- □ explore the following icon sets
+- □ upcoming icon sets
   - □  [Octicons](https://octicons.github.com/)
   - □ [Themify](http://themify.me/themify-icons)
   - □ [Foundation](https://zurb.com/playground/foundation-icon-fonts-3)
