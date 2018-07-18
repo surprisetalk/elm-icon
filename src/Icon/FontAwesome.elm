@@ -1401,2976 +1401,2961 @@ type Icon
   | Youtube
   | YoutubeSquare
 
-{-| <i class="fab far fas fal fa-accessible-icon"></i> -}
-accessibleIcon : Html msg
-accessibleIcon = i [] (AccessibleIcon)
-{-| <i class="fab far fas fal fa-accusoft"></i> -}
-accusoft : Html msg
-accusoft = i [] (Accusoft)
-{-| <i class="fab far fas fal fa-address-book"></i> -}
+{-| <i class="far fa-address-book"></i> -}
 addressBook : Html msg
-addressBook = i [] (AddressBook Regular)
-{-| <i class="fab far fas fal fa-address-card"></i> -}
+addressBook = i [] AddressBook
+{-| <i class="far fa-address-card"></i> -}
 addressCard : Html msg
-addressCard = i [] (AddressCard Regular)
-{-| <i class="fab far fas fal fa-adjust"></i> -}
+addressCard = i [] AddressCard
+{-| <i class="far fa-adjust"></i> -}
 adjust : Html msg
-adjust = i [] (Adjust Regular)
-{-| <i class="fab far fas fal fa-adn"></i> -}
-adn : Html msg
-adn = i [] (Adn)
-{-| <i class="fab far fas fal fa-adversal"></i> -}
-adversal : Html msg
-adversal = i [] (Adversal)
-{-| <i class="fab far fas fal fa-affiliatetheme"></i> -}
-affiliatetheme : Html msg
-affiliatetheme = i [] (Affiliatetheme)
-{-| <i class="fab far fas fal fa-alarm-clock"></i> -}
+adjust = i [] Adjust
+{-| <i class="far fa-alarm-clock"></i> -}
 alarmClock : Html msg
-alarmClock = i [] (AlarmClock Regular)
-{-| <i class="fab far fas fal fa-algolia"></i> -}
-algolia : Html msg
-algolia = i [] (Algolia)
-{-| <i class="fab far fas fal fa-align-center"></i> -}
+alarmClock = i [] AlarmClock
+{-| <i class="far fa-align-center"></i> -}
 alignCenter : Html msg
-alignCenter = i [] (AlignCenter Regular)
-{-| <i class="fab far fas fal fa-align-justify"></i> -}
+alignCenter = i [] AlignCenter
+{-| <i class="far fa-align-justify"></i> -}
 alignJustify : Html msg
-alignJustify = i [] (AlignJustify Regular)
-{-| <i class="fab far fas fal fa-align-left"></i> -}
+alignJustify = i [] AlignJustify
+{-| <i class="far fa-align-left"></i> -}
 alignLeft : Html msg
-alignLeft = i [] (AlignLeft Regular)
-{-| <i class="fab far fas fal fa-align-right"></i> -}
+alignLeft = i [] AlignLeft
+{-| <i class="far fa-align-right"></i> -}
 alignRight : Html msg
-alignRight = i [] (AlignRight Regular)
-{-| <i class="fab far fas fal fa-amazon"></i> -}
-amazon : Html msg
-amazon = i [] (Amazon)
-{-| <i class="fab far fas fal fa-amazon-pay"></i> -}
-amazonPay : Html msg
-amazonPay = i [] (AmazonPay)
-{-| <i class="fab far fas fal fa-ambulance"></i> -}
+alignRight = i [] AlignRight
+{-| <i class="far fa-allergies"></i> -}
+allergies : Html msg
+allergies = i [] Allergies
+{-| <i class="far fa-ambulance"></i> -}
 ambulance : Html msg
-ambulance = i [] (Ambulance Regular)
-{-| <i class="fab far fas fal fa-american-sign-language-interpreting"></i> -}
+ambulance = i [] Ambulance
+{-| <i class="far fa-american-sign-language-interpreting"></i> -}
 americanSignLanguageInterpreting : Html msg
-americanSignLanguageInterpreting = i [] (AmericanSignLanguageInterpreting Regular)
-{-| <i class="fab far fas fal fa-amilia"></i> -}
-amilia : Html msg
-amilia = i [] (Amilia)
-{-| <i class="fab far fas fal fa-anchor"></i> -}
+americanSignLanguageInterpreting = i [] AmericanSignLanguageInterpreting
+{-| <i class="far fa-anchor"></i> -}
 anchor : Html msg
-anchor = i [] (Anchor Regular)
-{-| <i class="fab far fas fal fa-android"></i> -}
-android : Html msg
-android = i [] (Android)
-{-| <i class="fab far fas fal fa-angellist"></i> -}
-angellist : Html msg
-angellist = i [] (Angellist)
-{-| <i class="fab far fas fal fa-angle-double-down"></i> -}
+anchor = i [] Anchor
+{-| <i class="far fa-angle-double-down"></i> -}
 angleDoubleDown : Html msg
-angleDoubleDown = i [] (AngleDoubleDown Regular)
-{-| <i class="fab far fas fal fa-angle-double-left"></i> -}
+angleDoubleDown = i [] AngleDoubleDown
+{-| <i class="far fa-angle-double-left"></i> -}
 angleDoubleLeft : Html msg
-angleDoubleLeft = i [] (AngleDoubleLeft Regular)
-{-| <i class="fab far fas fal fa-angle-double-right"></i> -}
+angleDoubleLeft = i [] AngleDoubleLeft
+{-| <i class="far fa-angle-double-right"></i> -}
 angleDoubleRight : Html msg
-angleDoubleRight = i [] (AngleDoubleRight Regular)
-{-| <i class="fab far fas fal fa-angle-double-up"></i> -}
+angleDoubleRight = i [] AngleDoubleRight
+{-| <i class="far fa-angle-double-up"></i> -}
 angleDoubleUp : Html msg
-angleDoubleUp = i [] (AngleDoubleUp Regular)
-{-| <i class="fab far fas fal fa-angle-down"></i> -}
+angleDoubleUp = i [] AngleDoubleUp
+{-| <i class="far fa-angle-down"></i> -}
 angleDown : Html msg
-angleDown = i [] (AngleDown Regular)
-{-| <i class="fab far fas fal fa-angle-left"></i> -}
+angleDown = i [] AngleDown
+{-| <i class="far fa-angle-left"></i> -}
 angleLeft : Html msg
-angleLeft = i [] (AngleLeft Regular)
-{-| <i class="fab far fas fal fa-angle-right"></i> -}
+angleLeft = i [] AngleLeft
+{-| <i class="far fa-angle-right"></i> -}
 angleRight : Html msg
-angleRight = i [] (AngleRight Regular)
-{-| <i class="fab far fas fal fa-angle-up"></i> -}
+angleRight = i [] AngleRight
+{-| <i class="far fa-angle-up"></i> -}
 angleUp : Html msg
-angleUp = i [] (AngleUp Regular)
-{-| <i class="fab far fas fal fa-angrycreative"></i> -}
-angrycreative : Html msg
-angrycreative = i [] (Angrycreative)
-{-| <i class="fab far fas fal fa-angular"></i> -}
-angular : Html msg
-angular = i [] (Angular)
-{-| <i class="fab far fas fal fa-app-store"></i> -}
-appStore : Html msg
-appStore = i [] (AppStore)
-{-| <i class="fab far fas fal fa-app-store-ios"></i> -}
-appStoreIos : Html msg
-appStoreIos = i [] (AppStoreIos)
-{-| <i class="fab far fas fal fa-apper"></i> -}
-apper : Html msg
-apper = i [] (Apper)
-{-| <i class="fab far fas fal fa-apple"></i> -}
-apple : Html msg
-apple = i [] (Apple)
-{-| <i class="fab far fas fal fa-apple-pay"></i> -}
-applePay : Html msg
-applePay = i [] (ApplePay)
-{-| <i class="fab far fas fal fa-archive"></i> -}
+angleUp = i [] AngleUp
+{-| <i class="far fa-angry"></i> -}
+angry : Html msg
+angry = i [] Angry
+{-| <i class="far fa-archive"></i> -}
 archive : Html msg
-archive = i [] (Archive Regular)
-{-| <i class="fab far fas fal fa-arrow-alt-circle-down"></i> -}
+archive = i [] Archive
+{-| <i class="far fa-archway"></i> -}
+archway : Html msg
+archway = i [] Archway
+{-| <i class="far fa-arrow-alt-circle-down"></i> -}
 arrowAltCircleDown : Html msg
-arrowAltCircleDown = i [] (ArrowAltCircleDown Regular)
-{-| <i class="fab far fas fal fa-arrow-alt-circle-left"></i> -}
+arrowAltCircleDown = i [] ArrowAltCircleDown
+{-| <i class="far fa-arrow-alt-circle-left"></i> -}
 arrowAltCircleLeft : Html msg
-arrowAltCircleLeft = i [] (ArrowAltCircleLeft Regular)
-{-| <i class="fab far fas fal fa-arrow-alt-circle-right"></i> -}
+arrowAltCircleLeft = i [] ArrowAltCircleLeft
+{-| <i class="far fa-arrow-alt-circle-right"></i> -}
 arrowAltCircleRight : Html msg
-arrowAltCircleRight = i [] (ArrowAltCircleRight Regular)
-{-| <i class="fab far fas fal fa-arrow-alt-circle-up"></i> -}
+arrowAltCircleRight = i [] ArrowAltCircleRight
+{-| <i class="far fa-arrow-alt-circle-up"></i> -}
 arrowAltCircleUp : Html msg
-arrowAltCircleUp = i [] (ArrowAltCircleUp Regular)
-{-| <i class="fab far fas fal fa-arrow-alt-down"></i> -}
+arrowAltCircleUp = i [] ArrowAltCircleUp
+{-| <i class="far fa-arrow-alt-down"></i> -}
 arrowAltDown : Html msg
-arrowAltDown = i [] (ArrowAltDown Regular)
-{-| <i class="fab far fas fal fa-arrow-alt-from-bottom"></i> -}
+arrowAltDown = i [] ArrowAltDown
+{-| <i class="far fa-arrow-alt-from-bottom"></i> -}
 arrowAltFromBottom : Html msg
-arrowAltFromBottom = i [] (ArrowAltFromBottom Regular)
-{-| <i class="fab far fas fal fa-arrow-alt-from-left"></i> -}
+arrowAltFromBottom = i [] ArrowAltFromBottom
+{-| <i class="far fa-arrow-alt-from-left"></i> -}
 arrowAltFromLeft : Html msg
-arrowAltFromLeft = i [] (ArrowAltFromLeft Regular)
-{-| <i class="fab far fas fal fa-arrow-alt-from-right"></i> -}
+arrowAltFromLeft = i [] ArrowAltFromLeft
+{-| <i class="far fa-arrow-alt-from-right"></i> -}
 arrowAltFromRight : Html msg
-arrowAltFromRight = i [] (ArrowAltFromRight Regular)
-{-| <i class="fab far fas fal fa-arrow-alt-from-top"></i> -}
+arrowAltFromRight = i [] ArrowAltFromRight
+{-| <i class="far fa-arrow-alt-from-top"></i> -}
 arrowAltFromTop : Html msg
-arrowAltFromTop = i [] (ArrowAltFromTop Regular)
-{-| <i class="fab far fas fal fa-arrow-alt-left"></i> -}
+arrowAltFromTop = i [] ArrowAltFromTop
+{-| <i class="far fa-arrow-alt-left"></i> -}
 arrowAltLeft : Html msg
-arrowAltLeft = i [] (ArrowAltLeft Regular)
-{-| <i class="fab far fas fal fa-arrow-alt-right"></i> -}
+arrowAltLeft = i [] ArrowAltLeft
+{-| <i class="far fa-arrow-alt-right"></i> -}
 arrowAltRight : Html msg
-arrowAltRight = i [] (ArrowAltRight Regular)
-{-| <i class="fab far fas fal fa-arrow-alt-square-down"></i> -}
+arrowAltRight = i [] ArrowAltRight
+{-| <i class="far fa-arrow-alt-square-down"></i> -}
 arrowAltSquareDown : Html msg
-arrowAltSquareDown = i [] (ArrowAltSquareDown Regular)
-{-| <i class="fab far fas fal fa-arrow-alt-square-left"></i> -}
+arrowAltSquareDown = i [] ArrowAltSquareDown
+{-| <i class="far fa-arrow-alt-square-left"></i> -}
 arrowAltSquareLeft : Html msg
-arrowAltSquareLeft = i [] (ArrowAltSquareLeft Regular)
-{-| <i class="fab far fas fal fa-arrow-alt-square-right"></i> -}
+arrowAltSquareLeft = i [] ArrowAltSquareLeft
+{-| <i class="far fa-arrow-alt-square-right"></i> -}
 arrowAltSquareRight : Html msg
-arrowAltSquareRight = i [] (ArrowAltSquareRight Regular)
-{-| <i class="fab far fas fal fa-arrow-alt-square-up"></i> -}
+arrowAltSquareRight = i [] ArrowAltSquareRight
+{-| <i class="far fa-arrow-alt-square-up"></i> -}
 arrowAltSquareUp : Html msg
-arrowAltSquareUp = i [] (ArrowAltSquareUp Regular)
-{-| <i class="fab far fas fal fa-arrow-alt-to-bottom"></i> -}
+arrowAltSquareUp = i [] ArrowAltSquareUp
+{-| <i class="far fa-arrow-alt-to-bottom"></i> -}
 arrowAltToBottom : Html msg
-arrowAltToBottom = i [] (ArrowAltToBottom Regular)
-{-| <i class="fab far fas fal fa-arrow-alt-to-left"></i> -}
+arrowAltToBottom = i [] ArrowAltToBottom
+{-| <i class="far fa-arrow-alt-to-left"></i> -}
 arrowAltToLeft : Html msg
-arrowAltToLeft = i [] (ArrowAltToLeft Regular)
-{-| <i class="fab far fas fal fa-arrow-alt-to-right"></i> -}
+arrowAltToLeft = i [] ArrowAltToLeft
+{-| <i class="far fa-arrow-alt-to-right"></i> -}
 arrowAltToRight : Html msg
-arrowAltToRight = i [] (ArrowAltToRight Regular)
-{-| <i class="fab far fas fal fa-arrow-alt-to-top"></i> -}
+arrowAltToRight = i [] ArrowAltToRight
+{-| <i class="far fa-arrow-alt-to-top"></i> -}
 arrowAltToTop : Html msg
-arrowAltToTop = i [] (ArrowAltToTop Regular)
-{-| <i class="fab far fas fal fa-arrow-alt-up"></i> -}
+arrowAltToTop = i [] ArrowAltToTop
+{-| <i class="far fa-arrow-alt-up"></i> -}
 arrowAltUp : Html msg
-arrowAltUp = i [] (ArrowAltUp Regular)
-{-| <i class="fab far fas fal fa-arrow-circle-down"></i> -}
+arrowAltUp = i [] ArrowAltUp
+{-| <i class="far fa-arrow-circle-down"></i> -}
 arrowCircleDown : Html msg
-arrowCircleDown = i [] (ArrowCircleDown Regular)
-{-| <i class="fab far fas fal fa-arrow-circle-left"></i> -}
+arrowCircleDown = i [] ArrowCircleDown
+{-| <i class="far fa-arrow-circle-left"></i> -}
 arrowCircleLeft : Html msg
-arrowCircleLeft = i [] (ArrowCircleLeft Regular)
-{-| <i class="fab far fas fal fa-arrow-circle-right"></i> -}
+arrowCircleLeft = i [] ArrowCircleLeft
+{-| <i class="far fa-arrow-circle-right"></i> -}
 arrowCircleRight : Html msg
-arrowCircleRight = i [] (ArrowCircleRight Regular)
-{-| <i class="fab far fas fal fa-arrow-circle-up"></i> -}
+arrowCircleRight = i [] ArrowCircleRight
+{-| <i class="far fa-arrow-circle-up"></i> -}
 arrowCircleUp : Html msg
-arrowCircleUp = i [] (ArrowCircleUp Regular)
-{-| <i class="fab far fas fal fa-arrow-down"></i> -}
+arrowCircleUp = i [] ArrowCircleUp
+{-| <i class="far fa-arrow-down"></i> -}
 arrowDown : Html msg
-arrowDown = i [] (ArrowDown Regular)
-{-| <i class="fab far fas fal fa-arrow-from-bottom"></i> -}
+arrowDown = i [] ArrowDown
+{-| <i class="far fa-arrow-from-bottom"></i> -}
 arrowFromBottom : Html msg
-arrowFromBottom = i [] (ArrowFromBottom Regular)
-{-| <i class="fab far fas fal fa-arrow-from-left"></i> -}
+arrowFromBottom = i [] ArrowFromBottom
+{-| <i class="far fa-arrow-from-left"></i> -}
 arrowFromLeft : Html msg
-arrowFromLeft = i [] (ArrowFromLeft Regular)
-{-| <i class="fab far fas fal fa-arrow-from-right"></i> -}
+arrowFromLeft = i [] ArrowFromLeft
+{-| <i class="far fa-arrow-from-right"></i> -}
 arrowFromRight : Html msg
-arrowFromRight = i [] (ArrowFromRight Regular)
-{-| <i class="fab far fas fal fa-arrow-from-top"></i> -}
+arrowFromRight = i [] ArrowFromRight
+{-| <i class="far fa-arrow-from-top"></i> -}
 arrowFromTop : Html msg
-arrowFromTop = i [] (ArrowFromTop Regular)
-{-| <i class="fab far fas fal fa-arrow-left"></i> -}
+arrowFromTop = i [] ArrowFromTop
+{-| <i class="far fa-arrow-left"></i> -}
 arrowLeft : Html msg
-arrowLeft = i [] (ArrowLeft Regular)
-{-| <i class="fab far fas fal fa-arrow-right"></i> -}
+arrowLeft = i [] ArrowLeft
+{-| <i class="far fa-arrow-right"></i> -}
 arrowRight : Html msg
-arrowRight = i [] (ArrowRight Regular)
-{-| <i class="fab far fas fal fa-arrow-square-down"></i> -}
+arrowRight = i [] ArrowRight
+{-| <i class="far fa-arrow-square-down"></i> -}
 arrowSquareDown : Html msg
-arrowSquareDown = i [] (ArrowSquareDown Regular)
-{-| <i class="fab far fas fal fa-arrow-square-left"></i> -}
+arrowSquareDown = i [] ArrowSquareDown
+{-| <i class="far fa-arrow-square-left"></i> -}
 arrowSquareLeft : Html msg
-arrowSquareLeft = i [] (ArrowSquareLeft Regular)
-{-| <i class="fab far fas fal fa-arrow-square-right"></i> -}
+arrowSquareLeft = i [] ArrowSquareLeft
+{-| <i class="far fa-arrow-square-right"></i> -}
 arrowSquareRight : Html msg
-arrowSquareRight = i [] (ArrowSquareRight Regular)
-{-| <i class="fab far fas fal fa-arrow-square-up"></i> -}
+arrowSquareRight = i [] ArrowSquareRight
+{-| <i class="far fa-arrow-square-up"></i> -}
 arrowSquareUp : Html msg
-arrowSquareUp = i [] (ArrowSquareUp Regular)
-{-| <i class="fab far fas fal fa-arrow-to-bottom"></i> -}
+arrowSquareUp = i [] ArrowSquareUp
+{-| <i class="far fa-arrow-to-bottom"></i> -}
 arrowToBottom : Html msg
-arrowToBottom = i [] (ArrowToBottom Regular)
-{-| <i class="fab far fas fal fa-arrow-to-left"></i> -}
+arrowToBottom = i [] ArrowToBottom
+{-| <i class="far fa-arrow-to-left"></i> -}
 arrowToLeft : Html msg
-arrowToLeft = i [] (ArrowToLeft Regular)
-{-| <i class="fab far fas fal fa-arrow-to-right"></i> -}
+arrowToLeft = i [] ArrowToLeft
+{-| <i class="far fa-arrow-to-right"></i> -}
 arrowToRight : Html msg
-arrowToRight = i [] (ArrowToRight Regular)
-{-| <i class="fab far fas fal fa-arrow-to-top"></i> -}
+arrowToRight = i [] ArrowToRight
+{-| <i class="far fa-arrow-to-top"></i> -}
 arrowToTop : Html msg
-arrowToTop = i [] (ArrowToTop Regular)
-{-| <i class="fab far fas fal fa-arrow-up"></i> -}
+arrowToTop = i [] ArrowToTop
+{-| <i class="far fa-arrow-up"></i> -}
 arrowUp : Html msg
-arrowUp = i [] (ArrowUp Regular)
-{-| <i class="fab far fas fal fa-arrows"></i> -}
+arrowUp = i [] ArrowUp
+{-| <i class="far fa-arrows"></i> -}
 arrows : Html msg
-arrows = i [] (Arrows Regular)
-{-| <i class="fab far fas fal fa-arrows-alt"></i> -}
+arrows = i [] Arrows
+{-| <i class="far fa-arrows-alt"></i> -}
 arrowsAlt : Html msg
-arrowsAlt = i [] (ArrowsAlt Regular)
-{-| <i class="fab far fas fal fa-arrows-alt-h"></i> -}
+arrowsAlt = i [] ArrowsAlt
+{-| <i class="far fa-arrows-alt-h"></i> -}
 arrowsAltH : Html msg
-arrowsAltH = i [] (ArrowsAltH Regular)
-{-| <i class="fab far fas fal fa-arrows-alt-v"></i> -}
+arrowsAltH = i [] ArrowsAltH
+{-| <i class="far fa-arrows-alt-v"></i> -}
 arrowsAltV : Html msg
-arrowsAltV = i [] (ArrowsAltV Regular)
-{-| <i class="fab far fas fal fa-arrows-h"></i> -}
+arrowsAltV = i [] ArrowsAltV
+{-| <i class="far fa-arrows-h"></i> -}
 arrowsH : Html msg
-arrowsH = i [] (ArrowsH Regular)
-{-| <i class="fab far fas fal fa-arrows-v"></i> -}
+arrowsH = i [] ArrowsH
+{-| <i class="far fa-arrows-v"></i> -}
 arrowsV : Html msg
-arrowsV = i [] (ArrowsV Regular)
-{-| <i class="fab far fas fal fa-assistive-listening-systems"></i> -}
+arrowsV = i [] ArrowsV
+{-| <i class="far fa-assistive-listening-systems"></i> -}
 assistiveListeningSystems : Html msg
-assistiveListeningSystems = i [] (AssistiveListeningSystems Regular)
-{-| <i class="fab far fas fal fa-asterisk"></i> -}
+assistiveListeningSystems = i [] AssistiveListeningSystems
+{-| <i class="far fa-asterisk"></i> -}
 asterisk : Html msg
-asterisk = i [] (Asterisk Regular)
-{-| <i class="fab far fas fal fa-asymmetrik"></i> -}
-asymmetrik : Html msg
-asymmetrik = i [] (Asymmetrik)
-{-| <i class="fab far fas fal fa-at"></i> -}
+asterisk = i [] Asterisk
+{-| <i class="far fa-at"></i> -}
 at : Html msg
-at = i [] (At Regular)
-{-| <i class="fab far fas fal fa-audible"></i> -}
-audible : Html msg
-audible = i [] (Audible)
-{-| <i class="fab far fas fal fa-audio-description"></i> -}
+at = i [] At
+{-| <i class="far fa-atlas"></i> -}
+atlas : Html msg
+atlas = i [] Atlas
+{-| <i class="far fa-audio-description"></i> -}
 audioDescription : Html msg
-audioDescription = i [] (AudioDescription Regular)
-{-| <i class="fab far fas fal fa-autoprefixer"></i> -}
-autoprefixer : Html msg
-autoprefixer = i [] (Autoprefixer)
-{-| <i class="fab far fas fal fa-avianex"></i> -}
-avianex : Html msg
-avianex = i [] (Avianex)
-{-| <i class="fab far fas fal fa-aviato"></i> -}
-aviato : Html msg
-aviato = i [] (Aviato)
-{-| <i class="fab far fas fal fa-aws"></i> -}
-aws : Html msg
-aws = i [] (Aws)
-{-| <i class="fab far fas fal fa-backward"></i> -}
+audioDescription = i [] AudioDescription
+{-| <i class="far fa-award"></i> -}
+award : Html msg
+award = i [] Award
+{-| <i class="far fa-backspace"></i> -}
+backspace : Html msg
+backspace = i [] Backspace
+{-| <i class="far fa-backward"></i> -}
 backward : Html msg
-backward = i [] (Backward Regular)
-{-| <i class="fab far fas fal fa-badge"></i> -}
+backward = i [] Backward
+{-| <i class="far fa-badge"></i> -}
 badge : Html msg
-badge = i [] (Badge Regular)
-{-| <i class="fab far fas fal fa-badge-check"></i> -}
+badge = i [] Badge
+{-| <i class="far fa-badge-check"></i> -}
 badgeCheck : Html msg
-badgeCheck = i [] (BadgeCheck Regular)
-{-| <i class="fab far fas fal fa-balance-scale"></i> -}
+badgeCheck = i [] BadgeCheck
+{-| <i class="far fa-balance-scale"></i> -}
 balanceScale : Html msg
-balanceScale = i [] (BalanceScale Regular)
-{-| <i class="fab far fas fal fa-ban"></i> -}
+balanceScale = i [] BalanceScale
+{-| <i class="far fa-balance-scale-left"></i> -}
+balanceScaleLeft : Html msg
+balanceScaleLeft = i [] BalanceScaleLeft
+{-| <i class="far fa-balance-scale-right"></i> -}
+balanceScaleRight : Html msg
+balanceScaleRight = i [] BalanceScaleRight
+{-| <i class="far fa-ban"></i> -}
 ban : Html msg
-ban = i [] (Ban Regular)
-{-| <i class="fab far fas fal fa-bandcamp"></i> -}
-bandcamp : Html msg
-bandcamp = i [] (Bandcamp)
-{-| <i class="fab far fas fal fa-barcode"></i> -}
+ban = i [] Ban
+{-| <i class="far fa-band-aid"></i> -}
+bandAid : Html msg
+bandAid = i [] BandAid
+{-| <i class="far fa-barcode"></i> -}
 barcode : Html msg
-barcode = i [] (Barcode Regular)
-{-| <i class="fab far fas fal fa-bars"></i> -}
+barcode = i [] Barcode
+{-| <i class="far fa-barcode-alt"></i> -}
+barcodeAlt : Html msg
+barcodeAlt = i [] BarcodeAlt
+{-| <i class="far fa-barcode-read"></i> -}
+barcodeRead : Html msg
+barcodeRead = i [] BarcodeRead
+{-| <i class="far fa-barcode-scan"></i> -}
+barcodeScan : Html msg
+barcodeScan = i [] BarcodeScan
+{-| <i class="far fa-bars"></i> -}
 bars : Html msg
-bars = i [] (Bars Regular)
-{-| <i class="fab far fas fal fa-baseball"></i> -}
+bars = i [] Bars
+{-| <i class="far fa-baseball"></i> -}
 baseball : Html msg
-baseball = i [] (Baseball Regular)
-{-| <i class="fab far fas fal fa-baseball-ball"></i> -}
+baseball = i [] Baseball
+{-| <i class="far fa-baseball-ball"></i> -}
 baseballBall : Html msg
-baseballBall = i [] (BaseballBall Regular)
-{-| <i class="fab far fas fal fa-basketball-ball"></i> -}
+baseballBall = i [] BaseballBall
+{-| <i class="far fa-basketball-ball"></i> -}
 basketballBall : Html msg
-basketballBall = i [] (BasketballBall Regular)
-{-| <i class="fab far fas fal fa-basketball-hoop"></i> -}
+basketballBall = i [] BasketballBall
+{-| <i class="far fa-basketball-hoop"></i> -}
 basketballHoop : Html msg
-basketballHoop = i [] (BasketballHoop Regular)
-{-| <i class="fab far fas fal fa-bath"></i> -}
+basketballHoop = i [] BasketballHoop
+{-| <i class="far fa-bath"></i> -}
 bath : Html msg
-bath = i [] (Bath Regular)
-{-| <i class="fab far fas fal fa-battery-bolt"></i> -}
+bath = i [] Bath
+{-| <i class="far fa-battery-bolt"></i> -}
 batteryBolt : Html msg
-batteryBolt = i [] (BatteryBolt Regular)
-{-| <i class="fab far fas fal fa-battery-empty"></i> -}
+batteryBolt = i [] BatteryBolt
+{-| <i class="far fa-battery-empty"></i> -}
 batteryEmpty : Html msg
-batteryEmpty = i [] (BatteryEmpty Regular)
-{-| <i class="fab far fas fal fa-battery-full"></i> -}
+batteryEmpty = i [] BatteryEmpty
+{-| <i class="far fa-battery-full"></i> -}
 batteryFull : Html msg
-batteryFull = i [] (BatteryFull Regular)
-{-| <i class="fab far fas fal fa-battery-half"></i> -}
+batteryFull = i [] BatteryFull
+{-| <i class="far fa-battery-half"></i> -}
 batteryHalf : Html msg
-batteryHalf = i [] (BatteryHalf Regular)
-{-| <i class="fab far fas fal fa-battery-quarter"></i> -}
+batteryHalf = i [] BatteryHalf
+{-| <i class="far fa-battery-quarter"></i> -}
 batteryQuarter : Html msg
-batteryQuarter = i [] (BatteryQuarter Regular)
-{-| <i class="fab far fas fal fa-battery-slash"></i> -}
+batteryQuarter = i [] BatteryQuarter
+{-| <i class="far fa-battery-slash"></i> -}
 batterySlash : Html msg
-batterySlash = i [] (BatterySlash Regular)
-{-| <i class="fab far fas fal fa-battery-three-quarters"></i> -}
+batterySlash = i [] BatterySlash
+{-| <i class="far fa-battery-three-quarters"></i> -}
 batteryThreeQuarters : Html msg
-batteryThreeQuarters = i [] (BatteryThreeQuarters Regular)
-{-| <i class="fab far fas fal fa-bed"></i> -}
+batteryThreeQuarters = i [] BatteryThreeQuarters
+{-| <i class="far fa-bed"></i> -}
 bed : Html msg
-bed = i [] (Bed Regular)
-{-| <i class="fab far fas fal fa-beer"></i> -}
+bed = i [] Bed
+{-| <i class="far fa-beer"></i> -}
 beer : Html msg
-beer = i [] (Beer Regular)
-{-| <i class="fab far fas fal fa-behance"></i> -}
-behance : Html msg
-behance = i [] (Behance)
-{-| <i class="fab far fas fal fa-behance-square"></i> -}
-behanceSquare : Html msg
-behanceSquare = i [] (BehanceSquare)
-{-| <i class="fab far fas fal fa-bell"></i> -}
+beer = i [] Beer
+{-| <i class="far fa-bell"></i> -}
 bell : Html msg
-bell = i [] (Bell Regular)
-{-| <i class="fab far fas fal fa-bell-slash"></i> -}
+bell = i [] Bell
+{-| <i class="far fa-bell-slash"></i> -}
 bellSlash : Html msg
-bellSlash = i [] (BellSlash Regular)
-{-| <i class="fab far fas fal fa-bicycle"></i> -}
+bellSlash = i [] BellSlash
+{-| <i class="far fa-bezier-curve"></i> -}
+bezierCurve : Html msg
+bezierCurve = i [] BezierCurve
+{-| <i class="far fa-bicycle"></i> -}
 bicycle : Html msg
-bicycle = i [] (Bicycle Regular)
-{-| <i class="fab far fas fal fa-bimobject"></i> -}
-bimobject : Html msg
-bimobject = i [] (Bimobject)
-{-| <i class="fab far fas fal fa-binoculars"></i> -}
+bicycle = i [] Bicycle
+{-| <i class="far fa-binoculars"></i> -}
 binoculars : Html msg
-binoculars = i [] (Binoculars Regular)
-{-| <i class="fab far fas fal fa-birthday-cake"></i> -}
+binoculars = i [] Binoculars
+{-| <i class="far fa-birthday-cake"></i> -}
 birthdayCake : Html msg
-birthdayCake = i [] (BirthdayCake Regular)
-{-| <i class="fab far fas fal fa-bitbucket"></i> -}
-bitbucket : Html msg
-bitbucket = i [] (Bitbucket)
-{-| <i class="fab far fas fal fa-bitcoin"></i> -}
-bitcoin : Html msg
-bitcoin = i [] (Bitcoin)
-{-| <i class="fab far fas fal fa-bity"></i> -}
-bity : Html msg
-bity = i [] (Bity)
-{-| <i class="fab far fas fal fa-black-tie"></i> -}
-blackTie : Html msg
-blackTie = i [] (BlackTie)
-{-| <i class="fab far fas fal fa-blackberry"></i> -}
-blackberry : Html msg
-blackberry = i [] (Blackberry)
-{-| <i class="fab far fas fal fa-blind"></i> -}
+birthdayCake = i [] BirthdayCake
+{-| <i class="far fa-blanket"></i> -}
+blanket : Html msg
+blanket = i [] Blanket
+{-| <i class="far fa-blender"></i> -}
+blender : Html msg
+blender = i [] Blender
+{-| <i class="far fa-blind"></i> -}
 blind : Html msg
-blind = i [] (Blind Regular)
-{-| <i class="fab far fas fal fa-blogger"></i> -}
-blogger : Html msg
-blogger = i [] (Blogger)
-{-| <i class="fab far fas fal fa-blogger-b"></i> -}
-bloggerB : Html msg
-bloggerB = i [] (BloggerB)
-{-| <i class="fab far fas fal fa-bluetooth"></i> -}
-bluetooth : Html msg
-bluetooth = i [] (Bluetooth)
-{-| <i class="fab far fas fal fa-bluetooth-b"></i> -}
-bluetoothB : Html msg
-bluetoothB = i [] (BluetoothB)
-{-| <i class="fab far fas fal fa-bold"></i> -}
+blind = i [] Blind
+{-| <i class="far fa-bold"></i> -}
 bold : Html msg
-bold = i [] (Bold Regular)
-{-| <i class="fab far fas fal fa-bolt"></i> -}
+bold = i [] Bold
+{-| <i class="far fa-bolt"></i> -}
 bolt : Html msg
-bolt = i [] (Bolt Regular)
-{-| <i class="fab far fas fal fa-bomb"></i> -}
+bolt = i [] Bolt
+{-| <i class="far fa-bomb"></i> -}
 bomb : Html msg
-bomb = i [] (Bomb Regular)
-{-| <i class="fab far fas fal fa-book"></i> -}
+bomb = i [] Bomb
+{-| <i class="far fa-bong"></i> -}
+bong : Html msg
+bong = i [] Bong
+{-| <i class="far fa-book"></i> -}
 book : Html msg
-book = i [] (Book Regular)
-{-| <i class="fab far fas fal fa-bookmark"></i> -}
+book = i [] Book
+{-| <i class="far fa-book-heart"></i> -}
+bookHeart : Html msg
+bookHeart = i [] BookHeart
+{-| <i class="far fa-book-open"></i> -}
+bookOpen : Html msg
+bookOpen = i [] BookOpen
+{-| <i class="far fa-bookmark"></i> -}
 bookmark : Html msg
-bookmark = i [] (Bookmark Regular)
-{-| <i class="fab far fas fal fa-bowling-ball"></i> -}
+bookmark = i [] Bookmark
+{-| <i class="far fa-bowling-ball"></i> -}
 bowlingBall : Html msg
-bowlingBall = i [] (BowlingBall Regular)
-{-| <i class="fab far fas fal fa-bowling-pins"></i> -}
+bowlingBall = i [] BowlingBall
+{-| <i class="far fa-bowling-pins"></i> -}
 bowlingPins : Html msg
-bowlingPins = i [] (BowlingPins Regular)
-{-| <i class="fab far fas fal fa-boxing-glove"></i> -}
+bowlingPins = i [] BowlingPins
+{-| <i class="far fa-box"></i> -}
+box : Html msg
+box = i [] Box
+{-| <i class="far fa-box-alt"></i> -}
+boxAlt : Html msg
+boxAlt = i [] BoxAlt
+{-| <i class="far fa-box-check"></i> -}
+boxCheck : Html msg
+boxCheck = i [] BoxCheck
+{-| <i class="far fa-box-fragile"></i> -}
+boxFragile : Html msg
+boxFragile = i [] BoxFragile
+{-| <i class="far fa-box-full"></i> -}
+boxFull : Html msg
+boxFull = i [] BoxFull
+{-| <i class="far fa-box-heart"></i> -}
+boxHeart : Html msg
+boxHeart = i [] BoxHeart
+{-| <i class="far fa-box-open"></i> -}
+boxOpen : Html msg
+boxOpen = i [] BoxOpen
+{-| <i class="far fa-box-up"></i> -}
+boxUp : Html msg
+boxUp = i [] BoxUp
+{-| <i class="far fa-box-usd"></i> -}
+boxUsd : Html msg
+boxUsd = i [] BoxUsd
+{-| <i class="far fa-boxes"></i> -}
+boxes : Html msg
+boxes = i [] Boxes
+{-| <i class="far fa-boxes-alt"></i> -}
+boxesAlt : Html msg
+boxesAlt = i [] BoxesAlt
+{-| <i class="far fa-boxing-glove"></i> -}
 boxingGlove : Html msg
-boxingGlove = i [] (BoxingGlove Regular)
-{-| <i class="fab far fas fal fa-braille"></i> -}
+boxingGlove = i [] BoxingGlove
+{-| <i class="far fa-braille"></i> -}
 braille : Html msg
-braille = i [] (Braille Regular)
-{-| <i class="fab far fas fal fa-briefcase"></i> -}
+braille = i [] Braille
+{-| <i class="far fa-briefcase"></i> -}
 briefcase : Html msg
-briefcase = i [] (Briefcase Regular)
-{-| <i class="fab far fas fal fa-browser"></i> -}
+briefcase = i [] Briefcase
+{-| <i class="far fa-briefcase-medical"></i> -}
+briefcaseMedical : Html msg
+briefcaseMedical = i [] BriefcaseMedical
+{-| <i class="far fa-broadcast-tower"></i> -}
+broadcastTower : Html msg
+broadcastTower = i [] BroadcastTower
+{-| <i class="far fa-broom"></i> -}
+broom : Html msg
+broom = i [] Broom
+{-| <i class="far fa-browser"></i> -}
 browser : Html msg
-browser = i [] (Browser Regular)
-{-| <i class="fab far fas fal fa-btc"></i> -}
-btc : Html msg
-btc = i [] (Btc)
-{-| <i class="fab far fas fal fa-bug"></i> -}
+browser = i [] Browser
+{-| <i class="far fa-brush"></i> -}
+brush : Html msg
+brush = i [] Brush
+{-| <i class="far fa-bug"></i> -}
 bug : Html msg
-bug = i [] (Bug Regular)
-{-| <i class="fab far fas fal fa-building"></i> -}
+bug = i [] Bug
+{-| <i class="far fa-building"></i> -}
 building : Html msg
-building = i [] (Building Regular)
-{-| <i class="fab far fas fal fa-bullhorn"></i> -}
+building = i [] Building
+{-| <i class="far fa-bullhorn"></i> -}
 bullhorn : Html msg
-bullhorn = i [] (Bullhorn Regular)
-{-| <i class="fab far fas fal fa-bullseye"></i> -}
+bullhorn = i [] Bullhorn
+{-| <i class="far fa-bullseye"></i> -}
 bullseye : Html msg
-bullseye = i [] (Bullseye Regular)
-{-| <i class="fab far fas fal fa-buromobelexperte"></i> -}
-buromobelexperte : Html msg
-buromobelexperte = i [] (Buromobelexperte)
-{-| <i class="fab far fas fal fa-bus"></i> -}
+bullseye = i [] Bullseye
+{-| <i class="far fa-burn"></i> -}
+burn : Html msg
+burn = i [] Burn
+{-| <i class="far fa-bus"></i> -}
 bus : Html msg
-bus = i [] (Bus Regular)
-{-| <i class="fab far fas fal fa-buysellads"></i> -}
-buysellads : Html msg
-buysellads = i [] (Buysellads)
-{-| <i class="fab far fas fal fa-calculator"></i> -}
+bus = i [] Bus
+{-| <i class="far fa-bus-alt"></i> -}
+busAlt : Html msg
+busAlt = i [] BusAlt
+{-| <i class="far fa-calculator"></i> -}
 calculator : Html msg
-calculator = i [] (Calculator Regular)
-{-| <i class="fab far fas fal fa-calendar"></i> -}
+calculator = i [] Calculator
+{-| <i class="far fa-calendar"></i> -}
 calendar : Html msg
-calendar = i [] (Calendar Regular)
-{-| <i class="fab far fas fal fa-calendar-alt"></i> -}
+calendar = i [] Calendar
+{-| <i class="far fa-calendar-alt"></i> -}
 calendarAlt : Html msg
-calendarAlt = i [] (CalendarAlt Regular)
-{-| <i class="fab far fas fal fa-calendar-check"></i> -}
+calendarAlt = i [] CalendarAlt
+{-| <i class="far fa-calendar-check"></i> -}
 calendarCheck : Html msg
-calendarCheck = i [] (CalendarCheck Regular)
-{-| <i class="fab far fas fal fa-calendar-edit"></i> -}
+calendarCheck = i [] CalendarCheck
+{-| <i class="far fa-calendar-edit"></i> -}
 calendarEdit : Html msg
-calendarEdit = i [] (CalendarEdit Regular)
-{-| <i class="fab far fas fal fa-calendar-exclamation"></i> -}
+calendarEdit = i [] CalendarEdit
+{-| <i class="far fa-calendar-exclamation"></i> -}
 calendarExclamation : Html msg
-calendarExclamation = i [] (CalendarExclamation Regular)
-{-| <i class="fab far fas fal fa-calendar-minus"></i> -}
+calendarExclamation = i [] CalendarExclamation
+{-| <i class="far fa-calendar-minus"></i> -}
 calendarMinus : Html msg
-calendarMinus = i [] (CalendarMinus Regular)
-{-| <i class="fab far fas fal fa-calendar-plus"></i> -}
+calendarMinus = i [] CalendarMinus
+{-| <i class="far fa-calendar-plus"></i> -}
 calendarPlus : Html msg
-calendarPlus = i [] (CalendarPlus Regular)
-{-| <i class="fab far fas fal fa-calendar-times"></i> -}
+calendarPlus = i [] CalendarPlus
+{-| <i class="far fa-calendar-times"></i> -}
 calendarTimes : Html msg
-calendarTimes = i [] (CalendarTimes Regular)
-{-| <i class="fab far fas fal fa-camera"></i> -}
+calendarTimes = i [] CalendarTimes
+{-| <i class="far fa-camera"></i> -}
 camera : Html msg
-camera = i [] (Camera Regular)
-{-| <i class="fab far fas fal fa-camera-alt"></i> -}
+camera = i [] Camera
+{-| <i class="far fa-camera-alt"></i> -}
 cameraAlt : Html msg
-cameraAlt = i [] (CameraAlt Regular)
-{-| <i class="fab far fas fal fa-camera-retro"></i> -}
+cameraAlt = i [] CameraAlt
+{-| <i class="far fa-camera-retro"></i> -}
 cameraRetro : Html msg
-cameraRetro = i [] (CameraRetro Regular)
-{-| <i class="fab far fas fal fa-car"></i> -}
+cameraRetro = i [] CameraRetro
+{-| <i class="far fa-cannabis"></i> -}
+cannabis : Html msg
+cannabis = i [] Cannabis
+{-| <i class="far fa-capsules"></i> -}
+capsules : Html msg
+capsules = i [] Capsules
+{-| <i class="far fa-car"></i> -}
 car : Html msg
-car = i [] (Car Regular)
-{-| <i class="fab far fas fal fa-caret-circle-down"></i> -}
+car = i [] Car
+{-| <i class="far fa-caret-circle-down"></i> -}
 caretCircleDown : Html msg
-caretCircleDown = i [] (CaretCircleDown Regular)
-{-| <i class="fab far fas fal fa-caret-circle-left"></i> -}
+caretCircleDown = i [] CaretCircleDown
+{-| <i class="far fa-caret-circle-left"></i> -}
 caretCircleLeft : Html msg
-caretCircleLeft = i [] (CaretCircleLeft Regular)
-{-| <i class="fab far fas fal fa-caret-circle-right"></i> -}
+caretCircleLeft = i [] CaretCircleLeft
+{-| <i class="far fa-caret-circle-right"></i> -}
 caretCircleRight : Html msg
-caretCircleRight = i [] (CaretCircleRight Regular)
-{-| <i class="fab far fas fal fa-caret-circle-up"></i> -}
+caretCircleRight = i [] CaretCircleRight
+{-| <i class="far fa-caret-circle-up"></i> -}
 caretCircleUp : Html msg
-caretCircleUp = i [] (CaretCircleUp Regular)
-{-| <i class="fab far fas fal fa-caret-down"></i> -}
+caretCircleUp = i [] CaretCircleUp
+{-| <i class="far fa-caret-down"></i> -}
 caretDown : Html msg
-caretDown = i [] (CaretDown Regular)
-{-| <i class="fab far fas fal fa-caret-left"></i> -}
+caretDown = i [] CaretDown
+{-| <i class="far fa-caret-left"></i> -}
 caretLeft : Html msg
-caretLeft = i [] (CaretLeft Regular)
-{-| <i class="fab far fas fal fa-caret-right"></i> -}
+caretLeft = i [] CaretLeft
+{-| <i class="far fa-caret-right"></i> -}
 caretRight : Html msg
-caretRight = i [] (CaretRight Regular)
-{-| <i class="fab far fas fal fa-caret-square-down"></i> -}
+caretRight = i [] CaretRight
+{-| <i class="far fa-caret-square-down"></i> -}
 caretSquareDown : Html msg
-caretSquareDown = i [] (CaretSquareDown Regular)
-{-| <i class="fab far fas fal fa-caret-square-left"></i> -}
+caretSquareDown = i [] CaretSquareDown
+{-| <i class="far fa-caret-square-left"></i> -}
 caretSquareLeft : Html msg
-caretSquareLeft = i [] (CaretSquareLeft Regular)
-{-| <i class="fab far fas fal fa-caret-square-right"></i> -}
+caretSquareLeft = i [] CaretSquareLeft
+{-| <i class="far fa-caret-square-right"></i> -}
 caretSquareRight : Html msg
-caretSquareRight = i [] (CaretSquareRight Regular)
-{-| <i class="fab far fas fal fa-caret-square-up"></i> -}
+caretSquareRight = i [] CaretSquareRight
+{-| <i class="far fa-caret-square-up"></i> -}
 caretSquareUp : Html msg
-caretSquareUp = i [] (CaretSquareUp Regular)
-{-| <i class="fab far fas fal fa-caret-up"></i> -}
+caretSquareUp = i [] CaretSquareUp
+{-| <i class="far fa-caret-up"></i> -}
 caretUp : Html msg
-caretUp = i [] (CaretUp Regular)
-{-| <i class="fab far fas fal fa-cart-arrow-down"></i> -}
+caretUp = i [] CaretUp
+{-| <i class="far fa-cart-arrow-down"></i> -}
 cartArrowDown : Html msg
-cartArrowDown = i [] (CartArrowDown Regular)
-{-| <i class="fab far fas fal fa-cart-plus"></i> -}
+cartArrowDown = i [] CartArrowDown
+{-| <i class="far fa-cart-plus"></i> -}
 cartPlus : Html msg
-cartPlus = i [] (CartPlus Regular)
-{-| <i class="fab far fas fal fa-cc-amazon-pay"></i> -}
-ccAmazonPay : Html msg
-ccAmazonPay = i [] (CcAmazonPay)
-{-| <i class="fab far fas fal fa-cc-amex"></i> -}
-ccAmex : Html msg
-ccAmex = i [] (CcAmex)
-{-| <i class="fab far fas fal fa-cc-apple-pay"></i> -}
-ccApplePay : Html msg
-ccApplePay = i [] (CcApplePay)
-{-| <i class="fab far fas fal fa-cc-diners-club"></i> -}
-ccDinersClub : Html msg
-ccDinersClub = i [] (CcDinersClub)
-{-| <i class="fab far fas fal fa-cc-discover"></i> -}
-ccDiscover : Html msg
-ccDiscover = i [] (CcDiscover)
-{-| <i class="fab far fas fal fa-cc-jcb"></i> -}
-ccJcb : Html msg
-ccJcb = i [] (CcJcb)
-{-| <i class="fab far fas fal fa-cc-mastercard"></i> -}
-ccMastercard : Html msg
-ccMastercard = i [] (CcMastercard)
-{-| <i class="fab far fas fal fa-cc-paypal"></i> -}
-ccPaypal : Html msg
-ccPaypal = i [] (CcPaypal)
-{-| <i class="fab far fas fal fa-cc-stripe"></i> -}
-ccStripe : Html msg
-ccStripe = i [] (CcStripe)
-{-| <i class="fab far fas fal fa-cc-visa"></i> -}
-ccVisa : Html msg
-ccVisa = i [] (CcVisa)
-{-| <i class="fab far fas fal fa-centercode"></i> -}
-centercode : Html msg
-centercode = i [] (Centercode)
-{-| <i class="fab far fas fal fa-certificate"></i> -}
+cartPlus = i [] CartPlus
+{-| <i class="far fa-certificate"></i> -}
 certificate : Html msg
-certificate = i [] (Certificate Regular)
-{-| <i class="fab far fas fal fa-chart-area"></i> -}
+certificate = i [] Certificate
+{-| <i class="far fa-chalkboard"></i> -}
+chalkboard : Html msg
+chalkboard = i [] Chalkboard
+{-| <i class="far fa-chalkboard-teacher"></i> -}
+chalkboardTeacher : Html msg
+chalkboardTeacher = i [] ChalkboardTeacher
+{-| <i class="far fa-chart-area"></i> -}
 chartArea : Html msg
-chartArea = i [] (ChartArea Regular)
-{-| <i class="fab far fas fal fa-chart-bar"></i> -}
+chartArea = i [] ChartArea
+{-| <i class="far fa-chart-bar"></i> -}
 chartBar : Html msg
-chartBar = i [] (ChartBar Regular)
-{-| <i class="fab far fas fal fa-chart-line"></i> -}
+chartBar = i [] ChartBar
+{-| <i class="far fa-chart-line"></i> -}
 chartLine : Html msg
-chartLine = i [] (ChartLine Regular)
-{-| <i class="fab far fas fal fa-chart-pie"></i> -}
+chartLine = i [] ChartLine
+{-| <i class="far fa-chart-pie"></i> -}
 chartPie : Html msg
-chartPie = i [] (ChartPie Regular)
-{-| <i class="fab far fas fal fa-check"></i> -}
+chartPie = i [] ChartPie
+{-| <i class="far fa-check"></i> -}
 check : Html msg
-check = i [] (Check Regular)
-{-| <i class="fab far fas fal fa-check-circle"></i> -}
+check = i [] Check
+{-| <i class="far fa-check-circle"></i> -}
 checkCircle : Html msg
-checkCircle = i [] (CheckCircle Regular)
-{-| <i class="fab far fas fal fa-check-square"></i> -}
+checkCircle = i [] CheckCircle
+{-| <i class="far fa-check-double"></i> -}
+checkDouble : Html msg
+checkDouble = i [] CheckDouble
+{-| <i class="far fa-check-square"></i> -}
 checkSquare : Html msg
-checkSquare = i [] (CheckSquare Regular)
-{-| <i class="fab far fas fal fa-chess"></i> -}
+checkSquare = i [] CheckSquare
+{-| <i class="far fa-chess"></i> -}
 chess : Html msg
-chess = i [] (Chess Regular)
-{-| <i class="fab far fas fal fa-chess-bishop"></i> -}
+chess = i [] Chess
+{-| <i class="far fa-chess-bishop"></i> -}
 chessBishop : Html msg
-chessBishop = i [] (ChessBishop Regular)
-{-| <i class="fab far fas fal fa-chess-bishop-alt"></i> -}
+chessBishop = i [] ChessBishop
+{-| <i class="far fa-chess-bishop-alt"></i> -}
 chessBishopAlt : Html msg
-chessBishopAlt = i [] (ChessBishopAlt Regular)
-{-| <i class="fab far fas fal fa-chess-board"></i> -}
+chessBishopAlt = i [] ChessBishopAlt
+{-| <i class="far fa-chess-board"></i> -}
 chessBoard : Html msg
-chessBoard = i [] (ChessBoard Regular)
-{-| <i class="fab far fas fal fa-chess-clock"></i> -}
+chessBoard = i [] ChessBoard
+{-| <i class="far fa-chess-clock"></i> -}
 chessClock : Html msg
-chessClock = i [] (ChessClock Regular)
-{-| <i class="fab far fas fal fa-chess-clock-alt"></i> -}
+chessClock = i [] ChessClock
+{-| <i class="far fa-chess-clock-alt"></i> -}
 chessClockAlt : Html msg
-chessClockAlt = i [] (ChessClockAlt Regular)
-{-| <i class="fab far fas fal fa-chess-king"></i> -}
+chessClockAlt = i [] ChessClockAlt
+{-| <i class="far fa-chess-king"></i> -}
 chessKing : Html msg
-chessKing = i [] (ChessKing Regular)
-{-| <i class="fab far fas fal fa-chess-king-alt"></i> -}
+chessKing = i [] ChessKing
+{-| <i class="far fa-chess-king-alt"></i> -}
 chessKingAlt : Html msg
-chessKingAlt = i [] (ChessKingAlt Regular)
-{-| <i class="fab far fas fal fa-chess-knight"></i> -}
+chessKingAlt = i [] ChessKingAlt
+{-| <i class="far fa-chess-knight"></i> -}
 chessKnight : Html msg
-chessKnight = i [] (ChessKnight Regular)
-{-| <i class="fab far fas fal fa-chess-knight-alt"></i> -}
+chessKnight = i [] ChessKnight
+{-| <i class="far fa-chess-knight-alt"></i> -}
 chessKnightAlt : Html msg
-chessKnightAlt = i [] (ChessKnightAlt Regular)
-{-| <i class="fab far fas fal fa-chess-pawn"></i> -}
+chessKnightAlt = i [] ChessKnightAlt
+{-| <i class="far fa-chess-pawn"></i> -}
 chessPawn : Html msg
-chessPawn = i [] (ChessPawn Regular)
-{-| <i class="fab far fas fal fa-chess-pawn-alt"></i> -}
+chessPawn = i [] ChessPawn
+{-| <i class="far fa-chess-pawn-alt"></i> -}
 chessPawnAlt : Html msg
-chessPawnAlt = i [] (ChessPawnAlt Regular)
-{-| <i class="fab far fas fal fa-chess-queen"></i> -}
+chessPawnAlt = i [] ChessPawnAlt
+{-| <i class="far fa-chess-queen"></i> -}
 chessQueen : Html msg
-chessQueen = i [] (ChessQueen Regular)
-{-| <i class="fab far fas fal fa-chess-queen-alt"></i> -}
+chessQueen = i [] ChessQueen
+{-| <i class="far fa-chess-queen-alt"></i> -}
 chessQueenAlt : Html msg
-chessQueenAlt = i [] (ChessQueenAlt Regular)
-{-| <i class="fab far fas fal fa-chess-rook"></i> -}
+chessQueenAlt = i [] ChessQueenAlt
+{-| <i class="far fa-chess-rook"></i> -}
 chessRook : Html msg
-chessRook = i [] (ChessRook Regular)
-{-| <i class="fab far fas fal fa-chess-rook-alt"></i> -}
+chessRook = i [] ChessRook
+{-| <i class="far fa-chess-rook-alt"></i> -}
 chessRookAlt : Html msg
-chessRookAlt = i [] (ChessRookAlt Regular)
-{-| <i class="fab far fas fal fa-chevron-circle-down"></i> -}
+chessRookAlt = i [] ChessRookAlt
+{-| <i class="far fa-chevron-circle-down"></i> -}
 chevronCircleDown : Html msg
-chevronCircleDown = i [] (ChevronCircleDown Regular)
-{-| <i class="fab far fas fal fa-chevron-circle-left"></i> -}
+chevronCircleDown = i [] ChevronCircleDown
+{-| <i class="far fa-chevron-circle-left"></i> -}
 chevronCircleLeft : Html msg
-chevronCircleLeft = i [] (ChevronCircleLeft Regular)
-{-| <i class="fab far fas fal fa-chevron-circle-right"></i> -}
+chevronCircleLeft = i [] ChevronCircleLeft
+{-| <i class="far fa-chevron-circle-right"></i> -}
 chevronCircleRight : Html msg
-chevronCircleRight = i [] (ChevronCircleRight Regular)
-{-| <i class="fab far fas fal fa-chevron-circle-up"></i> -}
+chevronCircleRight = i [] ChevronCircleRight
+{-| <i class="far fa-chevron-circle-up"></i> -}
 chevronCircleUp : Html msg
-chevronCircleUp = i [] (ChevronCircleUp Regular)
-{-| <i class="fab far fas fal fa-chevron-double-down"></i> -}
+chevronCircleUp = i [] ChevronCircleUp
+{-| <i class="far fa-chevron-double-down"></i> -}
 chevronDoubleDown : Html msg
-chevronDoubleDown = i [] (ChevronDoubleDown Regular)
-{-| <i class="fab far fas fal fa-chevron-double-left"></i> -}
+chevronDoubleDown = i [] ChevronDoubleDown
+{-| <i class="far fa-chevron-double-left"></i> -}
 chevronDoubleLeft : Html msg
-chevronDoubleLeft = i [] (ChevronDoubleLeft Regular)
-{-| <i class="fab far fas fal fa-chevron-double-right"></i> -}
+chevronDoubleLeft = i [] ChevronDoubleLeft
+{-| <i class="far fa-chevron-double-right"></i> -}
 chevronDoubleRight : Html msg
-chevronDoubleRight = i [] (ChevronDoubleRight Regular)
-{-| <i class="fab far fas fal fa-chevron-double-up"></i> -}
+chevronDoubleRight = i [] ChevronDoubleRight
+{-| <i class="far fa-chevron-double-up"></i> -}
 chevronDoubleUp : Html msg
-chevronDoubleUp = i [] (ChevronDoubleUp Regular)
-{-| <i class="fab far fas fal fa-chevron-down"></i> -}
+chevronDoubleUp = i [] ChevronDoubleUp
+{-| <i class="far fa-chevron-down"></i> -}
 chevronDown : Html msg
-chevronDown = i [] (ChevronDown Regular)
-{-| <i class="fab far fas fal fa-chevron-left"></i> -}
+chevronDown = i [] ChevronDown
+{-| <i class="far fa-chevron-left"></i> -}
 chevronLeft : Html msg
-chevronLeft = i [] (ChevronLeft Regular)
-{-| <i class="fab far fas fal fa-chevron-right"></i> -}
+chevronLeft = i [] ChevronLeft
+{-| <i class="far fa-chevron-right"></i> -}
 chevronRight : Html msg
-chevronRight = i [] (ChevronRight Regular)
-{-| <i class="fab far fas fal fa-chevron-square-down"></i> -}
+chevronRight = i [] ChevronRight
+{-| <i class="far fa-chevron-square-down"></i> -}
 chevronSquareDown : Html msg
-chevronSquareDown = i [] (ChevronSquareDown Regular)
-{-| <i class="fab far fas fal fa-chevron-square-left"></i> -}
+chevronSquareDown = i [] ChevronSquareDown
+{-| <i class="far fa-chevron-square-left"></i> -}
 chevronSquareLeft : Html msg
-chevronSquareLeft = i [] (ChevronSquareLeft Regular)
-{-| <i class="fab far fas fal fa-chevron-square-right"></i> -}
+chevronSquareLeft = i [] ChevronSquareLeft
+{-| <i class="far fa-chevron-square-right"></i> -}
 chevronSquareRight : Html msg
-chevronSquareRight = i [] (ChevronSquareRight Regular)
-{-| <i class="fab far fas fal fa-chevron-square-up"></i> -}
+chevronSquareRight = i [] ChevronSquareRight
+{-| <i class="far fa-chevron-square-up"></i> -}
 chevronSquareUp : Html msg
-chevronSquareUp = i [] (ChevronSquareUp Regular)
-{-| <i class="fab far fas fal fa-chevron-up"></i> -}
+chevronSquareUp = i [] ChevronSquareUp
+{-| <i class="far fa-chevron-up"></i> -}
 chevronUp : Html msg
-chevronUp = i [] (ChevronUp Regular)
-{-| <i class="fab far fas fal fa-child"></i> -}
+chevronUp = i [] ChevronUp
+{-| <i class="far fa-child"></i> -}
 child : Html msg
-child = i [] (Child Regular)
-{-| <i class="fab far fas fal fa-chrome"></i> -}
-chrome : Html msg
-chrome = i [] (Chrome)
-{-| <i class="fab far fas fal fa-circle"></i> -}
+child = i [] Child
+{-| <i class="far fa-church"></i> -}
+church : Html msg
+church = i [] Church
+{-| <i class="far fa-circle"></i> -}
 circle : Html msg
-circle = i [] (Circle Regular)
-{-| <i class="fab far fas fal fa-circle-notch"></i> -}
+circle = i [] Circle
+{-| <i class="far fa-circle-notch"></i> -}
 circleNotch : Html msg
-circleNotch = i [] (CircleNotch Regular)
-{-| <i class="fab far fas fal fa-clipboard"></i> -}
+circleNotch = i [] CircleNotch
+{-| <i class="far fa-clipboard"></i> -}
 clipboard : Html msg
-clipboard = i [] (Clipboard Regular)
-{-| <i class="fab far fas fal fa-clock"></i> -}
+clipboard = i [] Clipboard
+{-| <i class="far fa-clipboard-check"></i> -}
+clipboardCheck : Html msg
+clipboardCheck = i [] ClipboardCheck
+{-| <i class="far fa-clipboard-list"></i> -}
+clipboardList : Html msg
+clipboardList = i [] ClipboardList
+{-| <i class="far fa-clock"></i> -}
 clock : Html msg
-clock = i [] (Clock Regular)
-{-| <i class="fab far fas fal fa-clone"></i> -}
+clock = i [] Clock
+{-| <i class="far fa-clone"></i> -}
 clone : Html msg
-clone = i [] (Clone Regular)
-{-| <i class="fab far fas fal fa-closed-captioning"></i> -}
+clone = i [] Clone
+{-| <i class="far fa-closed-captioning"></i> -}
 closedCaptioning : Html msg
-closedCaptioning = i [] (ClosedCaptioning Regular)
-{-| <i class="fab far fas fal fa-cloud"></i> -}
+closedCaptioning = i [] ClosedCaptioning
+{-| <i class="far fa-cloud"></i> -}
 cloud : Html msg
-cloud = i [] (Cloud Regular)
-{-| <i class="fab far fas fal fa-cloud-download"></i> -}
+cloud = i [] Cloud
+{-| <i class="far fa-cloud-download"></i> -}
 cloudDownload : Html msg
-cloudDownload = i [] (CloudDownload Regular)
-{-| <i class="fab far fas fal fa-cloud-download-alt"></i> -}
+cloudDownload = i [] CloudDownload
+{-| <i class="far fa-cloud-download-alt"></i> -}
 cloudDownloadAlt : Html msg
-cloudDownloadAlt = i [] (CloudDownloadAlt Regular)
-{-| <i class="fab far fas fal fa-cloud-upload"></i> -}
+cloudDownloadAlt = i [] CloudDownloadAlt
+{-| <i class="far fa-cloud-upload"></i> -}
 cloudUpload : Html msg
-cloudUpload = i [] (CloudUpload Regular)
-{-| <i class="fab far fas fal fa-cloud-upload-alt"></i> -}
+cloudUpload = i [] CloudUpload
+{-| <i class="far fa-cloud-upload-alt"></i> -}
 cloudUploadAlt : Html msg
-cloudUploadAlt = i [] (CloudUploadAlt Regular)
-{-| <i class="fab far fas fal fa-cloudscale"></i> -}
-cloudscale : Html msg
-cloudscale = i [] (Cloudscale)
-{-| <i class="fab far fas fal fa-cloudsmith"></i> -}
-cloudsmith : Html msg
-cloudsmith = i [] (Cloudsmith)
-{-| <i class="fab far fas fal fa-cloudversify"></i> -}
-cloudversify : Html msg
-cloudversify = i [] (Cloudversify)
-{-| <i class="fab far fas fal fa-club"></i> -}
+cloudUploadAlt = i [] CloudUploadAlt
+{-| <i class="far fa-club"></i> -}
 club : Html msg
-club = i [] (Club Regular)
-{-| <i class="fab far fas fal fa-code"></i> -}
+club = i [] Club
+{-| <i class="far fa-cocktail"></i> -}
+cocktail : Html msg
+cocktail = i [] Cocktail
+{-| <i class="far fa-code"></i> -}
 code : Html msg
-code = i [] (Code Regular)
-{-| <i class="fab far fas fal fa-code-branch"></i> -}
+code = i [] Code
+{-| <i class="far fa-code-branch"></i> -}
 codeBranch : Html msg
-codeBranch = i [] (CodeBranch Regular)
-{-| <i class="fab far fas fal fa-code-commit"></i> -}
+codeBranch = i [] CodeBranch
+{-| <i class="far fa-code-commit"></i> -}
 codeCommit : Html msg
-codeCommit = i [] (CodeCommit Regular)
-{-| <i class="fab far fas fal fa-code-merge"></i> -}
+codeCommit = i [] CodeCommit
+{-| <i class="far fa-code-merge"></i> -}
 codeMerge : Html msg
-codeMerge = i [] (CodeMerge Regular)
-{-| <i class="fab far fas fal fa-codepen"></i> -}
-codepen : Html msg
-codepen = i [] (Codepen)
-{-| <i class="fab far fas fal fa-codiepie"></i> -}
-codiepie : Html msg
-codiepie = i [] (Codiepie)
-{-| <i class="fab far fas fal fa-coffee"></i> -}
+codeMerge = i [] CodeMerge
+{-| <i class="far fa-coffee"></i> -}
 coffee : Html msg
-coffee = i [] (Coffee Regular)
-{-| <i class="fab far fas fal fa-cog"></i> -}
+coffee = i [] Coffee
+{-| <i class="far fa-cog"></i> -}
 cog : Html msg
-cog = i [] (Cog Regular)
-{-| <i class="fab far fas fal fa-cogs"></i> -}
+cog = i [] Cog
+{-| <i class="far fa-cogs"></i> -}
 cogs : Html msg
-cogs = i [] (Cogs Regular)
-{-| <i class="fab far fas fal fa-columns"></i> -}
+cogs = i [] Cogs
+{-| <i class="far fa-coins"></i> -}
+coins : Html msg
+coins = i [] Coins
+{-| <i class="far fa-columns"></i> -}
 columns : Html msg
-columns = i [] (Columns Regular)
-{-| <i class="fab far fas fal fa-comment"></i> -}
+columns = i [] Columns
+{-| <i class="far fa-comment"></i> -}
 comment : Html msg
-comment = i [] (Comment Regular)
-{-| <i class="fab far fas fal fa-comment-alt"></i> -}
+comment = i [] Comment
+{-| <i class="far fa-comment-alt"></i> -}
 commentAlt : Html msg
-commentAlt = i [] (CommentAlt Regular)
-{-| <i class="fab far fas fal fa-comments"></i> -}
+commentAlt = i [] CommentAlt
+{-| <i class="far fa-comment-alt-check"></i> -}
+commentAltCheck : Html msg
+commentAltCheck = i [] CommentAltCheck
+{-| <i class="far fa-comment-alt-dots"></i> -}
+commentAltDots : Html msg
+commentAltDots = i [] CommentAltDots
+{-| <i class="far fa-comment-alt-edit"></i> -}
+commentAltEdit : Html msg
+commentAltEdit = i [] CommentAltEdit
+{-| <i class="far fa-comment-alt-exclamation"></i> -}
+commentAltExclamation : Html msg
+commentAltExclamation = i [] CommentAltExclamation
+{-| <i class="far fa-comment-alt-lines"></i> -}
+commentAltLines : Html msg
+commentAltLines = i [] CommentAltLines
+{-| <i class="far fa-comment-alt-minus"></i> -}
+commentAltMinus : Html msg
+commentAltMinus = i [] CommentAltMinus
+{-| <i class="far fa-comment-alt-plus"></i> -}
+commentAltPlus : Html msg
+commentAltPlus = i [] CommentAltPlus
+{-| <i class="far fa-comment-alt-slash"></i> -}
+commentAltSlash : Html msg
+commentAltSlash = i [] CommentAltSlash
+{-| <i class="far fa-comment-alt-smile"></i> -}
+commentAltSmile : Html msg
+commentAltSmile = i [] CommentAltSmile
+{-| <i class="far fa-comment-alt-times"></i> -}
+commentAltTimes : Html msg
+commentAltTimes = i [] CommentAltTimes
+{-| <i class="far fa-comment-check"></i> -}
+commentCheck : Html msg
+commentCheck = i [] CommentCheck
+{-| <i class="far fa-comment-dots"></i> -}
+commentDots : Html msg
+commentDots = i [] CommentDots
+{-| <i class="far fa-comment-edit"></i> -}
+commentEdit : Html msg
+commentEdit = i [] CommentEdit
+{-| <i class="far fa-comment-exclamation"></i> -}
+commentExclamation : Html msg
+commentExclamation = i [] CommentExclamation
+{-| <i class="far fa-comment-lines"></i> -}
+commentLines : Html msg
+commentLines = i [] CommentLines
+{-| <i class="far fa-comment-minus"></i> -}
+commentMinus : Html msg
+commentMinus = i [] CommentMinus
+{-| <i class="far fa-comment-plus"></i> -}
+commentPlus : Html msg
+commentPlus = i [] CommentPlus
+{-| <i class="far fa-comment-slash"></i> -}
+commentSlash : Html msg
+commentSlash = i [] CommentSlash
+{-| <i class="far fa-comment-smile"></i> -}
+commentSmile : Html msg
+commentSmile = i [] CommentSmile
+{-| <i class="far fa-comment-times"></i> -}
+commentTimes : Html msg
+commentTimes = i [] CommentTimes
+{-| <i class="far fa-comments"></i> -}
 comments : Html msg
-comments = i [] (Comments Regular)
-{-| <i class="fab far fas fal fa-compass"></i> -}
+comments = i [] Comments
+{-| <i class="far fa-comments-alt"></i> -}
+commentsAlt : Html msg
+commentsAlt = i [] CommentsAlt
+{-| <i class="far fa-compact-disc"></i> -}
+compactDisc : Html msg
+compactDisc = i [] CompactDisc
+{-| <i class="far fa-compass"></i> -}
 compass : Html msg
-compass = i [] (Compass Regular)
-{-| <i class="fab far fas fal fa-compress"></i> -}
+compass = i [] Compass
+{-| <i class="far fa-compress"></i> -}
 compress : Html msg
-compress = i [] (Compress Regular)
-{-| <i class="fab far fas fal fa-compress-alt"></i> -}
+compress = i [] Compress
+{-| <i class="far fa-compress-alt"></i> -}
 compressAlt : Html msg
-compressAlt = i [] (CompressAlt Regular)
-{-| <i class="fab far fas fal fa-compress-wide"></i> -}
+compressAlt = i [] CompressAlt
+{-| <i class="far fa-compress-wide"></i> -}
 compressWide : Html msg
-compressWide = i [] (CompressWide Regular)
-{-| <i class="fab far fas fal fa-connectdevelop"></i> -}
-connectdevelop : Html msg
-connectdevelop = i [] (Connectdevelop)
-{-| <i class="fab far fas fal fa-contao"></i> -}
-contao : Html msg
-contao = i [] (Contao)
-{-| <i class="fab far fas fal fa-copy"></i> -}
+compressWide = i [] CompressWide
+{-| <i class="far fa-concierge-bell"></i> -}
+conciergeBell : Html msg
+conciergeBell = i [] ConciergeBell
+{-| <i class="far fa-container-storage"></i> -}
+containerStorage : Html msg
+containerStorage = i [] ContainerStorage
+{-| <i class="far fa-conveyor-belt"></i> -}
+conveyorBelt : Html msg
+conveyorBelt = i [] ConveyorBelt
+{-| <i class="far fa-conveyor-belt-alt"></i> -}
+conveyorBeltAlt : Html msg
+conveyorBeltAlt = i [] ConveyorBeltAlt
+{-| <i class="far fa-cookie"></i> -}
+cookie : Html msg
+cookie = i [] Cookie
+{-| <i class="far fa-cookie-bite"></i> -}
+cookieBite : Html msg
+cookieBite = i [] CookieBite
+{-| <i class="far fa-copy"></i> -}
 copy : Html msg
-copy = i [] (Copy Regular)
-{-| <i class="fab far fas fal fa-copyright"></i> -}
+copy = i [] Copy
+{-| <i class="far fa-copyright"></i> -}
 copyright : Html msg
-copyright = i [] (Copyright Regular)
-{-| <i class="fab far fas fal fa-cpanel"></i> -}
-cpanel : Html msg
-cpanel = i [] (Cpanel)
-{-| <i class="fab far fas fal fa-creative-commons"></i> -}
-creativeCommons : Html msg
-creativeCommons = i [] (CreativeCommons)
-{-| <i class="fab far fas fal fa-credit-card"></i> -}
+copyright = i [] Copyright
+{-| <i class="far fa-couch"></i> -}
+couch : Html msg
+couch = i [] Couch
+{-| <i class="far fa-credit-card"></i> -}
 creditCard : Html msg
-creditCard = i [] (CreditCard Regular)
-{-| <i class="fab far fas fal fa-credit-card-blank"></i> -}
+creditCard = i [] CreditCard
+{-| <i class="far fa-credit-card-blank"></i> -}
 creditCardBlank : Html msg
-creditCardBlank = i [] (CreditCardBlank Regular)
-{-| <i class="fab far fas fal fa-credit-card-front"></i> -}
+creditCardBlank = i [] CreditCardBlank
+{-| <i class="far fa-credit-card-front"></i> -}
 creditCardFront : Html msg
-creditCardFront = i [] (CreditCardFront Regular)
-{-| <i class="fab far fas fal fa-cricket"></i> -}
+creditCardFront = i [] CreditCardFront
+{-| <i class="far fa-cricket"></i> -}
 cricket : Html msg
-cricket = i [] (Cricket Regular)
-{-| <i class="fab far fas fal fa-crop"></i> -}
+cricket = i [] Cricket
+{-| <i class="far fa-crop"></i> -}
 crop : Html msg
-crop = i [] (Crop Regular)
-{-| <i class="fab far fas fal fa-crosshairs"></i> -}
+crop = i [] Crop
+{-| <i class="far fa-crop-alt"></i> -}
+cropAlt : Html msg
+cropAlt = i [] CropAlt
+{-| <i class="far fa-crosshairs"></i> -}
 crosshairs : Html msg
-crosshairs = i [] (Crosshairs Regular)
-{-| <i class="fab far fas fal fa-css3"></i> -}
-css3 : Html msg
-css3 = i [] (Css3)
-{-| <i class="fab far fas fal fa-css3-alt"></i> -}
-css3Alt : Html msg
-css3Alt = i [] (Css3Alt)
-{-| <i class="fab far fas fal fa-cube"></i> -}
+crosshairs = i [] Crosshairs
+{-| <i class="far fa-crow"></i> -}
+crow : Html msg
+crow = i [] Crow
+{-| <i class="far fa-crown"></i> -}
+crown : Html msg
+crown = i [] Crown
+{-| <i class="far fa-cube"></i> -}
 cube : Html msg
-cube = i [] (Cube Regular)
-{-| <i class="fab far fas fal fa-cubes"></i> -}
+cube = i [] Cube
+{-| <i class="far fa-cubes"></i> -}
 cubes : Html msg
-cubes = i [] (Cubes Regular)
-{-| <i class="fab far fas fal fa-curling"></i> -}
+cubes = i [] Cubes
+{-| <i class="far fa-curling"></i> -}
 curling : Html msg
-curling = i [] (Curling Regular)
-{-| <i class="fab far fas fal fa-cut"></i> -}
+curling = i [] Curling
+{-| <i class="far fa-cut"></i> -}
 cut : Html msg
-cut = i [] (Cut Regular)
-{-| <i class="fab far fas fal fa-cuttlefish"></i> -}
-cuttlefish : Html msg
-cuttlefish = i [] (Cuttlefish)
-{-| <i class="fab far fas fal fa-d-and-d"></i> -}
-dAndD : Html msg
-dAndD = i [] (DAndD)
-{-| <i class="fab far fas fal fa-dashcube"></i> -}
-dashcube : Html msg
-dashcube = i [] (Dashcube)
-{-| <i class="fab far fas fal fa-database"></i> -}
+cut = i [] Cut
+{-| <i class="far fa-database"></i> -}
 database : Html msg
-database = i [] (Database Regular)
-{-| <i class="fab far fas fal fa-deaf"></i> -}
+database = i [] Database
+{-| <i class="far fa-deaf"></i> -}
 deaf : Html msg
-deaf = i [] (Deaf Regular)
-{-| <i class="fab far fas fal fa-delicious"></i> -}
-delicious : Html msg
-delicious = i [] (Delicious)
-{-| <i class="fab far fas fal fa-deploydog"></i> -}
-deploydog : Html msg
-deploydog = i [] (Deploydog)
-{-| <i class="fab far fas fal fa-deskpro"></i> -}
-deskpro : Html msg
-deskpro = i [] (Deskpro)
-{-| <i class="fab far fas fal fa-desktop"></i> -}
+deaf = i [] Deaf
+{-| <i class="far fa-desktop"></i> -}
 desktop : Html msg
-desktop = i [] (Desktop Regular)
-{-| <i class="fab far fas fal fa-desktop-alt"></i> -}
+desktop = i [] Desktop
+{-| <i class="far fa-desktop-alt"></i> -}
 desktopAlt : Html msg
-desktopAlt = i [] (DesktopAlt Regular)
-{-| <i class="fab far fas fal fa-deviantart"></i> -}
-deviantart : Html msg
-deviantart = i [] (Deviantart)
-{-| <i class="fab far fas fal fa-diamond"></i> -}
+desktopAlt = i [] DesktopAlt
+{-| <i class="far fa-diagnoses"></i> -}
+diagnoses : Html msg
+diagnoses = i [] Diagnoses
+{-| <i class="far fa-diamond"></i> -}
 diamond : Html msg
-diamond = i [] (Diamond Regular)
-{-| <i class="fab far fas fal fa-digg"></i> -}
-digg : Html msg
-digg = i [] (Digg)
-{-| <i class="fab far fas fal fa-digital-ocean"></i> -}
-digitalOcean : Html msg
-digitalOcean = i [] (DigitalOcean)
-{-| <i class="fab far fas fal fa-discord"></i> -}
-discord : Html msg
-discord = i [] (Discord)
-{-| <i class="fab far fas fal fa-discourse"></i> -}
-discourse : Html msg
-discourse = i [] (Discourse)
-{-| <i class="fab far fas fal fa-dochub"></i> -}
-dochub : Html msg
-dochub = i [] (Dochub)
-{-| <i class="fab far fas fal fa-docker"></i> -}
-docker : Html msg
-docker = i [] (Docker)
-{-| <i class="fab far fas fal fa-dollar-sign"></i> -}
+diamond = i [] Diamond
+{-| <i class="far fa-dice"></i> -}
+dice : Html msg
+dice = i [] Dice
+{-| <i class="far fa-dice-five"></i> -}
+diceFive : Html msg
+diceFive = i [] DiceFive
+{-| <i class="far fa-dice-four"></i> -}
+diceFour : Html msg
+diceFour = i [] DiceFour
+{-| <i class="far fa-dice-one"></i> -}
+diceOne : Html msg
+diceOne = i [] DiceOne
+{-| <i class="far fa-dice-six"></i> -}
+diceSix : Html msg
+diceSix = i [] DiceSix
+{-| <i class="far fa-dice-three"></i> -}
+diceThree : Html msg
+diceThree = i [] DiceThree
+{-| <i class="far fa-dice-two"></i> -}
+diceTwo : Html msg
+diceTwo = i [] DiceTwo
+{-| <i class="far fa-digital-tachograph"></i> -}
+digitalTachograph : Html msg
+digitalTachograph = i [] DigitalTachograph
+{-| <i class="far fa-divide"></i> -}
+divide : Html msg
+divide = i [] Divide
+{-| <i class="far fa-dizzy"></i> -}
+dizzy : Html msg
+dizzy = i [] Dizzy
+{-| <i class="far fa-dna"></i> -}
+dna : Html msg
+dna = i [] Dna
+{-| <i class="far fa-dollar-sign"></i> -}
 dollarSign : Html msg
-dollarSign = i [] (DollarSign Regular)
-{-| <i class="fab far fas fal fa-dot-circle"></i> -}
+dollarSign = i [] DollarSign
+{-| <i class="far fa-dolly"></i> -}
+dolly : Html msg
+dolly = i [] Dolly
+{-| <i class="far fa-dolly-empty"></i> -}
+dollyEmpty : Html msg
+dollyEmpty = i [] DollyEmpty
+{-| <i class="far fa-dolly-flatbed"></i> -}
+dollyFlatbed : Html msg
+dollyFlatbed = i [] DollyFlatbed
+{-| <i class="far fa-dolly-flatbed-alt"></i> -}
+dollyFlatbedAlt : Html msg
+dollyFlatbedAlt = i [] DollyFlatbedAlt
+{-| <i class="far fa-dolly-flatbed-empty"></i> -}
+dollyFlatbedEmpty : Html msg
+dollyFlatbedEmpty = i [] DollyFlatbedEmpty
+{-| <i class="far fa-donate"></i> -}
+donate : Html msg
+donate = i [] Donate
+{-| <i class="far fa-door-closed"></i> -}
+doorClosed : Html msg
+doorClosed = i [] DoorClosed
+{-| <i class="far fa-door-open"></i> -}
+doorOpen : Html msg
+doorOpen = i [] DoorOpen
+{-| <i class="far fa-dot-circle"></i> -}
 dotCircle : Html msg
-dotCircle = i [] (DotCircle Regular)
-{-| <i class="fab far fas fal fa-download"></i> -}
+dotCircle = i [] DotCircle
+{-| <i class="far fa-dove"></i> -}
+dove : Html msg
+dove = i [] Dove
+{-| <i class="far fa-download"></i> -}
 download : Html msg
-download = i [] (Download Regular)
-{-| <i class="fab far fas fal fa-draft2-digital"></i> -}
-draft2Digital : Html msg
-draft2Digital = i [] (Draft2Digital)
-{-| <i class="fab far fas fal fa-dribbble"></i> -}
-dribbble : Html msg
-dribbble = i [] (Dribbble)
-{-| <i class="fab far fas fal fa-dribbble-square"></i> -}
-dribbbleSquare : Html msg
-dribbbleSquare = i [] (DribbbleSquare)
-{-| <i class="fab far fas fal fa-dropbox"></i> -}
-dropbox : Html msg
-dropbox = i [] (Dropbox)
-{-| <i class="fab far fas fal fa-drupal"></i> -}
-drupal : Html msg
-drupal = i [] (Drupal)
-{-| <i class="fab far fas fal fa-dumbbell"></i> -}
+download = i [] Download
+{-| <i class="far fa-drafting-compass"></i> -}
+draftingCompass : Html msg
+draftingCompass = i [] DraftingCompass
+{-| <i class="far fa-drum"></i> -}
+drum : Html msg
+drum = i [] Drum
+{-| <i class="far fa-drum-steelpan"></i> -}
+drumSteelpan : Html msg
+drumSteelpan = i [] DrumSteelpan
+{-| <i class="far fa-dumbbell"></i> -}
 dumbbell : Html msg
-dumbbell = i [] (Dumbbell Regular)
-{-| <i class="fab far fas fal fa-dyalog"></i> -}
-dyalog : Html msg
-dyalog = i [] (Dyalog)
-{-| <i class="fab far fas fal fa-earlybirds"></i> -}
-earlybirds : Html msg
-earlybirds = i [] (Earlybirds)
-{-| <i class="fab far fas fal fa-edge"></i> -}
-edge : Html msg
-edge = i [] (Edge)
-{-| <i class="fab far fas fal fa-edit"></i> -}
+dumbbell = i [] Dumbbell
+{-| <i class="far fa-edit"></i> -}
 edit : Html msg
-edit = i [] (Edit Regular)
-{-| <i class="fab far fas fal fa-eject"></i> -}
+edit = i [] Edit
+{-| <i class="far fa-eject"></i> -}
 eject : Html msg
-eject = i [] (Eject Regular)
-{-| <i class="fab far fas fal fa-elementor"></i> -}
-elementor : Html msg
-elementor = i [] (Elementor)
-{-| <i class="fab far fas fal fa-ellipsis-h"></i> -}
+eject = i [] Eject
+{-| <i class="far fa-ellipsis-h"></i> -}
 ellipsisH : Html msg
-ellipsisH = i [] (EllipsisH Regular)
-{-| <i class="fab far fas fal fa-ellipsis-h-alt"></i> -}
+ellipsisH = i [] EllipsisH
+{-| <i class="far fa-ellipsis-h-alt"></i> -}
 ellipsisHAlt : Html msg
-ellipsisHAlt = i [] (EllipsisHAlt Regular)
-{-| <i class="fab far fas fal fa-ellipsis-v"></i> -}
+ellipsisHAlt = i [] EllipsisHAlt
+{-| <i class="far fa-ellipsis-v"></i> -}
 ellipsisV : Html msg
-ellipsisV = i [] (EllipsisV Regular)
-{-| <i class="fab far fas fal fa-ellipsis-v-alt"></i> -}
+ellipsisV = i [] EllipsisV
+{-| <i class="far fa-ellipsis-v-alt"></i> -}
 ellipsisVAlt : Html msg
-ellipsisVAlt = i [] (EllipsisVAlt Regular)
-{-| <i class="fab far fas fal fa-ember"></i> -}
-ember : Html msg
-ember = i [] (Ember)
-{-| <i class="fab far fas fal fa-empire"></i> -}
-empire : Html msg
-empire = i [] (Empire)
-{-| <i class="fab far fas fal fa-envelope"></i> -}
+ellipsisVAlt = i [] EllipsisVAlt
+{-| <i class="far fa-envelope"></i> -}
 envelope : Html msg
-envelope = i [] (Envelope Regular)
-{-| <i class="fab far fas fal fa-envelope-open"></i> -}
+envelope = i [] Envelope
+{-| <i class="far fa-envelope-open"></i> -}
 envelopeOpen : Html msg
-envelopeOpen = i [] (EnvelopeOpen Regular)
-{-| <i class="fab far fas fal fa-envelope-square"></i> -}
+envelopeOpen = i [] EnvelopeOpen
+{-| <i class="far fa-envelope-square"></i> -}
 envelopeSquare : Html msg
-envelopeSquare = i [] (EnvelopeSquare Regular)
-{-| <i class="fab far fas fal fa-envira"></i> -}
-envira : Html msg
-envira = i [] (Envira)
-{-| <i class="fab far fas fal fa-eraser"></i> -}
+envelopeSquare = i [] EnvelopeSquare
+{-| <i class="far fa-equals"></i> -}
+equals : Html msg
+equals = i [] Equals
+{-| <i class="far fa-eraser"></i> -}
 eraser : Html msg
-eraser = i [] (Eraser Regular)
-{-| <i class="fab far fas fal fa-erlang"></i> -}
-erlang : Html msg
-erlang = i [] (Erlang)
-{-| <i class="fab far fas fal fa-ethereum"></i> -}
-ethereum : Html msg
-ethereum = i [] (Ethereum)
-{-| <i class="fab far fas fal fa-etsy"></i> -}
-etsy : Html msg
-etsy = i [] (Etsy)
-{-| <i class="fab far fas fal fa-euro-sign"></i> -}
+eraser = i [] Eraser
+{-| <i class="far fa-euro-sign"></i> -}
 euroSign : Html msg
-euroSign = i [] (EuroSign Regular)
-{-| <i class="fab far fas fal fa-exchange"></i> -}
+euroSign = i [] EuroSign
+{-| <i class="far fa-exchange"></i> -}
 exchange : Html msg
-exchange = i [] (Exchange Regular)
-{-| <i class="fab far fas fal fa-exchange-alt"></i> -}
+exchange = i [] Exchange
+{-| <i class="far fa-exchange-alt"></i> -}
 exchangeAlt : Html msg
-exchangeAlt = i [] (ExchangeAlt Regular)
-{-| <i class="fab far fas fal fa-exclamation"></i> -}
+exchangeAlt = i [] ExchangeAlt
+{-| <i class="far fa-exclamation"></i> -}
 exclamation : Html msg
-exclamation = i [] (Exclamation Regular)
-{-| <i class="fab far fas fal fa-exclamation-circle"></i> -}
+exclamation = i [] Exclamation
+{-| <i class="far fa-exclamation-circle"></i> -}
 exclamationCircle : Html msg
-exclamationCircle = i [] (ExclamationCircle Regular)
-{-| <i class="fab far fas fal fa-exclamation-square"></i> -}
+exclamationCircle = i [] ExclamationCircle
+{-| <i class="far fa-exclamation-square"></i> -}
 exclamationSquare : Html msg
-exclamationSquare = i [] (ExclamationSquare Regular)
-{-| <i class="fab far fas fal fa-exclamation-triangle"></i> -}
+exclamationSquare = i [] ExclamationSquare
+{-| <i class="far fa-exclamation-triangle"></i> -}
 exclamationTriangle : Html msg
-exclamationTriangle = i [] (ExclamationTriangle Regular)
-{-| <i class="fab far fas fal fa-expand"></i> -}
+exclamationTriangle = i [] ExclamationTriangle
+{-| <i class="far fa-expand"></i> -}
 expand : Html msg
-expand = i [] (Expand Regular)
-{-| <i class="fab far fas fal fa-expand-alt"></i> -}
+expand = i [] Expand
+{-| <i class="far fa-expand-alt"></i> -}
 expandAlt : Html msg
-expandAlt = i [] (ExpandAlt Regular)
-{-| <i class="fab far fas fal fa-expand-arrows"></i> -}
+expandAlt = i [] ExpandAlt
+{-| <i class="far fa-expand-arrows"></i> -}
 expandArrows : Html msg
-expandArrows = i [] (ExpandArrows Regular)
-{-| <i class="fab far fas fal fa-expand-arrows-alt"></i> -}
+expandArrows = i [] ExpandArrows
+{-| <i class="far fa-expand-arrows-alt"></i> -}
 expandArrowsAlt : Html msg
-expandArrowsAlt = i [] (ExpandArrowsAlt Regular)
-{-| <i class="fab far fas fal fa-expand-wide"></i> -}
+expandArrowsAlt = i [] ExpandArrowsAlt
+{-| <i class="far fa-expand-wide"></i> -}
 expandWide : Html msg
-expandWide = i [] (ExpandWide Regular)
-{-| <i class="fab far fas fal fa-expeditedssl"></i> -}
-expeditedssl : Html msg
-expeditedssl = i [] (Expeditedssl)
-{-| <i class="fab far fas fal fa-external-link"></i> -}
+expandWide = i [] ExpandWide
+{-| <i class="far fa-external-link"></i> -}
 externalLink : Html msg
-externalLink = i [] (ExternalLink Regular)
-{-| <i class="fab far fas fal fa-external-link-alt"></i> -}
+externalLink = i [] ExternalLink
+{-| <i class="far fa-external-link-alt"></i> -}
 externalLinkAlt : Html msg
-externalLinkAlt = i [] (ExternalLinkAlt Regular)
-{-| <i class="fab far fas fal fa-external-link-square"></i> -}
+externalLinkAlt = i [] ExternalLinkAlt
+{-| <i class="far fa-external-link-square"></i> -}
 externalLinkSquare : Html msg
-externalLinkSquare = i [] (ExternalLinkSquare Regular)
-{-| <i class="fab far fas fal fa-external-link-square-alt"></i> -}
+externalLinkSquare = i [] ExternalLinkSquare
+{-| <i class="far fa-external-link-square-alt"></i> -}
 externalLinkSquareAlt : Html msg
-externalLinkSquareAlt = i [] (ExternalLinkSquareAlt Regular)
-{-| <i class="fab far fas fal fa-eye"></i> -}
+externalLinkSquareAlt = i [] ExternalLinkSquareAlt
+{-| <i class="far fa-eye"></i> -}
 eye : Html msg
-eye = i [] (Eye Regular)
-{-| <i class="fab far fas fal fa-eye-dropper"></i> -}
+eye = i [] Eye
+{-| <i class="far fa-eye-dropper"></i> -}
 eyeDropper : Html msg
-eyeDropper = i [] (EyeDropper Regular)
-{-| <i class="fab far fas fal fa-eye-slash"></i> -}
+eyeDropper = i [] EyeDropper
+{-| <i class="far fa-eye-slash"></i> -}
 eyeSlash : Html msg
-eyeSlash = i [] (EyeSlash Regular)
-{-| <i class="fab far fas fal fa-facebook"></i> -}
-facebook : Html msg
-facebook = i [] (Facebook)
-{-| <i class="fab far fas fal fa-facebook-f"></i> -}
-facebookF : Html msg
-facebookF = i [] (FacebookF)
-{-| <i class="fab far fas fal fa-facebook-messenger"></i> -}
-facebookMessenger : Html msg
-facebookMessenger = i [] (FacebookMessenger)
-{-| <i class="fab far fas fal fa-facebook-square"></i> -}
-facebookSquare : Html msg
-facebookSquare = i [] (FacebookSquare)
-{-| <i class="fab far fas fal fa-fast-backward"></i> -}
+eyeSlash = i [] EyeSlash
+{-| <i class="far fa-fast-backward"></i> -}
 fastBackward : Html msg
-fastBackward = i [] (FastBackward Regular)
-{-| <i class="fab far fas fal fa-fast-forward"></i> -}
+fastBackward = i [] FastBackward
+{-| <i class="far fa-fast-forward"></i> -}
 fastForward : Html msg
-fastForward = i [] (FastForward Regular)
-{-| <i class="fab far fas fal fa-fax"></i> -}
+fastForward = i [] FastForward
+{-| <i class="far fa-fax"></i> -}
 fax : Html msg
-fax = i [] (Fax Regular)
-{-| <i class="fab far fas fal fa-female"></i> -}
+fax = i [] Fax
+{-| <i class="far fa-feather"></i> -}
+feather : Html msg
+feather = i [] Feather
+{-| <i class="far fa-feather-alt"></i> -}
+featherAlt : Html msg
+featherAlt = i [] FeatherAlt
+{-| <i class="far fa-female"></i> -}
 female : Html msg
-female = i [] (Female Regular)
-{-| <i class="fab far fas fal fa-field-hockey"></i> -}
+female = i [] Female
+{-| <i class="far fa-field-hockey"></i> -}
 fieldHockey : Html msg
-fieldHockey = i [] (FieldHockey Regular)
-{-| <i class="fab far fas fal fa-fighter-jet"></i> -}
+fieldHockey = i [] FieldHockey
+{-| <i class="far fa-fighter-jet"></i> -}
 fighterJet : Html msg
-fighterJet = i [] (FighterJet Regular)
-{-| <i class="fab far fas fal fa-file"></i> -}
+fighterJet = i [] FighterJet
+{-| <i class="far fa-file"></i> -}
 file : Html msg
-file = i [] (File Regular)
-{-| <i class="fab far fas fal fa-file-alt"></i> -}
+file = i [] File
+{-| <i class="far fa-file-alt"></i> -}
 fileAlt : Html msg
-fileAlt = i [] (FileAlt Regular)
-{-| <i class="fab far fas fal fa-file-archive"></i> -}
+fileAlt = i [] FileAlt
+{-| <i class="far fa-file-archive"></i> -}
 fileArchive : Html msg
-fileArchive = i [] (FileArchive Regular)
-{-| <i class="fab far fas fal fa-file-audio"></i> -}
+fileArchive = i [] FileArchive
+{-| <i class="far fa-file-audio"></i> -}
 fileAudio : Html msg
-fileAudio = i [] (FileAudio Regular)
-{-| <i class="fab far fas fal fa-file-check"></i> -}
+fileAudio = i [] FileAudio
+{-| <i class="far fa-file-check"></i> -}
 fileCheck : Html msg
-fileCheck = i [] (FileCheck Regular)
-{-| <i class="fab far fas fal fa-file-code"></i> -}
+fileCheck = i [] FileCheck
+{-| <i class="far fa-file-code"></i> -}
 fileCode : Html msg
-fileCode = i [] (FileCode Regular)
-{-| <i class="fab far fas fal fa-file-edit"></i> -}
+fileCode = i [] FileCode
+{-| <i class="far fa-file-contract"></i> -}
+fileContract : Html msg
+fileContract = i [] FileContract
+{-| <i class="far fa-file-download"></i> -}
+fileDownload : Html msg
+fileDownload = i [] FileDownload
+{-| <i class="far fa-file-edit"></i> -}
 fileEdit : Html msg
-fileEdit = i [] (FileEdit Regular)
-{-| <i class="fab far fas fal fa-file-excel"></i> -}
+fileEdit = i [] FileEdit
+{-| <i class="far fa-file-excel"></i> -}
 fileExcel : Html msg
-fileExcel = i [] (FileExcel Regular)
-{-| <i class="fab far fas fal fa-file-exclamation"></i> -}
+fileExcel = i [] FileExcel
+{-| <i class="far fa-file-exclamation"></i> -}
 fileExclamation : Html msg
-fileExclamation = i [] (FileExclamation Regular)
-{-| <i class="fab far fas fal fa-file-image"></i> -}
+fileExclamation = i [] FileExclamation
+{-| <i class="far fa-file-export"></i> -}
+fileExport : Html msg
+fileExport = i [] FileExport
+{-| <i class="far fa-file-image"></i> -}
 fileImage : Html msg
-fileImage = i [] (FileImage Regular)
-{-| <i class="fab far fas fal fa-file-minus"></i> -}
+fileImage = i [] FileImage
+{-| <i class="far fa-file-import"></i> -}
+fileImport : Html msg
+fileImport = i [] FileImport
+{-| <i class="far fa-file-invoice"></i> -}
+fileInvoice : Html msg
+fileInvoice = i [] FileInvoice
+{-| <i class="far fa-file-invoice-dollar"></i> -}
+fileInvoiceDollar : Html msg
+fileInvoiceDollar = i [] FileInvoiceDollar
+{-| <i class="far fa-file-medical"></i> -}
+fileMedical : Html msg
+fileMedical = i [] FileMedical
+{-| <i class="far fa-file-medical-alt"></i> -}
+fileMedicalAlt : Html msg
+fileMedicalAlt = i [] FileMedicalAlt
+{-| <i class="far fa-file-minus"></i> -}
 fileMinus : Html msg
-fileMinus = i [] (FileMinus Regular)
-{-| <i class="fab far fas fal fa-file-pdf"></i> -}
+fileMinus = i [] FileMinus
+{-| <i class="far fa-file-pdf"></i> -}
 filePdf : Html msg
-filePdf = i [] (FilePdf Regular)
-{-| <i class="fab far fas fal fa-file-plus"></i> -}
+filePdf = i [] FilePdf
+{-| <i class="far fa-file-plus"></i> -}
 filePlus : Html msg
-filePlus = i [] (FilePlus Regular)
-{-| <i class="fab far fas fal fa-file-powerpoint"></i> -}
+filePlus = i [] FilePlus
+{-| <i class="far fa-file-powerpoint"></i> -}
 filePowerpoint : Html msg
-filePowerpoint = i [] (FilePowerpoint Regular)
-{-| <i class="fab far fas fal fa-file-times"></i> -}
+filePowerpoint = i [] FilePowerpoint
+{-| <i class="far fa-file-prescription"></i> -}
+filePrescription : Html msg
+filePrescription = i [] FilePrescription
+{-| <i class="far fa-file-signature"></i> -}
+fileSignature : Html msg
+fileSignature = i [] FileSignature
+{-| <i class="far fa-file-times"></i> -}
 fileTimes : Html msg
-fileTimes = i [] (FileTimes Regular)
-{-| <i class="fab far fas fal fa-file-video"></i> -}
+fileTimes = i [] FileTimes
+{-| <i class="far fa-file-upload"></i> -}
+fileUpload : Html msg
+fileUpload = i [] FileUpload
+{-| <i class="far fa-file-video"></i> -}
 fileVideo : Html msg
-fileVideo = i [] (FileVideo Regular)
-{-| <i class="fab far fas fal fa-file-word"></i> -}
+fileVideo = i [] FileVideo
+{-| <i class="far fa-file-word"></i> -}
 fileWord : Html msg
-fileWord = i [] (FileWord Regular)
-{-| <i class="fab far fas fal fa-film"></i> -}
+fileWord = i [] FileWord
+{-| <i class="far fa-fill"></i> -}
+fill : Html msg
+fill = i [] Fill
+{-| <i class="far fa-fill-drip"></i> -}
+fillDrip : Html msg
+fillDrip = i [] FillDrip
+{-| <i class="far fa-film"></i> -}
 film : Html msg
-film = i [] (Film Regular)
-{-| <i class="fab far fas fal fa-film-alt"></i> -}
+film = i [] Film
+{-| <i class="far fa-film-alt"></i> -}
 filmAlt : Html msg
-filmAlt = i [] (FilmAlt Regular)
-{-| <i class="fab far fas fal fa-filter"></i> -}
+filmAlt = i [] FilmAlt
+{-| <i class="far fa-filter"></i> -}
 filter : Html msg
-filter = i [] (Filter Regular)
-{-| <i class="fab far fas fal fa-fire"></i> -}
+filter = i [] Filter
+{-| <i class="far fa-fingerprint"></i> -}
+fingerprint : Html msg
+fingerprint = i [] Fingerprint
+{-| <i class="far fa-fire"></i> -}
 fire : Html msg
-fire = i [] (Fire Regular)
-{-| <i class="fab far fas fal fa-fire-extinguisher"></i> -}
+fire = i [] Fire
+{-| <i class="far fa-fire-extinguisher"></i> -}
 fireExtinguisher : Html msg
-fireExtinguisher = i [] (FireExtinguisher Regular)
-{-| <i class="fab far fas fal fa-firefox"></i> -}
-firefox : Html msg
-firefox = i [] (Firefox)
-{-| <i class="fab far fas fal fa-first-order"></i> -}
-firstOrder : Html msg
-firstOrder = i [] (FirstOrder)
-{-| <i class="fab far fas fal fa-firstdraft"></i> -}
-firstdraft : Html msg
-firstdraft = i [] (Firstdraft)
-{-| <i class="fab far fas fal fa-flag"></i> -}
+fireExtinguisher = i [] FireExtinguisher
+{-| <i class="far fa-first-aid"></i> -}
+firstAid : Html msg
+firstAid = i [] FirstAid
+{-| <i class="far fa-fish"></i> -}
+fish : Html msg
+fish = i [] Fish
+{-| <i class="far fa-flag"></i> -}
 flag : Html msg
-flag = i [] (Flag Regular)
-{-| <i class="fab far fas fal fa-flag-checkered"></i> -}
+flag = i [] Flag
+{-| <i class="far fa-flag-checkered"></i> -}
 flagCheckered : Html msg
-flagCheckered = i [] (FlagCheckered Regular)
-{-| <i class="fab far fas fal fa-flask"></i> -}
+flagCheckered = i [] FlagCheckered
+{-| <i class="far fa-flask"></i> -}
 flask : Html msg
-flask = i [] (Flask Regular)
-{-| <i class="fab far fas fal fa-flickr"></i> -}
-flickr : Html msg
-flickr = i [] (Flickr)
-{-| <i class="fab far fas fal fa-flipboard"></i> -}
-flipboard : Html msg
-flipboard = i [] (Flipboard)
-{-| <i class="fab far fas fal fa-fly"></i> -}
-fly : Html msg
-fly = i [] (Fly)
-{-| <i class="fab far fas fal fa-folder"></i> -}
+flask = i [] Flask
+{-| <i class="far fa-flushed"></i> -}
+flushed : Html msg
+flushed = i [] Flushed
+{-| <i class="far fa-folder"></i> -}
 folder : Html msg
-folder = i [] (Folder Regular)
-{-| <i class="fab far fas fal fa-folder-open"></i> -}
+folder = i [] Folder
+{-| <i class="far fa-folder-open"></i> -}
 folderOpen : Html msg
-folderOpen = i [] (FolderOpen Regular)
-{-| <i class="fab far fas fal fa-font"></i> -}
+folderOpen = i [] FolderOpen
+{-| <i class="far fa-font"></i> -}
 font : Html msg
-font = i [] (Font Regular)
-{-| <i class="fab far fas fal fa-font-awesome"></i> -}
-fontAwesome : Html msg
-fontAwesome = i [] (FontAwesome)
-{-| <i class="fab far fas fal fa-font-awesome-alt"></i> -}
-fontAwesomeAlt : Html msg
-fontAwesomeAlt = i [] (FontAwesomeAlt)
-{-| <i class="fab far fas fal fa-font-awesome-flag"></i> -}
-fontAwesomeFlag : Html msg
-fontAwesomeFlag = i [] (FontAwesomeFlag)
-{-| <i class="fab far fas fal fa-fonticons"></i> -}
-fonticons : Html msg
-fonticons = i [] (Fonticons)
-{-| <i class="fab far fas fal fa-fonticons-fi"></i> -}
-fonticonsFi : Html msg
-fonticonsFi = i [] (FonticonsFi)
-{-| <i class="fab far fas fal fa-football-ball"></i> -}
+font = i [] Font
+{-| <i class="far fa-font-awesome-logo-full"></i> -}
+fontAwesomeLogoFull : Html msg
+fontAwesomeLogoFull = i [] FontAwesomeLogoFull
+{-| <i class="far fa-football-ball"></i> -}
 footballBall : Html msg
-footballBall = i [] (FootballBall Regular)
-{-| <i class="fab far fas fal fa-football-helmet"></i> -}
+footballBall = i [] FootballBall
+{-| <i class="far fa-football-helmet"></i> -}
 footballHelmet : Html msg
-footballHelmet = i [] (FootballHelmet Regular)
-{-| <i class="fab far fas fal fa-fort-awesome"></i> -}
-fortAwesome : Html msg
-fortAwesome = i [] (FortAwesome)
-{-| <i class="fab far fas fal fa-fort-awesome-alt"></i> -}
-fortAwesomeAlt : Html msg
-fortAwesomeAlt = i [] (FortAwesomeAlt)
-{-| <i class="fab far fas fal fa-forumbee"></i> -}
-forumbee : Html msg
-forumbee = i [] (Forumbee)
-{-| <i class="fab far fas fal fa-forward"></i> -}
+footballHelmet = i [] FootballHelmet
+{-| <i class="far fa-forklift"></i> -}
+forklift : Html msg
+forklift = i [] Forklift
+{-| <i class="far fa-forward"></i> -}
 forward : Html msg
-forward = i [] (Forward Regular)
-{-| <i class="fab far fas fal fa-foursquare"></i> -}
-foursquare : Html msg
-foursquare = i [] (Foursquare)
-{-| <i class="fab far fas fal fa-free-code-camp"></i> -}
-freeCodeCamp : Html msg
-freeCodeCamp = i [] (FreeCodeCamp)
-{-| <i class="fab far fas fal fa-freebsd"></i> -}
-freebsd : Html msg
-freebsd = i [] (Freebsd)
-{-| <i class="fab far fas fal fa-frown"></i> -}
+forward = i [] Forward
+{-| <i class="far fa-fragile"></i> -}
+fragile : Html msg
+fragile = i [] Fragile
+{-| <i class="far fa-frog"></i> -}
+frog : Html msg
+frog = i [] Frog
+{-| <i class="far fa-frown"></i> -}
 frown : Html msg
-frown = i [] (Frown Regular)
-{-| <i class="fab far fas fal fa-futbol"></i> -}
+frown = i [] Frown
+{-| <i class="far fa-frown-open"></i> -}
+frownOpen : Html msg
+frownOpen = i [] FrownOpen
+{-| <i class="far fa-futbol"></i> -}
 futbol : Html msg
-futbol = i [] (Futbol Regular)
-{-| <i class="fab far fas fal fa-gamepad"></i> -}
+futbol = i [] Futbol
+{-| <i class="far fa-gamepad"></i> -}
 gamepad : Html msg
-gamepad = i [] (Gamepad Regular)
-{-| <i class="fab far fas fal fa-gavel"></i> -}
+gamepad = i [] Gamepad
+{-| <i class="far fa-gas-pump"></i> -}
+gasPump : Html msg
+gasPump = i [] GasPump
+{-| <i class="far fa-gavel"></i> -}
 gavel : Html msg
-gavel = i [] (Gavel Regular)
-{-| <i class="fab far fas fal fa-gem"></i> -}
+gavel = i [] Gavel
+{-| <i class="far fa-gem"></i> -}
 gem : Html msg
-gem = i [] (Gem Regular)
-{-| <i class="fab far fas fal fa-genderless"></i> -}
+gem = i [] Gem
+{-| <i class="far fa-genderless"></i> -}
 genderless : Html msg
-genderless = i [] (Genderless Regular)
-{-| <i class="fab far fas fal fa-get-pocket"></i> -}
-getPocket : Html msg
-getPocket = i [] (GetPocket)
-{-| <i class="fab far fas fal fa-gg"></i> -}
-gg : Html msg
-gg = i [] (Gg)
-{-| <i class="fab far fas fal fa-gg-circle"></i> -}
-ggCircle : Html msg
-ggCircle = i [] (GgCircle)
-{-| <i class="fab far fas fal fa-gift"></i> -}
+genderless = i [] Genderless
+{-| <i class="far fa-gift"></i> -}
 gift : Html msg
-gift = i [] (Gift Regular)
-{-| <i class="fab far fas fal fa-git"></i> -}
-git : Html msg
-git = i [] (Git)
-{-| <i class="fab far fas fal fa-git-square"></i> -}
-gitSquare : Html msg
-gitSquare = i [] (GitSquare)
-{-| <i class="fab far fas fal fa-github"></i> -}
-github : Html msg
-github = i [] (Github)
-{-| <i class="fab far fas fal fa-github-alt"></i> -}
-githubAlt : Html msg
-githubAlt = i [] (GithubAlt)
-{-| <i class="fab far fas fal fa-github-square"></i> -}
-githubSquare : Html msg
-githubSquare = i [] (GithubSquare)
-{-| <i class="fab far fas fal fa-gitkraken"></i> -}
-gitkraken : Html msg
-gitkraken = i [] (Gitkraken)
-{-| <i class="fab far fas fal fa-gitlab"></i> -}
-gitlab : Html msg
-gitlab = i [] (Gitlab)
-{-| <i class="fab far fas fal fa-gitter"></i> -}
-gitter : Html msg
-gitter = i [] (Gitter)
-{-| <i class="fab far fas fal fa-glass-martini"></i> -}
+gift = i [] Gift
+{-| <i class="far fa-glass-martini"></i> -}
 glassMartini : Html msg
-glassMartini = i [] (GlassMartini Regular)
-{-| <i class="fab far fas fal fa-glide"></i> -}
-glide : Html msg
-glide = i [] (Glide)
-{-| <i class="fab far fas fal fa-glide-g"></i> -}
-glideG : Html msg
-glideG = i [] (GlideG)
-{-| <i class="fab far fas fal fa-globe"></i> -}
+glassMartini = i [] GlassMartini
+{-| <i class="far fa-glass-martini-alt"></i> -}
+glassMartiniAlt : Html msg
+glassMartiniAlt = i [] GlassMartiniAlt
+{-| <i class="far fa-glasses"></i> -}
+glasses : Html msg
+glasses = i [] Glasses
+{-| <i class="far fa-globe"></i> -}
 globe : Html msg
-globe = i [] (Globe Regular)
-{-| <i class="fab far fas fal fa-gofore"></i> -}
-gofore : Html msg
-gofore = i [] (Gofore)
-{-| <i class="fab far fas fal fa-golf-ball"></i> -}
+globe = i [] Globe
+{-| <i class="far fa-globe-africa"></i> -}
+globeAfrica : Html msg
+globeAfrica = i [] GlobeAfrica
+{-| <i class="far fa-globe-americas"></i> -}
+globeAmericas : Html msg
+globeAmericas = i [] GlobeAmericas
+{-| <i class="far fa-globe-asia"></i> -}
+globeAsia : Html msg
+globeAsia = i [] GlobeAsia
+{-| <i class="far fa-golf-ball"></i> -}
 golfBall : Html msg
-golfBall = i [] (GolfBall Regular)
-{-| <i class="fab far fas fal fa-golf-club"></i> -}
+golfBall = i [] GolfBall
+{-| <i class="far fa-golf-club"></i> -}
 golfClub : Html msg
-golfClub = i [] (GolfClub Regular)
-{-| <i class="fab far fas fal fa-goodreads"></i> -}
-goodreads : Html msg
-goodreads = i [] (Goodreads)
-{-| <i class="fab far fas fal fa-goodreads-g"></i> -}
-goodreadsG : Html msg
-goodreadsG = i [] (GoodreadsG)
-{-| <i class="fab far fas fal fa-google"></i> -}
-google : Html msg
-google = i [] (Google)
-{-| <i class="fab far fas fal fa-google-drive"></i> -}
-googleDrive : Html msg
-googleDrive = i [] (GoogleDrive)
-{-| <i class="fab far fas fal fa-google-play"></i> -}
-googlePlay : Html msg
-googlePlay = i [] (GooglePlay)
-{-| <i class="fab far fas fal fa-google-plus"></i> -}
-googlePlus : Html msg
-googlePlus = i [] (GooglePlus)
-{-| <i class="fab far fas fal fa-google-plus-g"></i> -}
-googlePlusG : Html msg
-googlePlusG = i [] (GooglePlusG)
-{-| <i class="fab far fas fal fa-google-plus-square"></i> -}
-googlePlusSquare : Html msg
-googlePlusSquare = i [] (GooglePlusSquare)
-{-| <i class="fab far fas fal fa-google-wallet"></i> -}
-googleWallet : Html msg
-googleWallet = i [] (GoogleWallet)
-{-| <i class="fab far fas fal fa-graduation-cap"></i> -}
+golfClub = i [] GolfClub
+{-| <i class="far fa-graduation-cap"></i> -}
 graduationCap : Html msg
-graduationCap = i [] (GraduationCap Regular)
-{-| <i class="fab far fas fal fa-gratipay"></i> -}
-gratipay : Html msg
-gratipay = i [] (Gratipay)
-{-| <i class="fab far fas fal fa-grav"></i> -}
-grav : Html msg
-grav = i [] (Grav)
-{-| <i class="fab far fas fal fa-gripfire"></i> -}
-gripfire : Html msg
-gripfire = i [] (Gripfire)
-{-| <i class="fab far fas fal fa-grunt"></i> -}
-grunt : Html msg
-grunt = i [] (Grunt)
-{-| <i class="fab far fas fal fa-gulp"></i> -}
-gulp : Html msg
-gulp = i [] (Gulp)
-{-| <i class="fab far fas fal fa-h-square"></i> -}
+graduationCap = i [] GraduationCap
+{-| <i class="far fa-greater-than"></i> -}
+greaterThan : Html msg
+greaterThan = i [] GreaterThan
+{-| <i class="far fa-greater-than-equal"></i> -}
+greaterThanEqual : Html msg
+greaterThanEqual = i [] GreaterThanEqual
+{-| <i class="far fa-grimace"></i> -}
+grimace : Html msg
+grimace = i [] Grimace
+{-| <i class="far fa-grin"></i> -}
+grin : Html msg
+grin = i [] Grin
+{-| <i class="far fa-grin-alt"></i> -}
+grinAlt : Html msg
+grinAlt = i [] GrinAlt
+{-| <i class="far fa-grin-beam"></i> -}
+grinBeam : Html msg
+grinBeam = i [] GrinBeam
+{-| <i class="far fa-grin-beam-sweat"></i> -}
+grinBeamSweat : Html msg
+grinBeamSweat = i [] GrinBeamSweat
+{-| <i class="far fa-grin-hearts"></i> -}
+grinHearts : Html msg
+grinHearts = i [] GrinHearts
+{-| <i class="far fa-grin-squint"></i> -}
+grinSquint : Html msg
+grinSquint = i [] GrinSquint
+{-| <i class="far fa-grin-squint-tears"></i> -}
+grinSquintTears : Html msg
+grinSquintTears = i [] GrinSquintTears
+{-| <i class="far fa-grin-stars"></i> -}
+grinStars : Html msg
+grinStars = i [] GrinStars
+{-| <i class="far fa-grin-tears"></i> -}
+grinTears : Html msg
+grinTears = i [] GrinTears
+{-| <i class="far fa-grin-tongue"></i> -}
+grinTongue : Html msg
+grinTongue = i [] GrinTongue
+{-| <i class="far fa-grin-tongue-squint"></i> -}
+grinTongueSquint : Html msg
+grinTongueSquint = i [] GrinTongueSquint
+{-| <i class="far fa-grin-tongue-wink"></i> -}
+grinTongueWink : Html msg
+grinTongueWink = i [] GrinTongueWink
+{-| <i class="far fa-grin-wink"></i> -}
+grinWink : Html msg
+grinWink = i [] GrinWink
+{-| <i class="far fa-grip-horizontal"></i> -}
+gripHorizontal : Html msg
+gripHorizontal = i [] GripHorizontal
+{-| <i class="far fa-grip-vertical"></i> -}
+gripVertical : Html msg
+gripVertical = i [] GripVertical
+{-| <i class="far fa-h-square"></i> -}
 hSquare : Html msg
-hSquare = i [] (HSquare Regular)
-{-| <i class="fab far fas fal fa-h1"></i> -}
+hSquare = i [] HSquare
+{-| <i class="far fa-h1"></i> -}
 h1 : Html msg
-h1 = i [] (H1 Regular)
-{-| <i class="fab far fas fal fa-h2"></i> -}
+h1 = i [] H1
+{-| <i class="far fa-h2"></i> -}
 h2 : Html msg
-h2 = i [] (H2 Regular)
-{-| <i class="fab far fas fal fa-h3"></i> -}
+h2 = i [] H2
+{-| <i class="far fa-h3"></i> -}
 h3 : Html msg
-h3 = i [] (H3 Regular)
-{-| <i class="fab far fas fal fa-hacker-news"></i> -}
-hackerNews : Html msg
-hackerNews = i [] (HackerNews)
-{-| <i class="fab far fas fal fa-hacker-news-square"></i> -}
-hackerNewsSquare : Html msg
-hackerNewsSquare = i [] (HackerNewsSquare)
-{-| <i class="fab far fas fal fa-hand-lizard"></i> -}
+h3 = i [] H3
+{-| <i class="far fa-hand-heart"></i> -}
+handHeart : Html msg
+handHeart = i [] HandHeart
+{-| <i class="far fa-hand-holding"></i> -}
+handHolding : Html msg
+handHolding = i [] HandHolding
+{-| <i class="far fa-hand-holding-box"></i> -}
+handHoldingBox : Html msg
+handHoldingBox = i [] HandHoldingBox
+{-| <i class="far fa-hand-holding-heart"></i> -}
+handHoldingHeart : Html msg
+handHoldingHeart = i [] HandHoldingHeart
+{-| <i class="far fa-hand-holding-seedling"></i> -}
+handHoldingSeedling : Html msg
+handHoldingSeedling = i [] HandHoldingSeedling
+{-| <i class="far fa-hand-holding-usd"></i> -}
+handHoldingUsd : Html msg
+handHoldingUsd = i [] HandHoldingUsd
+{-| <i class="far fa-hand-holding-water"></i> -}
+handHoldingWater : Html msg
+handHoldingWater = i [] HandHoldingWater
+{-| <i class="far fa-hand-lizard"></i> -}
 handLizard : Html msg
-handLizard = i [] (HandLizard Regular)
-{-| <i class="fab far fas fal fa-hand-paper"></i> -}
+handLizard = i [] HandLizard
+{-| <i class="far fa-hand-paper"></i> -}
 handPaper : Html msg
-handPaper = i [] (HandPaper Regular)
-{-| <i class="fab far fas fal fa-hand-peace"></i> -}
+handPaper = i [] HandPaper
+{-| <i class="far fa-hand-peace"></i> -}
 handPeace : Html msg
-handPeace = i [] (HandPeace Regular)
-{-| <i class="fab far fas fal fa-hand-point-down"></i> -}
+handPeace = i [] HandPeace
+{-| <i class="far fa-hand-point-down"></i> -}
 handPointDown : Html msg
-handPointDown = i [] (HandPointDown Regular)
-{-| <i class="fab far fas fal fa-hand-point-left"></i> -}
+handPointDown = i [] HandPointDown
+{-| <i class="far fa-hand-point-left"></i> -}
 handPointLeft : Html msg
-handPointLeft = i [] (HandPointLeft Regular)
-{-| <i class="fab far fas fal fa-hand-point-right"></i> -}
+handPointLeft = i [] HandPointLeft
+{-| <i class="far fa-hand-point-right"></i> -}
 handPointRight : Html msg
-handPointRight = i [] (HandPointRight Regular)
-{-| <i class="fab far fas fal fa-hand-point-up"></i> -}
+handPointRight = i [] HandPointRight
+{-| <i class="far fa-hand-point-up"></i> -}
 handPointUp : Html msg
-handPointUp = i [] (HandPointUp Regular)
-{-| <i class="fab far fas fal fa-hand-pointer"></i> -}
+handPointUp = i [] HandPointUp
+{-| <i class="far fa-hand-pointer"></i> -}
 handPointer : Html msg
-handPointer = i [] (HandPointer Regular)
-{-| <i class="fab far fas fal fa-hand-rock"></i> -}
+handPointer = i [] HandPointer
+{-| <i class="far fa-hand-receiving"></i> -}
+handReceiving : Html msg
+handReceiving = i [] HandReceiving
+{-| <i class="far fa-hand-rock"></i> -}
 handRock : Html msg
-handRock = i [] (HandRock Regular)
-{-| <i class="fab far fas fal fa-hand-scissors"></i> -}
+handRock = i [] HandRock
+{-| <i class="far fa-hand-scissors"></i> -}
 handScissors : Html msg
-handScissors = i [] (HandScissors Regular)
-{-| <i class="fab far fas fal fa-hand-spock"></i> -}
+handScissors = i [] HandScissors
+{-| <i class="far fa-hand-spock"></i> -}
 handSpock : Html msg
-handSpock = i [] (HandSpock Regular)
-{-| <i class="fab far fas fal fa-handshake"></i> -}
+handSpock = i [] HandSpock
+{-| <i class="far fa-hands"></i> -}
+hands : Html msg
+hands = i [] Hands
+{-| <i class="far fa-hands-heart"></i> -}
+handsHeart : Html msg
+handsHeart = i [] HandsHeart
+{-| <i class="far fa-hands-helping"></i> -}
+handsHelping : Html msg
+handsHelping = i [] HandsHelping
+{-| <i class="far fa-hands-usd"></i> -}
+handsUsd : Html msg
+handsUsd = i [] HandsUsd
+{-| <i class="far fa-handshake"></i> -}
 handshake : Html msg
-handshake = i [] (Handshake Regular)
-{-| <i class="fab far fas fal fa-hashtag"></i> -}
+handshake = i [] Handshake
+{-| <i class="far fa-handshake-alt"></i> -}
+handshakeAlt : Html msg
+handshakeAlt = i [] HandshakeAlt
+{-| <i class="far fa-hashtag"></i> -}
 hashtag : Html msg
-hashtag = i [] (Hashtag Regular)
-{-| <i class="fab far fas fal fa-hdd"></i> -}
+hashtag = i [] Hashtag
+{-| <i class="far fa-hdd"></i> -}
 hdd : Html msg
-hdd = i [] (Hdd Regular)
-{-| <i class="fab far fas fal fa-heading"></i> -}
+hdd = i [] Hdd
+{-| <i class="far fa-heading"></i> -}
 heading : Html msg
-heading = i [] (Heading Regular)
-{-| <i class="fab far fas fal fa-headphones"></i> -}
+heading = i [] Heading
+{-| <i class="far fa-headphones"></i> -}
 headphones : Html msg
-headphones = i [] (Headphones Regular)
-{-| <i class="fab far fas fal fa-heart"></i> -}
+headphones = i [] Headphones
+{-| <i class="far fa-headphones-alt"></i> -}
+headphonesAlt : Html msg
+headphonesAlt = i [] HeadphonesAlt
+{-| <i class="far fa-headset"></i> -}
+headset : Html msg
+headset = i [] Headset
+{-| <i class="far fa-heart"></i> -}
 heart : Html msg
-heart = i [] (Heart Regular)
-{-| <i class="fab far fas fal fa-heartbeat"></i> -}
+heart = i [] Heart
+{-| <i class="far fa-heart-circle"></i> -}
+heartCircle : Html msg
+heartCircle = i [] HeartCircle
+{-| <i class="far fa-heart-square"></i> -}
+heartSquare : Html msg
+heartSquare = i [] HeartSquare
+{-| <i class="far fa-heartbeat"></i> -}
 heartbeat : Html msg
-heartbeat = i [] (Heartbeat Regular)
-{-| <i class="fab far fas fal fa-hexagon"></i> -}
+heartbeat = i [] Heartbeat
+{-| <i class="far fa-helicopter"></i> -}
+helicopter : Html msg
+helicopter = i [] Helicopter
+{-| <i class="far fa-hexagon"></i> -}
 hexagon : Html msg
-hexagon = i [] (Hexagon Regular)
-{-| <i class="fab far fas fal fa-hips"></i> -}
-hips : Html msg
-hips = i [] (Hips)
-{-| <i class="fab far fas fal fa-hire-a-helper"></i> -}
-hireAHelper : Html msg
-hireAHelper = i [] (HireAHelper)
-{-| <i class="fab far fas fal fa-history"></i> -}
+hexagon = i [] Hexagon
+{-| <i class="far fa-highlighter"></i> -}
+highlighter : Html msg
+highlighter = i [] Highlighter
+{-| <i class="far fa-history"></i> -}
 history : Html msg
-history = i [] (History Regular)
-{-| <i class="fab far fas fal fa-hockey-puck"></i> -}
+history = i [] History
+{-| <i class="far fa-hockey-puck"></i> -}
 hockeyPuck : Html msg
-hockeyPuck = i [] (HockeyPuck Regular)
-{-| <i class="fab far fas fal fa-hockey-sticks"></i> -}
+hockeyPuck = i [] HockeyPuck
+{-| <i class="far fa-hockey-sticks"></i> -}
 hockeySticks : Html msg
-hockeySticks = i [] (HockeySticks Regular)
-{-| <i class="fab far fas fal fa-home"></i> -}
+hockeySticks = i [] HockeySticks
+{-| <i class="far fa-home"></i> -}
 home : Html msg
-home = i [] (Home Regular)
-{-| <i class="fab far fas fal fa-hooli"></i> -}
-hooli : Html msg
-hooli = i [] (Hooli)
-{-| <i class="fab far fas fal fa-hospital"></i> -}
+home = i [] Home
+{-| <i class="far fa-home-heart"></i> -}
+homeHeart : Html msg
+homeHeart = i [] HomeHeart
+{-| <i class="far fa-hospital"></i> -}
 hospital : Html msg
-hospital = i [] (Hospital Regular)
-{-| <i class="fab far fas fal fa-hotjar"></i> -}
-hotjar : Html msg
-hotjar = i [] (Hotjar)
-{-| <i class="fab far fas fal fa-hourglass"></i> -}
+hospital = i [] Hospital
+{-| <i class="far fa-hospital-alt"></i> -}
+hospitalAlt : Html msg
+hospitalAlt = i [] HospitalAlt
+{-| <i class="far fa-hospital-symbol"></i> -}
+hospitalSymbol : Html msg
+hospitalSymbol = i [] HospitalSymbol
+{-| <i class="far fa-hot-tub"></i> -}
+hotTub : Html msg
+hotTub = i [] HotTub
+{-| <i class="far fa-hotel"></i> -}
+hotel : Html msg
+hotel = i [] Hotel
+{-| <i class="far fa-hourglass"></i> -}
 hourglass : Html msg
-hourglass = i [] (Hourglass Regular)
-{-| <i class="fab far fas fal fa-hourglass-end"></i> -}
+hourglass = i [] Hourglass
+{-| <i class="far fa-hourglass-end"></i> -}
 hourglassEnd : Html msg
-hourglassEnd = i [] (HourglassEnd Regular)
-{-| <i class="fab far fas fal fa-hourglass-half"></i> -}
+hourglassEnd = i [] HourglassEnd
+{-| <i class="far fa-hourglass-half"></i> -}
 hourglassHalf : Html msg
-hourglassHalf = i [] (HourglassHalf Regular)
-{-| <i class="fab far fas fal fa-hourglass-start"></i> -}
+hourglassHalf = i [] HourglassHalf
+{-| <i class="far fa-hourglass-start"></i> -}
 hourglassStart : Html msg
-hourglassStart = i [] (HourglassStart Regular)
-{-| <i class="fab far fas fal fa-houzz"></i> -}
-houzz : Html msg
-houzz = i [] (Houzz)
-{-| <i class="fab far fas fal fa-html5"></i> -}
-html5 : Html msg
-html5 = i [] (Html5)
-{-| <i class="fab far fas fal fa-hubspot"></i> -}
-hubspot : Html msg
-hubspot = i [] (Hubspot)
-{-| <i class="fab far fas fal fa-i-cursor"></i> -}
+hourglassStart = i [] HourglassStart
+{-| <i class="far fa-i-cursor"></i> -}
 iCursor : Html msg
-iCursor = i [] (ICursor Regular)
-{-| <i class="fab far fas fal fa-id-badge"></i> -}
+iCursor = i [] ICursor
+{-| <i class="far fa-id-badge"></i> -}
 idBadge : Html msg
-idBadge = i [] (IdBadge Regular)
-{-| <i class="fab far fas fal fa-id-card"></i> -}
+idBadge = i [] IdBadge
+{-| <i class="far fa-id-card"></i> -}
 idCard : Html msg
-idCard = i [] (IdCard Regular)
-{-| <i class="fab far fas fal fa-image"></i> -}
+idCard = i [] IdCard
+{-| <i class="far fa-id-card-alt"></i> -}
+idCardAlt : Html msg
+idCardAlt = i [] IdCardAlt
+{-| <i class="far fa-image"></i> -}
 image : Html msg
-image = i [] (Image Regular)
-{-| <i class="fab far fas fal fa-images"></i> -}
+image = i [] Image
+{-| <i class="far fa-images"></i> -}
 images : Html msg
-images = i [] (Images Regular)
-{-| <i class="fab far fas fal fa-imdb"></i> -}
-imdb : Html msg
-imdb = i [] (Imdb)
-{-| <i class="fab far fas fal fa-inbox"></i> -}
+images = i [] Images
+{-| <i class="far fa-inbox"></i> -}
 inbox : Html msg
-inbox = i [] (Inbox Regular)
-{-| <i class="fab far fas fal fa-inbox-in"></i> -}
+inbox = i [] Inbox
+{-| <i class="far fa-inbox-in"></i> -}
 inboxIn : Html msg
-inboxIn = i [] (InboxIn Regular)
-{-| <i class="fab far fas fal fa-inbox-out"></i> -}
+inboxIn = i [] InboxIn
+{-| <i class="far fa-inbox-out"></i> -}
 inboxOut : Html msg
-inboxOut = i [] (InboxOut Regular)
-{-| <i class="fab far fas fal fa-indent"></i> -}
+inboxOut = i [] InboxOut
+{-| <i class="far fa-indent"></i> -}
 indent : Html msg
-indent = i [] (Indent Regular)
-{-| <i class="fab far fas fal fa-industry"></i> -}
+indent = i [] Indent
+{-| <i class="far fa-industry"></i> -}
 industry : Html msg
-industry = i [] (Industry Regular)
-{-| <i class="fab far fas fal fa-industry-alt"></i> -}
+industry = i [] Industry
+{-| <i class="far fa-industry-alt"></i> -}
 industryAlt : Html msg
-industryAlt = i [] (IndustryAlt Regular)
-{-| <i class="fab far fas fal fa-info"></i> -}
+industryAlt = i [] IndustryAlt
+{-| <i class="far fa-infinity"></i> -}
+infinity : Html msg
+infinity = i [] Infinity
+{-| <i class="far fa-info"></i> -}
 info : Html msg
-info = i [] (Info Regular)
-{-| <i class="fab far fas fal fa-info-circle"></i> -}
+info = i [] Info
+{-| <i class="far fa-info-circle"></i> -}
 infoCircle : Html msg
-infoCircle = i [] (InfoCircle Regular)
-{-| <i class="fab far fas fal fa-info-square"></i> -}
+infoCircle = i [] InfoCircle
+{-| <i class="far fa-info-square"></i> -}
 infoSquare : Html msg
-infoSquare = i [] (InfoSquare Regular)
-{-| <i class="fab far fas fal fa-instagram"></i> -}
-instagram : Html msg
-instagram = i [] (Instagram)
-{-| <i class="fab far fas fal fa-internet-explorer"></i> -}
-internetExplorer : Html msg
-internetExplorer = i [] (InternetExplorer)
-{-| <i class="fab far fas fal fa-ioxhost"></i> -}
-ioxhost : Html msg
-ioxhost = i [] (Ioxhost)
-{-| <i class="fab far fas fal fa-italic"></i> -}
+infoSquare = i [] InfoSquare
+{-| <i class="far fa-inventory"></i> -}
+inventory : Html msg
+inventory = i [] Inventory
+{-| <i class="far fa-italic"></i> -}
 italic : Html msg
-italic = i [] (Italic Regular)
-{-| <i class="fab far fas fal fa-itunes"></i> -}
-itunes : Html msg
-itunes = i [] (Itunes)
-{-| <i class="fab far fas fal fa-itunes-note"></i> -}
-itunesNote : Html msg
-itunesNote = i [] (ItunesNote)
-{-| <i class="fab far fas fal fa-jack-o-lantern"></i> -}
+italic = i [] Italic
+{-| <i class="far fa-jack-o-lantern"></i> -}
 jackOLantern : Html msg
-jackOLantern = i [] (JackOLantern Regular)
-{-| <i class="fab far fas fal fa-jenkins"></i> -}
-jenkins : Html msg
-jenkins = i [] (Jenkins)
-{-| <i class="fab far fas fal fa-joget"></i> -}
-joget : Html msg
-joget = i [] (Joget)
-{-| <i class="fab far fas fal fa-joomla"></i> -}
-joomla : Html msg
-joomla = i [] (Joomla)
-{-| <i class="fab far fas fal fa-js"></i> -}
-js : Html msg
-js = i [] (Js)
-{-| <i class="fab far fas fal fa-js-square"></i> -}
-jsSquare : Html msg
-jsSquare = i [] (JsSquare)
-{-| <i class="fab far fas fal fa-jsfiddle"></i> -}
-jsfiddle : Html msg
-jsfiddle = i [] (Jsfiddle)
-{-| <i class="fab far fas fal fa-key"></i> -}
+jackOLantern = i [] JackOLantern
+{-| <i class="far fa-joint"></i> -}
+joint : Html msg
+joint = i [] Joint
+{-| <i class="far fa-key"></i> -}
 key : Html msg
-key = i [] (Key Regular)
-{-| <i class="fab far fas fal fa-keyboard"></i> -}
+key = i [] Key
+{-| <i class="far fa-keyboard"></i> -}
 keyboard : Html msg
-keyboard = i [] (Keyboard Regular)
-{-| <i class="fab far fas fal fa-keycdn"></i> -}
-keycdn : Html msg
-keycdn = i [] (Keycdn)
-{-| <i class="fab far fas fal fa-kickstarter"></i> -}
-kickstarter : Html msg
-kickstarter = i [] (Kickstarter)
-{-| <i class="fab far fas fal fa-kickstarter-k"></i> -}
-kickstarterK : Html msg
-kickstarterK = i [] (KickstarterK)
-{-| <i class="fab far fas fal fa-korvue"></i> -}
-korvue : Html msg
-korvue = i [] (Korvue)
-{-| <i class="fab far fas fal fa-language"></i> -}
+keyboard = i [] Keyboard
+{-| <i class="far fa-kiss"></i> -}
+kiss : Html msg
+kiss = i [] Kiss
+{-| <i class="far fa-kiss-beam"></i> -}
+kissBeam : Html msg
+kissBeam = i [] KissBeam
+{-| <i class="far fa-kiss-wink-heart"></i> -}
+kissWinkHeart : Html msg
+kissWinkHeart = i [] KissWinkHeart
+{-| <i class="far fa-kiwi-bird"></i> -}
+kiwiBird : Html msg
+kiwiBird = i [] KiwiBird
+{-| <i class="far fa-lamp"></i> -}
+lamp : Html msg
+lamp = i [] Lamp
+{-| <i class="far fa-language"></i> -}
 language : Html msg
-language = i [] (Language Regular)
-{-| <i class="fab far fas fal fa-laptop"></i> -}
+language = i [] Language
+{-| <i class="far fa-laptop"></i> -}
 laptop : Html msg
-laptop = i [] (Laptop Regular)
-{-| <i class="fab far fas fal fa-laravel"></i> -}
-laravel : Html msg
-laravel = i [] (Laravel)
-{-| <i class="fab far fas fal fa-lastfm"></i> -}
-lastfm : Html msg
-lastfm = i [] (Lastfm)
-{-| <i class="fab far fas fal fa-lastfm-square"></i> -}
-lastfmSquare : Html msg
-lastfmSquare = i [] (LastfmSquare)
-{-| <i class="fab far fas fal fa-leaf"></i> -}
+laptop = i [] Laptop
+{-| <i class="far fa-laugh"></i> -}
+laugh : Html msg
+laugh = i [] Laugh
+{-| <i class="far fa-laugh-beam"></i> -}
+laughBeam : Html msg
+laughBeam = i [] LaughBeam
+{-| <i class="far fa-laugh-squint"></i> -}
+laughSquint : Html msg
+laughSquint = i [] LaughSquint
+{-| <i class="far fa-laugh-wink"></i> -}
+laughWink : Html msg
+laughWink = i [] LaughWink
+{-| <i class="far fa-leaf"></i> -}
 leaf : Html msg
-leaf = i [] (Leaf Regular)
-{-| <i class="fab far fas fal fa-leanpub"></i> -}
-leanpub : Html msg
-leanpub = i [] (Leanpub)
-{-| <i class="fab far fas fal fa-lemon"></i> -}
+leaf = i [] Leaf
+{-| <i class="far fa-leaf-heart"></i> -}
+leafHeart : Html msg
+leafHeart = i [] LeafHeart
+{-| <i class="far fa-lemon"></i> -}
 lemon : Html msg
-lemon = i [] (Lemon Regular)
-{-| <i class="fab far fas fal fa-less"></i> -}
-less : Html msg
-less = i [] (Less)
-{-| <i class="fab far fas fal fa-level-down"></i> -}
+lemon = i [] Lemon
+{-| <i class="far fa-less-than"></i> -}
+lessThan : Html msg
+lessThan = i [] LessThan
+{-| <i class="far fa-less-than-equal"></i> -}
+lessThanEqual : Html msg
+lessThanEqual = i [] LessThanEqual
+{-| <i class="far fa-level-down"></i> -}
 levelDown : Html msg
-levelDown = i [] (LevelDown Regular)
-{-| <i class="fab far fas fal fa-level-down-alt"></i> -}
+levelDown = i [] LevelDown
+{-| <i class="far fa-level-down-alt"></i> -}
 levelDownAlt : Html msg
-levelDownAlt = i [] (LevelDownAlt Regular)
-{-| <i class="fab far fas fal fa-level-up"></i> -}
+levelDownAlt = i [] LevelDownAlt
+{-| <i class="far fa-level-up"></i> -}
 levelUp : Html msg
-levelUp = i [] (LevelUp Regular)
-{-| <i class="fab far fas fal fa-level-up-alt"></i> -}
+levelUp = i [] LevelUp
+{-| <i class="far fa-level-up-alt"></i> -}
 levelUpAlt : Html msg
-levelUpAlt = i [] (LevelUpAlt Regular)
-{-| <i class="fab far fas fal fa-life-ring"></i> -}
+levelUpAlt = i [] LevelUpAlt
+{-| <i class="far fa-life-ring"></i> -}
 lifeRing : Html msg
-lifeRing = i [] (LifeRing Regular)
-{-| <i class="fab far fas fal fa-lightbulb"></i> -}
+lifeRing = i [] LifeRing
+{-| <i class="far fa-lightbulb"></i> -}
 lightbulb : Html msg
-lightbulb = i [] (Lightbulb Regular)
-{-| <i class="fab far fas fal fa-line"></i> -}
-line : Html msg
-line = i [] (Line Regular)
-{-| <i class="fab far fas fal fa-link"></i> -}
+lightbulb = i [] Lightbulb
+{-| <i class="far fa-link"></i> -}
 link : Html msg
-link = i [] (Link)
-{-| <i class="fab far fas fal fa-linkedin"></i> -}
-linkedin : Html msg
-linkedin = i [] (Linkedin)
-{-| <i class="fab far fas fal fa-linkedin-in"></i> -}
-linkedinIn : Html msg
-linkedinIn = i [] (LinkedinIn)
-{-| <i class="fab far fas fal fa-linode"></i> -}
-linode : Html msg
-linode = i [] (Linode)
-{-| <i class="fab far fas fal fa-linux"></i> -}
-linux : Html msg
-linux = i [] (Linux)
-{-| <i class="fab far fas fal fa-lira-sign"></i> -}
+link = i [] Link
+{-| <i class="far fa-lira-sign"></i> -}
 liraSign : Html msg
-liraSign = i [] (LiraSign Regular)
-{-| <i class="fab far fas fal fa-list"></i> -}
+liraSign = i [] LiraSign
+{-| <i class="far fa-list"></i> -}
 list : Html msg
-list = i [] (List Regular)
-{-| <i class="fab far fas fal fa-list-alt"></i> -}
+list = i [] List
+{-| <i class="far fa-list-alt"></i> -}
 listAlt : Html msg
-listAlt = i [] (ListAlt Regular)
-{-| <i class="fab far fas fal fa-list-ol"></i> -}
+listAlt = i [] ListAlt
+{-| <i class="far fa-list-ol"></i> -}
 listOl : Html msg
-listOl = i [] (ListOl Regular)
-{-| <i class="fab far fas fal fa-list-ul"></i> -}
+listOl = i [] ListOl
+{-| <i class="far fa-list-ul"></i> -}
 listUl : Html msg
-listUl = i [] (ListUl Regular)
-{-| <i class="fab far fas fal fa-location-arrow"></i> -}
+listUl = i [] ListUl
+{-| <i class="far fa-location-arrow"></i> -}
 locationArrow : Html msg
-locationArrow = i [] (LocationArrow Regular)
-{-| <i class="fab far fas fal fa-lock"></i> -}
+locationArrow = i [] LocationArrow
+{-| <i class="far fa-lock"></i> -}
 lock : Html msg
-lock = i [] (Lock Regular)
-{-| <i class="fab far fas fal fa-lock-alt"></i> -}
+lock = i [] Lock
+{-| <i class="far fa-lock-alt"></i> -}
 lockAlt : Html msg
-lockAlt = i [] (LockAlt Regular)
-{-| <i class="fab far fas fal fa-lock-open"></i> -}
+lockAlt = i [] LockAlt
+{-| <i class="far fa-lock-open"></i> -}
 lockOpen : Html msg
-lockOpen = i [] (LockOpen Regular)
-{-| <i class="fab far fas fal fa-lock-open-alt"></i> -}
+lockOpen = i [] LockOpen
+{-| <i class="far fa-lock-open-alt"></i> -}
 lockOpenAlt : Html msg
-lockOpenAlt = i [] (LockOpenAlt Regular)
-{-| <i class="fab far fas fal fa-long-arrow-alt-down"></i> -}
+lockOpenAlt = i [] LockOpenAlt
+{-| <i class="far fa-long-arrow-alt-down"></i> -}
 longArrowAltDown : Html msg
-longArrowAltDown = i [] (LongArrowAltDown Regular)
-{-| <i class="fab far fas fal fa-long-arrow-alt-left"></i> -}
+longArrowAltDown = i [] LongArrowAltDown
+{-| <i class="far fa-long-arrow-alt-left"></i> -}
 longArrowAltLeft : Html msg
-longArrowAltLeft = i [] (LongArrowAltLeft Regular)
-{-| <i class="fab far fas fal fa-long-arrow-alt-right"></i> -}
+longArrowAltLeft = i [] LongArrowAltLeft
+{-| <i class="far fa-long-arrow-alt-right"></i> -}
 longArrowAltRight : Html msg
-longArrowAltRight = i [] (LongArrowAltRight Regular)
-{-| <i class="fab far fas fal fa-long-arrow-alt-up"></i> -}
+longArrowAltRight = i [] LongArrowAltRight
+{-| <i class="far fa-long-arrow-alt-up"></i> -}
 longArrowAltUp : Html msg
-longArrowAltUp = i [] (LongArrowAltUp Regular)
-{-| <i class="fab far fas fal fa-long-arrow-down"></i> -}
+longArrowAltUp = i [] LongArrowAltUp
+{-| <i class="far fa-long-arrow-down"></i> -}
 longArrowDown : Html msg
-longArrowDown = i [] (LongArrowDown Regular)
-{-| <i class="fab far fas fal fa-long-arrow-left"></i> -}
+longArrowDown = i [] LongArrowDown
+{-| <i class="far fa-long-arrow-left"></i> -}
 longArrowLeft : Html msg
-longArrowLeft = i [] (LongArrowLeft Regular)
-{-| <i class="fab far fas fal fa-long-arrow-right"></i> -}
+longArrowLeft = i [] LongArrowLeft
+{-| <i class="far fa-long-arrow-right"></i> -}
 longArrowRight : Html msg
-longArrowRight = i [] (LongArrowRight Regular)
-{-| <i class="fab far fas fal fa-long-arrow-up"></i> -}
+longArrowRight = i [] LongArrowRight
+{-| <i class="far fa-long-arrow-up"></i> -}
 longArrowUp : Html msg
-longArrowUp = i [] (LongArrowUp Regular)
-{-| <i class="fab far fas fal fa-low-vision"></i> -}
+longArrowUp = i [] LongArrowUp
+{-| <i class="far fa-loveseat"></i> -}
+loveseat : Html msg
+loveseat = i [] Loveseat
+{-| <i class="far fa-low-vision"></i> -}
 lowVision : Html msg
-lowVision = i [] (LowVision Regular)
-{-| <i class="fab far fas fal fa-luchador"></i> -}
+lowVision = i [] LowVision
+{-| <i class="far fa-luchador"></i> -}
 luchador : Html msg
-luchador = i [] (Luchador Regular)
-{-| <i class="fab far fas fal fa-lyft"></i> -}
-lyft : Html msg
-lyft = i [] (Lyft)
-{-| <i class="fab far fas fal fa-magento"></i> -}
-magento : Html msg
-magento = i [] (Magento)
-{-| <i class="fab far fas fal fa-magic"></i> -}
+luchador = i [] Luchador
+{-| <i class="far fa-luggage-cart"></i> -}
+luggageCart : Html msg
+luggageCart = i [] LuggageCart
+{-| <i class="far fa-magic"></i> -}
 magic : Html msg
-magic = i [] (Magic Regular)
-{-| <i class="fab far fas fal fa-magnet"></i> -}
+magic = i [] Magic
+{-| <i class="far fa-magnet"></i> -}
 magnet : Html msg
-magnet = i [] (Magnet Regular)
-{-| <i class="fab far fas fal fa-male"></i> -}
+magnet = i [] Magnet
+{-| <i class="far fa-male"></i> -}
 male : Html msg
-male = i [] (Male Regular)
-{-| <i class="fab far fas fal fa-map"></i> -}
+male = i [] Male
+{-| <i class="far fa-map"></i> -}
 map : Html msg
-map = i [] (Map Regular)
-{-| <i class="fab far fas fal fa-map-marker"></i> -}
+map = i [] Map
+{-| <i class="far fa-map-marked"></i> -}
+mapMarked : Html msg
+mapMarked = i [] MapMarked
+{-| <i class="far fa-map-marked-alt"></i> -}
+mapMarkedAlt : Html msg
+mapMarkedAlt = i [] MapMarkedAlt
+{-| <i class="far fa-map-marker"></i> -}
 mapMarker : Html msg
-mapMarker = i [] (MapMarker Regular)
-{-| <i class="fab far fas fal fa-map-marker-alt"></i> -}
+mapMarker = i [] MapMarker
+{-| <i class="far fa-map-marker-alt"></i> -}
 mapMarkerAlt : Html msg
-mapMarkerAlt = i [] (MapMarkerAlt Regular)
-{-| <i class="fab far fas fal fa-map-pin"></i> -}
+mapMarkerAlt = i [] MapMarkerAlt
+{-| <i class="far fa-map-pin"></i> -}
 mapPin : Html msg
-mapPin = i [] (MapPin Regular)
-{-| <i class="fab far fas fal fa-map-signs"></i> -}
+mapPin = i [] MapPin
+{-| <i class="far fa-map-signs"></i> -}
 mapSigns : Html msg
-mapSigns = i [] (MapSigns Regular)
-{-| <i class="fab far fas fal fa-mars"></i> -}
+mapSigns = i [] MapSigns
+{-| <i class="far fa-marker"></i> -}
+marker : Html msg
+marker = i [] Marker
+{-| <i class="far fa-mars"></i> -}
 mars : Html msg
-mars = i [] (Mars Regular)
-{-| <i class="fab far fas fal fa-mars-double"></i> -}
+mars = i [] Mars
+{-| <i class="far fa-mars-double"></i> -}
 marsDouble : Html msg
-marsDouble = i [] (MarsDouble Regular)
-{-| <i class="fab far fas fal fa-mars-stroke"></i> -}
+marsDouble = i [] MarsDouble
+{-| <i class="far fa-mars-stroke"></i> -}
 marsStroke : Html msg
-marsStroke = i [] (MarsStroke Regular)
-{-| <i class="fab far fas fal fa-mars-stroke-h"></i> -}
+marsStroke = i [] MarsStroke
+{-| <i class="far fa-mars-stroke-h"></i> -}
 marsStrokeH : Html msg
-marsStrokeH = i [] (MarsStrokeH Regular)
-{-| <i class="fab far fas fal fa-mars-stroke-v"></i> -}
+marsStrokeH = i [] MarsStrokeH
+{-| <i class="far fa-mars-stroke-v"></i> -}
 marsStrokeV : Html msg
-marsStrokeV = i [] (MarsStrokeV Regular)
-{-| <i class="fab far fas fal fa-maxcdn"></i> -}
-maxcdn : Html msg
-maxcdn = i [] (Maxcdn)
-{-| <i class="fab far fas fal fa-medapps"></i> -}
-medapps : Html msg
-medapps = i [] (Medapps)
-{-| <i class="fab far fas fal fa-medium"></i> -}
-medium : Html msg
-medium = i [] (Medium)
-{-| <i class="fab far fas fal fa-medium-m"></i> -}
-mediumM : Html msg
-mediumM = i [] (MediumM)
-{-| <i class="fab far fas fal fa-medkit"></i> -}
+marsStrokeV = i [] MarsStrokeV
+{-| <i class="far fa-medal"></i> -}
+medal : Html msg
+medal = i [] Medal
+{-| <i class="far fa-medkit"></i> -}
 medkit : Html msg
-medkit = i [] (Medkit Regular)
-{-| <i class="fab far fas fal fa-medrt"></i> -}
-medrt : Html msg
-medrt = i [] (Medrt)
-{-| <i class="fab far fas fal fa-meetup"></i> -}
-meetup : Html msg
-meetup = i [] (Meetup)
-{-| <i class="fab far fas fal fa-meh"></i> -}
+medkit = i [] Medkit
+{-| <i class="far fa-meh"></i> -}
 meh : Html msg
-meh = i [] (Meh Regular)
-{-| <i class="fab far fas fal fa-mercury"></i> -}
+meh = i [] Meh
+{-| <i class="far fa-meh-blank"></i> -}
+mehBlank : Html msg
+mehBlank = i [] MehBlank
+{-| <i class="far fa-meh-rolling-eyes"></i> -}
+mehRollingEyes : Html msg
+mehRollingEyes = i [] MehRollingEyes
+{-| <i class="far fa-memory"></i> -}
+memory : Html msg
+memory = i [] Memory
+{-| <i class="far fa-mercury"></i> -}
 mercury : Html msg
-mercury = i [] (Mercury Regular)
-{-| <i class="fab far fas fal fa-microchip"></i> -}
+mercury = i [] Mercury
+{-| <i class="far fa-microchip"></i> -}
 microchip : Html msg
-microchip = i [] (Microchip Regular)
-{-| <i class="fab far fas fal fa-microphone"></i> -}
+microchip = i [] Microchip
+{-| <i class="far fa-microphone"></i> -}
 microphone : Html msg
-microphone = i [] (Microphone Regular)
-{-| <i class="fab far fas fal fa-microphone-alt"></i> -}
+microphone = i [] Microphone
+{-| <i class="far fa-microphone-alt"></i> -}
 microphoneAlt : Html msg
-microphoneAlt = i [] (MicrophoneAlt Regular)
-{-| <i class="fab far fas fal fa-microphone-slash"></i> -}
+microphoneAlt = i [] MicrophoneAlt
+{-| <i class="far fa-microphone-alt-slash"></i> -}
+microphoneAltSlash : Html msg
+microphoneAltSlash = i [] MicrophoneAltSlash
+{-| <i class="far fa-microphone-slash"></i> -}
 microphoneSlash : Html msg
-microphoneSlash = i [] (MicrophoneSlash Regular)
-{-| <i class="fab far fas fal fa-microsoft"></i> -}
-microsoft : Html msg
-microsoft = i [] (Microsoft)
-{-| <i class="fab far fas fal fa-minus"></i> -}
+microphoneSlash = i [] MicrophoneSlash
+{-| <i class="far fa-minus"></i> -}
 minus : Html msg
-minus = i [] (Minus Regular)
-{-| <i class="fab far fas fal fa-minus-circle"></i> -}
+minus = i [] Minus
+{-| <i class="far fa-minus-circle"></i> -}
 minusCircle : Html msg
-minusCircle = i [] (MinusCircle Regular)
-{-| <i class="fab far fas fal fa-minus-hexagon"></i> -}
+minusCircle = i [] MinusCircle
+{-| <i class="far fa-minus-hexagon"></i> -}
 minusHexagon : Html msg
-minusHexagon = i [] (MinusHexagon Regular)
-{-| <i class="fab far fas fal fa-minus-octagon"></i> -}
+minusHexagon = i [] MinusHexagon
+{-| <i class="far fa-minus-octagon"></i> -}
 minusOctagon : Html msg
-minusOctagon = i [] (MinusOctagon Regular)
-{-| <i class="fab far fas fal fa-minus-square"></i> -}
+minusOctagon = i [] MinusOctagon
+{-| <i class="far fa-minus-square"></i> -}
 minusSquare : Html msg
-minusSquare = i [] (MinusSquare Regular)
-{-| <i class="fab far fas fal fa-mix"></i> -}
-mix : Html msg
-mix = i [] (Mix)
-{-| <i class="fab far fas fal fa-mixcloud"></i> -}
-mixcloud : Html msg
-mixcloud = i [] (Mixcloud)
-{-| <i class="fab far fas fal fa-mizuni"></i> -}
-mizuni : Html msg
-mizuni = i [] (Mizuni)
-{-| <i class="fab far fas fal fa-mobile"></i> -}
+minusSquare = i [] MinusSquare
+{-| <i class="far fa-mobile"></i> -}
 mobile : Html msg
-mobile = i [] (Mobile Regular)
-{-| <i class="fab far fas fal fa-mobile-alt"></i> -}
+mobile = i [] Mobile
+{-| <i class="far fa-mobile-alt"></i> -}
 mobileAlt : Html msg
-mobileAlt = i [] (MobileAlt Regular)
-{-| <i class="fab far fas fal fa-mobile-android"></i> -}
+mobileAlt = i [] MobileAlt
+{-| <i class="far fa-mobile-android"></i> -}
 mobileAndroid : Html msg
-mobileAndroid = i [] (MobileAndroid Regular)
-{-| <i class="fab far fas fal fa-mobile-android-alt"></i> -}
+mobileAndroid = i [] MobileAndroid
+{-| <i class="far fa-mobile-android-alt"></i> -}
 mobileAndroidAlt : Html msg
-mobileAndroidAlt = i [] (MobileAndroidAlt Regular)
-{-| <i class="fab far fas fal fa-modx"></i> -}
-modx : Html msg
-modx = i [] (Modx)
-{-| <i class="fab far fas fal fa-monero"></i> -}
-monero : Html msg
-monero = i [] (Monero)
-{-| <i class="fab far fas fal fa-money-bill"></i> -}
+mobileAndroidAlt = i [] MobileAndroidAlt
+{-| <i class="far fa-money-bill"></i> -}
 moneyBill : Html msg
-moneyBill = i [] (MoneyBill Regular)
-{-| <i class="fab far fas fal fa-money-bill-alt"></i> -}
+moneyBill = i [] MoneyBill
+{-| <i class="far fa-money-bill-alt"></i> -}
 moneyBillAlt : Html msg
-moneyBillAlt = i [] (MoneyBillAlt Regular)
-{-| <i class="fab far fas fal fa-moon"></i> -}
+moneyBillAlt = i [] MoneyBillAlt
+{-| <i class="far fa-money-bill-wave"></i> -}
+moneyBillWave : Html msg
+moneyBillWave = i [] MoneyBillWave
+{-| <i class="far fa-money-bill-wave-alt"></i> -}
+moneyBillWaveAlt : Html msg
+moneyBillWaveAlt = i [] MoneyBillWaveAlt
+{-| <i class="far fa-money-check"></i> -}
+moneyCheck : Html msg
+moneyCheck = i [] MoneyCheck
+{-| <i class="far fa-money-check-alt"></i> -}
+moneyCheckAlt : Html msg
+moneyCheckAlt = i [] MoneyCheckAlt
+{-| <i class="far fa-monument"></i> -}
+monument : Html msg
+monument = i [] Monument
+{-| <i class="far fa-moon"></i> -}
 moon : Html msg
-moon = i [] (Moon Regular)
-{-| <i class="fab far fas fal fa-motorcycle"></i> -}
+moon = i [] Moon
+{-| <i class="far fa-mortar-pestle"></i> -}
+mortarPestle : Html msg
+mortarPestle = i [] MortarPestle
+{-| <i class="far fa-motorcycle"></i> -}
 motorcycle : Html msg
-motorcycle = i [] (Motorcycle Regular)
-{-| <i class="fab far fas fal fa-mouse-pointer"></i> -}
+motorcycle = i [] Motorcycle
+{-| <i class="far fa-mouse-pointer"></i> -}
 mousePointer : Html msg
-mousePointer = i [] (MousePointer Regular)
-{-| <i class="fab far fas fal fa-music"></i> -}
+mousePointer = i [] MousePointer
+{-| <i class="far fa-music"></i> -}
 music : Html msg
-music = i [] (Music Regular)
-{-| <i class="fab far fas fal fa-napster"></i> -}
-napster : Html msg
-napster = i [] (Napster)
-{-| <i class="fab far fas fal fa-neuter"></i> -}
+music = i [] Music
+{-| <i class="far fa-neuter"></i> -}
 neuter : Html msg
-neuter = i [] (Neuter Regular)
-{-| <i class="fab far fas fal fa-newspaper"></i> -}
+neuter = i [] Neuter
+{-| <i class="far fa-newspaper"></i> -}
 newspaper : Html msg
-newspaper = i [] (Newspaper Regular)
-{-| <i class="fab far fas fal fa-nintendo-switch"></i> -}
-nintendoSwitch : Html msg
-nintendoSwitch = i [] (NintendoSwitch)
-{-| <i class="fab far fas fal fa-node"></i> -}
-node : Html msg
-node = i [] (Node)
-{-| <i class="fab far fas fal fa-node-js"></i> -}
-nodeJs : Html msg
-nodeJs = i [] (NodeJs)
-{-| <i class="fab far fas fal fa-npm"></i> -}
-npm : Html msg
-npm = i [] (Npm)
-{-| <i class="fab far fas fal fa-ns8"></i> -}
-ns8 : Html msg
-ns8 = i [] (Ns8)
-{-| <i class="fab far fas fal fa-nutritionix"></i> -}
-nutritionix : Html msg
-nutritionix = i [] (Nutritionix)
-{-| <i class="fab far fas fal fa-object-group"></i> -}
+newspaper = i [] Newspaper
+{-| <i class="far fa-not-equal"></i> -}
+notEqual : Html msg
+notEqual = i [] NotEqual
+{-| <i class="far fa-notes-medical"></i> -}
+notesMedical : Html msg
+notesMedical = i [] NotesMedical
+{-| <i class="far fa-object-group"></i> -}
 objectGroup : Html msg
-objectGroup = i [] (ObjectGroup Regular)
-{-| <i class="fab far fas fal fa-object-ungroup"></i> -}
+objectGroup = i [] ObjectGroup
+{-| <i class="far fa-object-ungroup"></i> -}
 objectUngroup : Html msg
-objectUngroup = i [] (ObjectUngroup Regular)
-{-| <i class="fab far fas fal fa-octagon"></i> -}
+objectUngroup = i [] ObjectUngroup
+{-| <i class="far fa-octagon"></i> -}
 octagon : Html msg
-octagon = i [] (Octagon Regular)
-{-| <i class="fab far fas fal fa-odnoklassniki"></i> -}
-odnoklassniki : Html msg
-odnoklassniki = i [] (Odnoklassniki)
-{-| <i class="fab far fas fal fa-odnoklassniki-square"></i> -}
-odnoklassnikiSquare : Html msg
-odnoklassnikiSquare = i [] (OdnoklassnikiSquare)
-{-| <i class="fab far fas fal fa-opencart"></i> -}
-opencart : Html msg
-opencart = i [] (Opencart)
-{-| <i class="fab far fas fal fa-openid"></i> -}
-openid : Html msg
-openid = i [] (Openid)
-{-| <i class="fab far fas fal fa-opera"></i> -}
-opera : Html msg
-opera = i [] (Opera)
-{-| <i class="fab far fas fal fa-optin-monster"></i> -}
-optinMonster : Html msg
-optinMonster = i [] (OptinMonster)
-{-| <i class="fab far fas fal fa-osi"></i> -}
-osi : Html msg
-osi = i [] (Osi)
-{-| <i class="fab far fas fal fa-outdent"></i> -}
+octagon = i [] Octagon
+{-| <i class="far fa-outdent"></i> -}
 outdent : Html msg
-outdent = i [] (Outdent Regular)
-{-| <i class="fab far fas fal fa-page4"></i> -}
-page4 : Html msg
-page4 = i [] (Page4)
-{-| <i class="fab far fas fal fa-pagelines"></i> -}
-pagelines : Html msg
-pagelines = i [] (Pagelines)
-{-| <i class="fab far fas fal fa-paint-brush"></i> -}
+outdent = i [] Outdent
+{-| <i class="far fa-paint-brush"></i> -}
 paintBrush : Html msg
-paintBrush = i [] (PaintBrush Regular)
-{-| <i class="fab far fas fal fa-palfed"></i> -}
-palfed : Html msg
-palfed = i [] (Palfed)
-{-| <i class="fab far fas fal fa-paper-plane"></i> -}
+paintBrush = i [] PaintBrush
+{-| <i class="far fa-paint-brush-alt"></i> -}
+paintBrushAlt : Html msg
+paintBrushAlt = i [] PaintBrushAlt
+{-| <i class="far fa-paint-roller"></i> -}
+paintRoller : Html msg
+paintRoller = i [] PaintRoller
+{-| <i class="far fa-palette"></i> -}
+palette : Html msg
+palette = i [] Palette
+{-| <i class="far fa-pallet"></i> -}
+pallet : Html msg
+pallet = i [] Pallet
+{-| <i class="far fa-pallet-alt"></i> -}
+palletAlt : Html msg
+palletAlt = i [] PalletAlt
+{-| <i class="far fa-paper-plane"></i> -}
 paperPlane : Html msg
-paperPlane = i [] (PaperPlane Regular)
-{-| <i class="fab far fas fal fa-paperclip"></i> -}
+paperPlane = i [] PaperPlane
+{-| <i class="far fa-paperclip"></i> -}
 paperclip : Html msg
-paperclip = i [] (Paperclip Regular)
-{-| <i class="fab far fas fal fa-paragraph"></i> -}
+paperclip = i [] Paperclip
+{-| <i class="far fa-parachute-box"></i> -}
+parachuteBox : Html msg
+parachuteBox = i [] ParachuteBox
+{-| <i class="far fa-paragraph"></i> -}
 paragraph : Html msg
-paragraph = i [] (Paragraph Regular)
-{-| <i class="fab far fas fal fa-paste"></i> -}
+paragraph = i [] Paragraph
+{-| <i class="far fa-parking"></i> -}
+parking : Html msg
+parking = i [] Parking
+{-| <i class="far fa-passport"></i> -}
+passport : Html msg
+passport = i [] Passport
+{-| <i class="far fa-paste"></i> -}
 paste : Html msg
-paste = i [] (Paste Regular)
-{-| <i class="fab far fas fal fa-patreon"></i> -}
-patreon : Html msg
-patreon = i [] (Patreon)
-{-| <i class="fab far fas fal fa-pause"></i> -}
+paste = i [] Paste
+{-| <i class="far fa-pause"></i> -}
 pause : Html msg
-pause = i [] (Pause Regular)
-{-| <i class="fab far fas fal fa-pause-circle"></i> -}
+pause = i [] Pause
+{-| <i class="far fa-pause-circle"></i> -}
 pauseCircle : Html msg
-pauseCircle = i [] (PauseCircle Regular)
-{-| <i class="fab far fas fal fa-paw"></i> -}
+pauseCircle = i [] PauseCircle
+{-| <i class="far fa-paw"></i> -}
 paw : Html msg
-paw = i [] (Paw Regular)
-{-| <i class="fab far fas fal fa-paypal"></i> -}
-paypal : Html msg
-paypal = i [] (Paypal)
-{-| <i class="fab far fas fal fa-pen"></i> -}
+paw = i [] Paw
+{-| <i class="far fa-pen"></i> -}
 pen : Html msg
-pen = i [] (Pen Regular)
-{-| <i class="fab far fas fal fa-pen-alt"></i> -}
+pen = i [] Pen
+{-| <i class="far fa-pen-alt"></i> -}
 penAlt : Html msg
-penAlt = i [] (PenAlt Regular)
-{-| <i class="fab far fas fal fa-pen-square"></i> -}
+penAlt = i [] PenAlt
+{-| <i class="far fa-pen-fancy"></i> -}
+penFancy : Html msg
+penFancy = i [] PenFancy
+{-| <i class="far fa-pen-nib"></i> -}
+penNib : Html msg
+penNib = i [] PenNib
+{-| <i class="far fa-pen-square"></i> -}
 penSquare : Html msg
-penSquare = i [] (PenSquare Regular)
-{-| <i class="fab far fas fal fa-pencil"></i> -}
+penSquare = i [] PenSquare
+{-| <i class="far fa-pencil"></i> -}
 pencil : Html msg
-pencil = i [] (Pencil Regular)
-{-| <i class="fab far fas fal fa-pencil-alt"></i> -}
+pencil = i [] Pencil
+{-| <i class="far fa-pencil-alt"></i> -}
 pencilAlt : Html msg
-pencilAlt = i [] (PencilAlt Regular)
-{-| <i class="fab far fas fal fa-pennant"></i> -}
+pencilAlt = i [] PencilAlt
+{-| <i class="far fa-pencil-ruler"></i> -}
+pencilRuler : Html msg
+pencilRuler = i [] PencilRuler
+{-| <i class="far fa-pennant"></i> -}
 pennant : Html msg
-pennant = i [] (Pennant Regular)
-{-| <i class="fab far fas fal fa-percent"></i> -}
+pennant = i [] Pennant
+{-| <i class="far fa-people-carry"></i> -}
+peopleCarry : Html msg
+peopleCarry = i [] PeopleCarry
+{-| <i class="far fa-percent"></i> -}
 percent : Html msg
-percent = i [] (Percent Regular)
-{-| <i class="fab far fas fal fa-periscope"></i> -}
-periscope : Html msg
-periscope = i [] (Periscope)
-{-| <i class="fab far fas fal fa-phabricator"></i> -}
-phabricator : Html msg
-phabricator = i [] (Phabricator)
-{-| <i class="fab far fas fal fa-phoenix-framework"></i> -}
-phoenixFramework : Html msg
-phoenixFramework = i [] (PhoenixFramework)
-{-| <i class="fab far fas fal fa-phone"></i> -}
+percent = i [] Percent
+{-| <i class="far fa-percentage"></i> -}
+percentage : Html msg
+percentage = i [] Percentage
+{-| <i class="far fa-person-carry"></i> -}
+personCarry : Html msg
+personCarry = i [] PersonCarry
+{-| <i class="far fa-person-dolly"></i> -}
+personDolly : Html msg
+personDolly = i [] PersonDolly
+{-| <i class="far fa-person-dolly-empty"></i> -}
+personDollyEmpty : Html msg
+personDollyEmpty = i [] PersonDollyEmpty
+{-| <i class="far fa-phone"></i> -}
 phone : Html msg
-phone = i [] (Phone Regular)
-{-| <i class="fab far fas fal fa-phone-slash"></i> -}
+phone = i [] Phone
+{-| <i class="far fa-phone-plus"></i> -}
+phonePlus : Html msg
+phonePlus = i [] PhonePlus
+{-| <i class="far fa-phone-slash"></i> -}
 phoneSlash : Html msg
-phoneSlash = i [] (PhoneSlash Regular)
-{-| <i class="fab far fas fal fa-phone-square"></i> -}
+phoneSlash = i [] PhoneSlash
+{-| <i class="far fa-phone-square"></i> -}
 phoneSquare : Html msg
-phoneSquare = i [] (PhoneSquare Regular)
-{-| <i class="fab far fas fal fa-phone-volume"></i> -}
+phoneSquare = i [] PhoneSquare
+{-| <i class="far fa-phone-volume"></i> -}
 phoneVolume : Html msg
-phoneVolume = i [] (PhoneVolume Regular)
-{-| <i class="fab far fas fal fa-php"></i> -}
-php : Html msg
-php = i [] (Php)
-{-| <i class="fab far fas fal fa-pied-piper"></i> -}
-piedPiper : Html msg
-piedPiper = i [] (PiedPiper)
-{-| <i class="fab far fas fal fa-pied-piper-alt"></i> -}
-piedPiperAlt : Html msg
-piedPiperAlt = i [] (PiedPiperAlt)
-{-| <i class="fab far fas fal fa-pied-piper-pp"></i> -}
-piedPiperPp : Html msg
-piedPiperPp = i [] (PiedPiperPp)
-{-| <i class="fab far fas fal fa-pinterest"></i> -}
-pinterest : Html msg
-pinterest = i [] (Pinterest)
-{-| <i class="fab far fas fal fa-pinterest-p"></i> -}
-pinterestP : Html msg
-pinterestP = i [] (PinterestP)
-{-| <i class="fab far fas fal fa-pinterest-square"></i> -}
-pinterestSquare : Html msg
-pinterestSquare = i [] (PinterestSquare)
-{-| <i class="fab far fas fal fa-plane"></i> -}
+phoneVolume = i [] PhoneVolume
+{-| <i class="far fa-piggy-bank"></i> -}
+piggyBank : Html msg
+piggyBank = i [] PiggyBank
+{-| <i class="far fa-pills"></i> -}
+pills : Html msg
+pills = i [] Pills
+{-| <i class="far fa-plane"></i> -}
 plane : Html msg
-plane = i [] (Plane Regular)
-{-| <i class="fab far fas fal fa-plane-alt"></i> -}
+plane = i [] Plane
+{-| <i class="far fa-plane-alt"></i> -}
 planeAlt : Html msg
-planeAlt = i [] (PlaneAlt Regular)
-{-| <i class="fab far fas fal fa-play"></i> -}
+planeAlt = i [] PlaneAlt
+{-| <i class="far fa-plane-arrival"></i> -}
+planeArrival : Html msg
+planeArrival = i [] PlaneArrival
+{-| <i class="far fa-plane-departure"></i> -}
+planeDeparture : Html msg
+planeDeparture = i [] PlaneDeparture
+{-| <i class="far fa-play"></i> -}
 play : Html msg
-play = i [] (Play Regular)
-{-| <i class="fab far fas fal fa-play-circle"></i> -}
+play = i [] Play
+{-| <i class="far fa-play-circle"></i> -}
 playCircle : Html msg
-playCircle = i [] (PlayCircle Regular)
-{-| <i class="fab far fas fal fa-playstation"></i> -}
-playstation : Html msg
-playstation = i [] (Playstation)
-{-| <i class="fab far fas fal fa-plug"></i> -}
+playCircle = i [] PlayCircle
+{-| <i class="far fa-plug"></i> -}
 plug : Html msg
-plug = i [] (Plug Regular)
-{-| <i class="fab far fas fal fa-plus"></i> -}
+plug = i [] Plug
+{-| <i class="far fa-plus"></i> -}
 plus : Html msg
-plus = i [] (Plus Regular)
-{-| <i class="fab far fas fal fa-plus-circle"></i> -}
+plus = i [] Plus
+{-| <i class="far fa-plus-circle"></i> -}
 plusCircle : Html msg
-plusCircle = i [] (PlusCircle Regular)
-{-| <i class="fab far fas fal fa-plus-hexagon"></i> -}
+plusCircle = i [] PlusCircle
+{-| <i class="far fa-plus-hexagon"></i> -}
 plusHexagon : Html msg
-plusHexagon = i [] (PlusHexagon Regular)
-{-| <i class="fab far fas fal fa-plus-octagon"></i> -}
+plusHexagon = i [] PlusHexagon
+{-| <i class="far fa-plus-octagon"></i> -}
 plusOctagon : Html msg
-plusOctagon = i [] (PlusOctagon Regular)
-{-| <i class="fab far fas fal fa-plus-square"></i> -}
+plusOctagon = i [] PlusOctagon
+{-| <i class="far fa-plus-square"></i> -}
 plusSquare : Html msg
-plusSquare = i [] (PlusSquare Regular)
-{-| <i class="fab far fas fal fa-podcast"></i> -}
+plusSquare = i [] PlusSquare
+{-| <i class="far fa-podcast"></i> -}
 podcast : Html msg
-podcast = i [] (Podcast Regular)
-{-| <i class="fab far fas fal fa-poo"></i> -}
+podcast = i [] Podcast
+{-| <i class="far fa-poo"></i> -}
 poo : Html msg
-poo = i [] (Poo Regular)
-{-| <i class="fab far fas fal fa-portrait"></i> -}
+poo = i [] Poo
+{-| <i class="far fa-portrait"></i> -}
 portrait : Html msg
-portrait = i [] (Portrait Regular)
-{-| <i class="fab far fas fal fa-pound-sign"></i> -}
+portrait = i [] Portrait
+{-| <i class="far fa-pound-sign"></i> -}
 poundSign : Html msg
-poundSign = i [] (PoundSign Regular)
-{-| <i class="fab far fas fal fa-power-off"></i> -}
+poundSign = i [] PoundSign
+{-| <i class="far fa-power-off"></i> -}
 powerOff : Html msg
-powerOff = i [] (PowerOff Regular)
-{-| <i class="fab far fas fal fa-print"></i> -}
+powerOff = i [] PowerOff
+{-| <i class="far fa-prescription"></i> -}
+prescription : Html msg
+prescription = i [] Prescription
+{-| <i class="far fa-prescription-bottle"></i> -}
+prescriptionBottle : Html msg
+prescriptionBottle = i [] PrescriptionBottle
+{-| <i class="far fa-prescription-bottle-alt"></i> -}
+prescriptionBottleAlt : Html msg
+prescriptionBottleAlt = i [] PrescriptionBottleAlt
+{-| <i class="far fa-print"></i> -}
 print : Html msg
-print = i [] (Print Regular)
-{-| <i class="fab far fas fal fa-product-hunt"></i> -}
-productHunt : Html msg
-productHunt = i [] (ProductHunt)
-{-| <i class="fab far fas fal fa-pushed"></i> -}
-pushed : Html msg
-pushed = i [] (Pushed)
-{-| <i class="fab far fas fal fa-puzzle-piece"></i> -}
+print = i [] Print
+{-| <i class="far fa-procedures"></i> -}
+procedures : Html msg
+procedures = i [] Procedures
+{-| <i class="far fa-project-diagram"></i> -}
+projectDiagram : Html msg
+projectDiagram = i [] ProjectDiagram
+{-| <i class="far fa-puzzle-piece"></i> -}
 puzzlePiece : Html msg
-puzzlePiece = i [] (PuzzlePiece Regular)
-{-| <i class="fab far fas fal fa-python"></i> -}
-python : Html msg
-python = i [] (Python)
-{-| <i class="fab far fas fal fa-qq"></i> -}
-qq : Html msg
-qq = i [] (Qq)
-{-| <i class="fab far fas fal fa-qrcode"></i> -}
+puzzlePiece = i [] PuzzlePiece
+{-| <i class="far fa-qrcode"></i> -}
 qrcode : Html msg
-qrcode = i [] (Qrcode Regular)
-{-| <i class="fab far fas fal fa-question"></i> -}
+qrcode = i [] Qrcode
+{-| <i class="far fa-question"></i> -}
 question : Html msg
-question = i [] (Question Regular)
-{-| <i class="fab far fas fal fa-question-circle"></i> -}
+question = i [] Question
+{-| <i class="far fa-question-circle"></i> -}
 questionCircle : Html msg
-questionCircle = i [] (QuestionCircle Regular)
-{-| <i class="fab far fas fal fa-question-square"></i> -}
+questionCircle = i [] QuestionCircle
+{-| <i class="far fa-question-square"></i> -}
 questionSquare : Html msg
-questionSquare = i [] (QuestionSquare Regular)
-{-| <i class="fab far fas fal fa-quidditch"></i> -}
+questionSquare = i [] QuestionSquare
+{-| <i class="far fa-quidditch"></i> -}
 quidditch : Html msg
-quidditch = i [] (Quidditch Regular)
-{-| <i class="fab far fas fal fa-quinscape"></i> -}
-quinscape : Html msg
-quinscape = i [] (Quinscape)
-{-| <i class="fab far fas fal fa-quora"></i> -}
-quora : Html msg
-quora = i [] (Quora)
-{-| <i class="fab far fas fal fa-quote-left"></i> -}
+quidditch = i [] Quidditch
+{-| <i class="far fa-quote-left"></i> -}
 quoteLeft : Html msg
-quoteLeft = i [] (QuoteLeft Regular)
-{-| <i class="fab far fas fal fa-quote-right"></i> -}
+quoteLeft = i [] QuoteLeft
+{-| <i class="far fa-quote-right"></i> -}
 quoteRight : Html msg
-quoteRight = i [] (QuoteRight Regular)
-{-| <i class="fab far fas fal fa-racquet"></i> -}
+quoteRight = i [] QuoteRight
+{-| <i class="far fa-racquet"></i> -}
 racquet : Html msg
-racquet = i [] (Racquet Regular)
-{-| <i class="fab far fas fal fa-random"></i> -}
+racquet = i [] Racquet
+{-| <i class="far fa-ramp-loading"></i> -}
+rampLoading : Html msg
+rampLoading = i [] RampLoading
+{-| <i class="far fa-random"></i> -}
 random : Html msg
-random = i [] (Random Regular)
-{-| <i class="fab far fas fal fa-ravelry"></i> -}
-ravelry : Html msg
-ravelry = i [] (Ravelry)
-{-| <i class="fab far fas fal fa-react"></i> -}
-react : Html msg
-react = i [] (React)
-{-| <i class="fab far fas fal fa-rebel"></i> -}
-rebel : Html msg
-rebel = i [] (Rebel)
-{-| <i class="fab far fas fal fa-rectangle-landscape"></i> -}
+random = i [] Random
+{-| <i class="far fa-receipt"></i> -}
+receipt : Html msg
+receipt = i [] Receipt
+{-| <i class="far fa-rectangle-landscape"></i> -}
 rectangleLandscape : Html msg
-rectangleLandscape = i [] (RectangleLandscape Regular)
-{-| <i class="fab far fas fal fa-rectangle-portrait"></i> -}
+rectangleLandscape = i [] RectangleLandscape
+{-| <i class="far fa-rectangle-portrait"></i> -}
 rectanglePortrait : Html msg
-rectanglePortrait = i [] (RectanglePortrait Regular)
-{-| <i class="fab far fas fal fa-rectangle-wide"></i> -}
+rectanglePortrait = i [] RectanglePortrait
+{-| <i class="far fa-rectangle-wide"></i> -}
 rectangleWide : Html msg
-rectangleWide = i [] (RectangleWide Regular)
-{-| <i class="fab far fas fal fa-recycle"></i> -}
+rectangleWide = i [] RectangleWide
+{-| <i class="far fa-recycle"></i> -}
 recycle : Html msg
-recycle = i [] (Recycle Regular)
-{-| <i class="fab far fas fal fa-red-river"></i> -}
-redRiver : Html msg
-redRiver = i [] (RedRiver)
-{-| <i class="fab far fas fal fa-reddit"></i> -}
-reddit : Html msg
-reddit = i [] (Reddit)
-{-| <i class="fab far fas fal fa-reddit-alien"></i> -}
-redditAlien : Html msg
-redditAlien = i [] (RedditAlien)
-{-| <i class="fab far fas fal fa-reddit-square"></i> -}
-redditSquare : Html msg
-redditSquare = i [] (RedditSquare)
-{-| <i class="fab far fas fal fa-redo"></i> -}
+recycle = i [] Recycle
+{-| <i class="far fa-redo"></i> -}
 redo : Html msg
-redo = i [] (Redo Regular)
-{-| <i class="fab far fas fal fa-redo-alt"></i> -}
+redo = i [] Redo
+{-| <i class="far fa-redo-alt"></i> -}
 redoAlt : Html msg
-redoAlt = i [] (RedoAlt Regular)
-{-| <i class="fab far fas fal fa-registered"></i> -}
+redoAlt = i [] RedoAlt
+{-| <i class="far fa-registered"></i> -}
 registered : Html msg
-registered = i [] (Registered Regular)
-{-| <i class="fab far fas fal fa-rendact"></i> -}
-rendact : Html msg
-rendact = i [] (Rendact)
-{-| <i class="fab far fas fal fa-renren"></i> -}
-renren : Html msg
-renren = i [] (Renren)
-{-| <i class="fab far fas fal fa-repeat"></i> -}
+registered = i [] Registered
+{-| <i class="far fa-repeat"></i> -}
 repeat : Html msg
-repeat = i [] (Repeat Regular)
-{-| <i class="fab far fas fal fa-repeat1"></i> -}
+repeat = i [] Repeat
+{-| <i class="far fa-repeat-1"></i> -}
 repeat1 : Html msg
-repeat1 = i [] (Repeat1 Regular)
-{-| <i class="fab far fas fal fa-repeat1-alt"></i> -}
+repeat1 = i [] Repeat1
+{-| <i class="far fa-repeat-1-alt"></i> -}
 repeat1Alt : Html msg
-repeat1Alt = i [] (Repeat1Alt Regular)
-{-| <i class="fab far fas fal fa-repeat-alt"></i> -}
+repeat1Alt = i [] Repeat1Alt
+{-| <i class="far fa-repeat-alt"></i> -}
 repeatAlt : Html msg
-repeatAlt = i [] (RepeatAlt Regular)
-{-| <i class="fab far fas fal fa-reply"></i> -}
+repeatAlt = i [] RepeatAlt
+{-| <i class="far fa-reply"></i> -}
 reply : Html msg
-reply = i [] (Reply Regular)
-{-| <i class="fab far fas fal fa-reply-all"></i> -}
+reply = i [] Reply
+{-| <i class="far fa-reply-all"></i> -}
 replyAll : Html msg
-replyAll = i [] (ReplyAll Regular)
-{-| <i class="fab far fas fal fa-replyd"></i> -}
-replyd : Html msg
-replyd = i [] (Replyd)
-{-| <i class="fab far fas fal fa-resolving"></i> -}
-resolving : Html msg
-resolving = i [] (Resolving)
-{-| <i class="fab far fas fal fa-retweet"></i> -}
+replyAll = i [] ReplyAll
+{-| <i class="far fa-retweet"></i> -}
 retweet : Html msg
-retweet = i [] (Retweet Regular)
-{-| <i class="fab far fas fal fa-retweet-alt"></i> -}
+retweet = i [] Retweet
+{-| <i class="far fa-retweet-alt"></i> -}
 retweetAlt : Html msg
-retweetAlt = i [] (RetweetAlt Regular)
-{-| <i class="fab far fas fal fa-road"></i> -}
+retweetAlt = i [] RetweetAlt
+{-| <i class="far fa-ribbon"></i> -}
+ribbon : Html msg
+ribbon = i [] Ribbon
+{-| <i class="far fa-road"></i> -}
 road : Html msg
-road = i [] (Road Regular)
-{-| <i class="fab far fas fal fa-rocket"></i> -}
+road = i [] Road
+{-| <i class="far fa-robot"></i> -}
+robot : Html msg
+robot = i [] Robot
+{-| <i class="far fa-rocket"></i> -}
 rocket : Html msg
-rocket = i [] (Rocket Regular)
-{-| <i class="fab far fas fal fa-rocketchat"></i> -}
-rocketchat : Html msg
-rocketchat = i [] (Rocketchat)
-{-| <i class="fab far fas fal fa-rockrms"></i> -}
-rockrms : Html msg
-rockrms = i [] (Rockrms)
-{-| <i class="fab far fas fal fa-rss"></i> -}
+rocket = i [] Rocket
+{-| <i class="far fa-route"></i> -}
+route : Html msg
+route = i [] Route
+{-| <i class="far fa-rss"></i> -}
 rss : Html msg
-rss = i [] (Rss Regular)
-{-| <i class="fab far fas fal fa-rss-square"></i> -}
+rss = i [] Rss
+{-| <i class="far fa-rss-square"></i> -}
 rssSquare : Html msg
-rssSquare = i [] (RssSquare Regular)
-{-| <i class="fab far fas fal fa-ruble-sign"></i> -}
+rssSquare = i [] RssSquare
+{-| <i class="far fa-ruble-sign"></i> -}
 rubleSign : Html msg
-rubleSign = i [] (RubleSign Regular)
-{-| <i class="fab far fas fal fa-rupee-sign"></i> -}
+rubleSign = i [] RubleSign
+{-| <i class="far fa-ruler"></i> -}
+ruler : Html msg
+ruler = i [] Ruler
+{-| <i class="far fa-ruler-combined"></i> -}
+rulerCombined : Html msg
+rulerCombined = i [] RulerCombined
+{-| <i class="far fa-ruler-horizontal"></i> -}
+rulerHorizontal : Html msg
+rulerHorizontal = i [] RulerHorizontal
+{-| <i class="far fa-ruler-vertical"></i> -}
+rulerVertical : Html msg
+rulerVertical = i [] RulerVertical
+{-| <i class="far fa-rupee-sign"></i> -}
 rupeeSign : Html msg
-rupeeSign = i [] (RupeeSign Regular)
-{-| <i class="fab far fas fal fa-safari"></i> -}
-safari : Html msg
-safari = i [] (Safari)
-{-| <i class="fab far fas fal fa-sass"></i> -}
-sass : Html msg
-sass = i [] (Sass)
-{-| <i class="fab far fas fal fa-save"></i> -}
+rupeeSign = i [] RupeeSign
+{-| <i class="far fa-sad-cry"></i> -}
+sadCry : Html msg
+sadCry = i [] SadCry
+{-| <i class="far fa-sad-tear"></i> -}
+sadTear : Html msg
+sadTear = i [] SadTear
+{-| <i class="far fa-save"></i> -}
 save : Html msg
-save = i [] (Save Regular)
-{-| <i class="fab far fas fal fa-schlix"></i> -}
-schlix : Html msg
-schlix = i [] (Schlix)
-{-| <i class="fab far fas fal fa-scribd"></i> -}
-scribd : Html msg
-scribd = i [] (Scribd)
-{-| <i class="fab far fas fal fa-scrubber"></i> -}
+save = i [] Save
+{-| <i class="far fa-scanner"></i> -}
+scanner : Html msg
+scanner = i [] Scanner
+{-| <i class="far fa-scanner-keyboard"></i> -}
+scannerKeyboard : Html msg
+scannerKeyboard = i [] ScannerKeyboard
+{-| <i class="far fa-scanner-touchscreen"></i> -}
+scannerTouchscreen : Html msg
+scannerTouchscreen = i [] ScannerTouchscreen
+{-| <i class="far fa-school"></i> -}
+school : Html msg
+school = i [] School
+{-| <i class="far fa-screwdriver"></i> -}
+screwdriver : Html msg
+screwdriver = i [] Screwdriver
+{-| <i class="far fa-scrubber"></i> -}
 scrubber : Html msg
-scrubber = i [] (Scrubber Regular)
-{-| <i class="fab far fas fal fa-search"></i> -}
+scrubber = i [] Scrubber
+{-| <i class="far fa-search"></i> -}
 search : Html msg
-search = i [] (Search Regular)
-{-| <i class="fab far fas fal fa-search-minus"></i> -}
+search = i [] Search
+{-| <i class="far fa-search-minus"></i> -}
 searchMinus : Html msg
-searchMinus = i [] (SearchMinus Regular)
-{-| <i class="fab far fas fal fa-search-plus"></i> -}
+searchMinus = i [] SearchMinus
+{-| <i class="far fa-search-plus"></i> -}
 searchPlus : Html msg
-searchPlus = i [] (SearchPlus Regular)
-{-| <i class="fab far fas fal fa-searchengin"></i> -}
-searchengin : Html msg
-searchengin = i [] (Searchengin)
-{-| <i class="fab far fas fal fa-sellcast"></i> -}
-sellcast : Html msg
-sellcast = i [] (Sellcast)
-{-| <i class="fab far fas fal fa-sellsy"></i> -}
-sellsy : Html msg
-sellsy = i [] (Sellsy)
-{-| <i class="fab far fas fal fa-server"></i> -}
+searchPlus = i [] SearchPlus
+{-| <i class="far fa-seedling"></i> -}
+seedling : Html msg
+seedling = i [] Seedling
+{-| <i class="far fa-server"></i> -}
 server : Html msg
-server = i [] (Server Regular)
-{-| <i class="fab far fas fal fa-servicestack"></i> -}
-servicestack : Html msg
-servicestack = i [] (Servicestack)
-{-| <i class="fab far fas fal fa-share"></i> -}
+server = i [] Server
+{-| <i class="far fa-share"></i> -}
 share : Html msg
-share = i [] (Share Regular)
-{-| <i class="fab far fas fal fa-share-all"></i> -}
+share = i [] Share
+{-| <i class="far fa-share-all"></i> -}
 shareAll : Html msg
-shareAll = i [] (ShareAll Regular)
-{-| <i class="fab far fas fal fa-share-alt"></i> -}
+shareAll = i [] ShareAll
+{-| <i class="far fa-share-alt"></i> -}
 shareAlt : Html msg
-shareAlt = i [] (ShareAlt Regular)
-{-| <i class="fab far fas fal fa-share-alt-square"></i> -}
+shareAlt = i [] ShareAlt
+{-| <i class="far fa-share-alt-square"></i> -}
 shareAltSquare : Html msg
-shareAltSquare = i [] (ShareAltSquare Regular)
-{-| <i class="fab far fas fal fa-share-square"></i> -}
+shareAltSquare = i [] ShareAltSquare
+{-| <i class="far fa-share-square"></i> -}
 shareSquare : Html msg
-shareSquare = i [] (ShareSquare Regular)
-{-| <i class="fab far fas fal fa-shekel-sign"></i> -}
+shareSquare = i [] ShareSquare
+{-| <i class="far fa-shekel-sign"></i> -}
 shekelSign : Html msg
-shekelSign = i [] (ShekelSign Regular)
-{-| <i class="fab far fas fal fa-shield"></i> -}
+shekelSign = i [] ShekelSign
+{-| <i class="far fa-shield"></i> -}
 shield : Html msg
-shield = i [] (Shield Regular)
-{-| <i class="fab far fas fal fa-shield-alt"></i> -}
+shield = i [] Shield
+{-| <i class="far fa-shield-alt"></i> -}
 shieldAlt : Html msg
-shieldAlt = i [] (ShieldAlt Regular)
-{-| <i class="fab far fas fal fa-shield-check"></i> -}
+shieldAlt = i [] ShieldAlt
+{-| <i class="far fa-shield-check"></i> -}
 shieldCheck : Html msg
-shieldCheck = i [] (ShieldCheck Regular)
-{-| <i class="fab far fas fal fa-ship"></i> -}
+shieldCheck = i [] ShieldCheck
+{-| <i class="far fa-ship"></i> -}
 ship : Html msg
-ship = i [] (Ship Regular)
-{-| <i class="fab far fas fal fa-shirtsinbulk"></i> -}
-shirtsinbulk : Html msg
-shirtsinbulk = i [] (Shirtsinbulk)
-{-| <i class="fab far fas fal fa-shopping-bag"></i> -}
+ship = i [] Ship
+{-| <i class="far fa-shipping-fast"></i> -}
+shippingFast : Html msg
+shippingFast = i [] ShippingFast
+{-| <i class="far fa-shipping-timed"></i> -}
+shippingTimed : Html msg
+shippingTimed = i [] ShippingTimed
+{-| <i class="far fa-shoe-prints"></i> -}
+shoePrints : Html msg
+shoePrints = i [] ShoePrints
+{-| <i class="far fa-shopping-bag"></i> -}
 shoppingBag : Html msg
-shoppingBag = i [] (ShoppingBag Regular)
-{-| <i class="fab far fas fal fa-shopping-basket"></i> -}
+shoppingBag = i [] ShoppingBag
+{-| <i class="far fa-shopping-basket"></i> -}
 shoppingBasket : Html msg
-shoppingBasket = i [] (ShoppingBasket Regular)
-{-| <i class="fab far fas fal fa-shopping-cart"></i> -}
+shoppingBasket = i [] ShoppingBasket
+{-| <i class="far fa-shopping-cart"></i> -}
 shoppingCart : Html msg
-shoppingCart = i [] (ShoppingCart Regular)
-{-| <i class="fab far fas fal fa-shower"></i> -}
+shoppingCart = i [] ShoppingCart
+{-| <i class="far fa-shower"></i> -}
 shower : Html msg
-shower = i [] (Shower Regular)
-{-| <i class="fab far fas fal fa-shuttlecock"></i> -}
+shower = i [] Shower
+{-| <i class="far fa-shuttle-van"></i> -}
+shuttleVan : Html msg
+shuttleVan = i [] ShuttleVan
+{-| <i class="far fa-shuttlecock"></i> -}
 shuttlecock : Html msg
-shuttlecock = i [] (Shuttlecock Regular)
-{-| <i class="fab far fas fal fa-sign-in"></i> -}
+shuttlecock = i [] Shuttlecock
+{-| <i class="far fa-sign"></i> -}
+sign : Html msg
+sign = i [] Sign
+{-| <i class="far fa-sign-in"></i> -}
 signIn : Html msg
-signIn = i [] (SignIn Regular)
-{-| <i class="fab far fas fal fa-sign-in-alt"></i> -}
+signIn = i [] SignIn
+{-| <i class="far fa-sign-in-alt"></i> -}
 signInAlt : Html msg
-signInAlt = i [] (SignInAlt Regular)
-{-| <i class="fab far fas fal fa-sign-language"></i> -}
+signInAlt = i [] SignInAlt
+{-| <i class="far fa-sign-language"></i> -}
 signLanguage : Html msg
-signLanguage = i [] (SignLanguage Regular)
-{-| <i class="fab far fas fal fa-sign-out"></i> -}
+signLanguage = i [] SignLanguage
+{-| <i class="far fa-sign-out"></i> -}
 signOut : Html msg
-signOut = i [] (SignOut Regular)
-{-| <i class="fab far fas fal fa-sign-out-alt"></i> -}
+signOut = i [] SignOut
+{-| <i class="far fa-sign-out-alt"></i> -}
 signOutAlt : Html msg
-signOutAlt = i [] (SignOutAlt Regular)
-{-| <i class="fab far fas fal fa-signal"></i> -}
+signOutAlt = i [] SignOutAlt
+{-| <i class="far fa-signal"></i> -}
 signal : Html msg
-signal = i [] (Signal Regular)
-{-| <i class="fab far fas fal fa-simplybuilt"></i> -}
-simplybuilt : Html msg
-simplybuilt = i [] (Simplybuilt)
-{-| <i class="fab far fas fal fa-sistrix"></i> -}
-sistrix : Html msg
-sistrix = i [] (Sistrix)
-{-| <i class="fab far fas fal fa-sitemap"></i> -}
+signal = i [] Signal
+{-| <i class="far fa-signature"></i> -}
+signature : Html msg
+signature = i [] Signature
+{-| <i class="far fa-sitemap"></i> -}
 sitemap : Html msg
-sitemap = i [] (Sitemap Regular)
-{-| <i class="fab far fas fal fa-skyatlas"></i> -}
-skyatlas : Html msg
-skyatlas = i [] (Skyatlas)
-{-| <i class="fab far fas fal fa-skype"></i> -}
-skype : Html msg
-skype = i [] (Skype)
-{-| <i class="fab far fas fal fa-slack"></i> -}
-slack : Html msg
-slack = i [] (Slack)
-{-| <i class="fab far fas fal fa-slack-hash"></i> -}
-slackHash : Html msg
-slackHash = i [] (SlackHash)
-{-| <i class="fab far fas fal fa-sliders-h"></i> -}
+sitemap = i [] Sitemap
+{-| <i class="far fa-skull"></i> -}
+skull : Html msg
+skull = i [] Skull
+{-| <i class="far fa-sliders-h"></i> -}
 slidersH : Html msg
-slidersH = i [] (SlidersH Regular)
-{-| <i class="fab far fas fal fa-sliders-h-square"></i> -}
+slidersH = i [] SlidersH
+{-| <i class="far fa-sliders-h-square"></i> -}
 slidersHSquare : Html msg
-slidersHSquare = i [] (SlidersHSquare Regular)
-{-| <i class="fab far fas fal fa-sliders-v"></i> -}
+slidersHSquare = i [] SlidersHSquare
+{-| <i class="far fa-sliders-v"></i> -}
 slidersV : Html msg
-slidersV = i [] (SlidersV Regular)
-{-| <i class="fab far fas fal fa-sliders-v-square"></i> -}
+slidersV = i [] SlidersV
+{-| <i class="far fa-sliders-v-square"></i> -}
 slidersVSquare : Html msg
-slidersVSquare = i [] (SlidersVSquare Regular)
-{-| <i class="fab far fas fal fa-slideshare"></i> -}
-slideshare : Html msg
-slideshare = i [] (Slideshare)
-{-| <i class="fab far fas fal fa-smile"></i> -}
+slidersVSquare = i [] SlidersVSquare
+{-| <i class="far fa-smile"></i> -}
 smile : Html msg
-smile = i [] (Smile Regular)
-{-| <i class="fab far fas fal fa-snapchat"></i> -}
-snapchat : Html msg
-snapchat = i [] (Snapchat)
-{-| <i class="fab far fas fal fa-snapchat-ghost"></i> -}
-snapchatGhost : Html msg
-snapchatGhost = i [] (SnapchatGhost)
-{-| <i class="fab far fas fal fa-snapchat-square"></i> -}
-snapchatSquare : Html msg
-snapchatSquare = i [] (SnapchatSquare)
-{-| <i class="fab far fas fal fa-snowflake"></i> -}
+smile = i [] Smile
+{-| <i class="far fa-smile-beam"></i> -}
+smileBeam : Html msg
+smileBeam = i [] SmileBeam
+{-| <i class="far fa-smile-plus"></i> -}
+smilePlus : Html msg
+smilePlus = i [] SmilePlus
+{-| <i class="far fa-smile-wink"></i> -}
+smileWink : Html msg
+smileWink = i [] SmileWink
+{-| <i class="far fa-smoking"></i> -}
+smoking : Html msg
+smoking = i [] Smoking
+{-| <i class="far fa-smoking-ban"></i> -}
+smokingBan : Html msg
+smokingBan = i [] SmokingBan
+{-| <i class="far fa-snowflake"></i> -}
 snowflake : Html msg
-snowflake = i [] (Snowflake Regular)
-{-| <i class="fab far fas fal fa-sort"></i> -}
+snowflake = i [] Snowflake
+{-| <i class="far fa-solar-panel"></i> -}
+solarPanel : Html msg
+solarPanel = i [] SolarPanel
+{-| <i class="far fa-sort"></i> -}
 sort : Html msg
-sort = i [] (Sort Regular)
-{-| <i class="fab far fas fal fa-sort-alpha-down"></i> -}
+sort = i [] Sort
+{-| <i class="far fa-sort-alpha-down"></i> -}
 sortAlphaDown : Html msg
-sortAlphaDown = i [] (SortAlphaDown Regular)
-{-| <i class="fab far fas fal fa-sort-alpha-up"></i> -}
+sortAlphaDown = i [] SortAlphaDown
+{-| <i class="far fa-sort-alpha-up"></i> -}
 sortAlphaUp : Html msg
-sortAlphaUp = i [] (SortAlphaUp Regular)
-{-| <i class="fab far fas fal fa-sort-amount-down"></i> -}
+sortAlphaUp = i [] SortAlphaUp
+{-| <i class="far fa-sort-amount-down"></i> -}
 sortAmountDown : Html msg
-sortAmountDown = i [] (SortAmountDown Regular)
-{-| <i class="fab far fas fal fa-sort-amount-up"></i> -}
+sortAmountDown = i [] SortAmountDown
+{-| <i class="far fa-sort-amount-up"></i> -}
 sortAmountUp : Html msg
-sortAmountUp = i [] (SortAmountUp Regular)
-{-| <i class="fab far fas fal fa-sort-down"></i> -}
+sortAmountUp = i [] SortAmountUp
+{-| <i class="far fa-sort-down"></i> -}
 sortDown : Html msg
-sortDown = i [] (SortDown Regular)
-{-| <i class="fab far fas fal fa-sort-numeric-down"></i> -}
+sortDown = i [] SortDown
+{-| <i class="far fa-sort-numeric-down"></i> -}
 sortNumericDown : Html msg
-sortNumericDown = i [] (SortNumericDown Regular)
-{-| <i class="fab far fas fal fa-sort-numeric-up"></i> -}
+sortNumericDown = i [] SortNumericDown
+{-| <i class="far fa-sort-numeric-up"></i> -}
 sortNumericUp : Html msg
-sortNumericUp = i [] (SortNumericUp Regular)
-{-| <i class="fab far fas fal fa-sort-up"></i> -}
+sortNumericUp = i [] SortNumericUp
+{-| <i class="far fa-sort-up"></i> -}
 sortUp : Html msg
-sortUp = i [] (SortUp Regular)
-{-| <i class="fab far fas fal fa-soundcloud"></i> -}
-soundcloud : Html msg
-soundcloud = i [] (Soundcloud)
-{-| <i class="fab far fas fal fa-space-shuttle"></i> -}
+sortUp = i [] SortUp
+{-| <i class="far fa-spa"></i> -}
+spa : Html msg
+spa = i [] Spa
+{-| <i class="far fa-space-shuttle"></i> -}
 spaceShuttle : Html msg
-spaceShuttle = i [] (SpaceShuttle Regular)
-{-| <i class="fab far fas fal fa-spade"></i> -}
+spaceShuttle = i [] SpaceShuttle
+{-| <i class="far fa-spade"></i> -}
 spade : Html msg
-spade = i [] (Spade Regular)
-{-| <i class="fab far fas fal fa-speakap"></i> -}
-speakap : Html msg
-speakap = i [] (Speakap)
-{-| <i class="fab far fas fal fa-spinner"></i> -}
+spade = i [] Spade
+{-| <i class="far fa-spinner"></i> -}
 spinner : Html msg
-spinner = i [] (Spinner Regular)
-{-| <i class="fab far fas fal fa-spinner-third"></i> -}
+spinner = i [] Spinner
+{-| <i class="far fa-spinner-third"></i> -}
 spinnerThird : Html msg
-spinnerThird = i [] (SpinnerThird Regular)
-{-| <i class="fab far fas fal fa-spotify"></i> -}
-spotify : Html msg
-spotify = i [] (Spotify)
-{-| <i class="fab far fas fal fa-square"></i> -}
+spinnerThird = i [] SpinnerThird
+{-| <i class="far fa-splotch"></i> -}
+splotch : Html msg
+splotch = i [] Splotch
+{-| <i class="far fa-spray-can"></i> -}
+sprayCan : Html msg
+sprayCan = i [] SprayCan
+{-| <i class="far fa-square"></i> -}
 square : Html msg
-square = i [] (Square Regular)
-{-| <i class="fab far fas fal fa-square-full"></i> -}
+square = i [] Square
+{-| <i class="far fa-square-full"></i> -}
 squareFull : Html msg
-squareFull = i [] (SquareFull Regular)
-{-| <i class="fab far fas fal fa-stack-exchange"></i> -}
-stackExchange : Html msg
-stackExchange = i [] (StackExchange)
-{-| <i class="fab far fas fal fa-stack-overflow"></i> -}
-stackOverflow : Html msg
-stackOverflow = i [] (StackOverflow)
-{-| <i class="fab far fas fal fa-star"></i> -}
+squareFull = i [] SquareFull
+{-| <i class="far fa-stamp"></i> -}
+stamp : Html msg
+stamp = i [] Stamp
+{-| <i class="far fa-star"></i> -}
 star : Html msg
-star = i [] (Star Regular)
-{-| <i class="fab far fas fal fa-star-exclamation"></i> -}
+star = i [] Star
+{-| <i class="far fa-star-exclamation"></i> -}
 starExclamation : Html msg
-starExclamation = i [] (StarExclamation Regular)
-{-| <i class="fab far fas fal fa-star-half"></i> -}
+starExclamation = i [] StarExclamation
+{-| <i class="far fa-star-half"></i> -}
 starHalf : Html msg
-starHalf = i [] (StarHalf Regular)
-{-| <i class="fab far fas fal fa-staylinked"></i> -}
-staylinked : Html msg
-staylinked = i [] (Staylinked)
-{-| <i class="fab far fas fal fa-steam"></i> -}
-steam : Html msg
-steam = i [] (Steam)
-{-| <i class="fab far fas fal fa-steam-square"></i> -}
-steamSquare : Html msg
-steamSquare = i [] (SteamSquare)
-{-| <i class="fab far fas fal fa-steam-symbol"></i> -}
-steamSymbol : Html msg
-steamSymbol = i [] (SteamSymbol)
-{-| <i class="fab far fas fal fa-step-backward"></i> -}
+starHalf = i [] StarHalf
+{-| <i class="far fa-star-half-alt"></i> -}
+starHalfAlt : Html msg
+starHalfAlt = i [] StarHalfAlt
+{-| <i class="far fa-step-backward"></i> -}
 stepBackward : Html msg
-stepBackward = i [] (StepBackward Regular)
-{-| <i class="fab far fas fal fa-step-forward"></i> -}
+stepBackward = i [] StepBackward
+{-| <i class="far fa-step-forward"></i> -}
 stepForward : Html msg
-stepForward = i [] (StepForward Regular)
-{-| <i class="fab far fas fal fa-stethoscope"></i> -}
+stepForward = i [] StepForward
+{-| <i class="far fa-stethoscope"></i> -}
 stethoscope : Html msg
-stethoscope = i [] (Stethoscope Regular)
-{-| <i class="fab far fas fal fa-sticker-mule"></i> -}
-stickerMule : Html msg
-stickerMule = i [] (StickerMule)
-{-| <i class="fab far fas fal fa-sticky-note"></i> -}
+stethoscope = i [] Stethoscope
+{-| <i class="far fa-sticky-note"></i> -}
 stickyNote : Html msg
-stickyNote = i [] (StickyNote Regular)
-{-| <i class="fab far fas fal fa-stop"></i> -}
+stickyNote = i [] StickyNote
+{-| <i class="far fa-stop"></i> -}
 stop : Html msg
-stop = i [] (Stop Regular)
-{-| <i class="fab far fas fal fa-stop-circle"></i> -}
+stop = i [] Stop
+{-| <i class="far fa-stop-circle"></i> -}
 stopCircle : Html msg
-stopCircle = i [] (StopCircle Regular)
-{-| <i class="fab far fas fal fa-stopwatch"></i> -}
+stopCircle = i [] StopCircle
+{-| <i class="far fa-stopwatch"></i> -}
 stopwatch : Html msg
-stopwatch = i [] (Stopwatch Regular)
-{-| <i class="fab far fas fal fa-strava"></i> -}
-strava : Html msg
-strava = i [] (Strava)
-{-| <i class="fab far fas fal fa-street-view"></i> -}
+stopwatch = i [] Stopwatch
+{-| <i class="far fa-store"></i> -}
+store : Html msg
+store = i [] Store
+{-| <i class="far fa-store-alt"></i> -}
+storeAlt : Html msg
+storeAlt = i [] StoreAlt
+{-| <i class="far fa-stream"></i> -}
+stream : Html msg
+stream = i [] Stream
+{-| <i class="far fa-street-view"></i> -}
 streetView : Html msg
-streetView = i [] (StreetView Regular)
-{-| <i class="fab far fas fal fa-strikethrough"></i> -}
+streetView = i [] StreetView
+{-| <i class="far fa-strikethrough"></i> -}
 strikethrough : Html msg
-strikethrough = i [] (Strikethrough Regular)
-{-| <i class="fab far fas fal fa-stripe"></i> -}
-stripe : Html msg
-stripe = i [] (Stripe)
-{-| <i class="fab far fas fal fa-stripe-s"></i> -}
-stripeS : Html msg
-stripeS = i [] (StripeS)
-{-| <i class="fab far fas fal fa-studiovinari"></i> -}
-studiovinari : Html msg
-studiovinari = i [] (Studiovinari)
-{-| <i class="fab far fas fal fa-stumbleupon"></i> -}
-stumbleupon : Html msg
-stumbleupon = i [] (Stumbleupon)
-{-| <i class="fab far fas fal fa-stumbleupon-circle"></i> -}
-stumbleuponCircle : Html msg
-stumbleuponCircle = i [] (StumbleuponCircle)
-{-| <i class="fab far fas fal fa-subscript"></i> -}
+strikethrough = i [] Strikethrough
+{-| <i class="far fa-stroopwafel"></i> -}
+stroopwafel : Html msg
+stroopwafel = i [] Stroopwafel
+{-| <i class="far fa-subscript"></i> -}
 subscript : Html msg
-subscript = i [] (Subscript Regular)
-{-| <i class="fab far fas fal fa-subway"></i> -}
+subscript = i [] Subscript
+{-| <i class="far fa-subway"></i> -}
 subway : Html msg
-subway = i [] (Subway Regular)
-{-| <i class="fab far fas fal fa-suitcase"></i> -}
+subway = i [] Subway
+{-| <i class="far fa-suitcase"></i> -}
 suitcase : Html msg
-suitcase = i [] (Suitcase Regular)
-{-| <i class="fab far fas fal fa-sun"></i> -}
+suitcase = i [] Suitcase
+{-| <i class="far fa-suitcase-rolling"></i> -}
+suitcaseRolling : Html msg
+suitcaseRolling = i [] SuitcaseRolling
+{-| <i class="far fa-sun"></i> -}
 sun : Html msg
-sun = i [] (Sun Regular)
-{-| <i class="fab far fas fal fa-superpowers"></i> -}
-superpowers : Html msg
-superpowers = i [] (Superpowers)
-{-| <i class="fab far fas fal fa-superscript"></i> -}
+sun = i [] Sun
+{-| <i class="far fa-superscript"></i> -}
 superscript : Html msg
-superscript = i [] (Superscript Regular)
-{-| <i class="fab far fas fal fa-supple"></i> -}
-supple : Html msg
-supple = i [] (Supple)
-{-| <i class="fab far fas fal fa-sync"></i> -}
+superscript = i [] Superscript
+{-| <i class="far fa-surprise"></i> -}
+surprise : Html msg
+surprise = i [] Surprise
+{-| <i class="far fa-swatchbook"></i> -}
+swatchbook : Html msg
+swatchbook = i [] Swatchbook
+{-| <i class="far fa-swimmer"></i> -}
+swimmer : Html msg
+swimmer = i [] Swimmer
+{-| <i class="far fa-swimming-pool"></i> -}
+swimmingPool : Html msg
+swimmingPool = i [] SwimmingPool
+{-| <i class="far fa-sync"></i> -}
 sync : Html msg
-sync = i [] (Sync Regular)
-{-| <i class="fab far fas fal fa-sync-alt"></i> -}
+sync = i [] Sync
+{-| <i class="far fa-sync-alt"></i> -}
 syncAlt : Html msg
-syncAlt = i [] (SyncAlt Regular)
-{-| <i class="fab far fas fal fa-table"></i> -}
+syncAlt = i [] SyncAlt
+{-| <i class="far fa-syringe"></i> -}
+syringe : Html msg
+syringe = i [] Syringe
+{-| <i class="far fa-table"></i> -}
 table : Html msg
-table = i [] (Table Regular)
-{-| <i class="fab far fas fal fa-table-tennis"></i> -}
+table = i [] Table
+{-| <i class="far fa-table-tennis"></i> -}
 tableTennis : Html msg
-tableTennis = i [] (TableTennis Regular)
-{-| <i class="fab far fas fal fa-tablet"></i> -}
+tableTennis = i [] TableTennis
+{-| <i class="far fa-tablet"></i> -}
 tablet : Html msg
-tablet = i [] (Tablet Regular)
-{-| <i class="fab far fas fal fa-tablet-alt"></i> -}
+tablet = i [] Tablet
+{-| <i class="far fa-tablet-alt"></i> -}
 tabletAlt : Html msg
-tabletAlt = i [] (TabletAlt Regular)
-{-| <i class="fab far fas fal fa-tablet-android"></i> -}
+tabletAlt = i [] TabletAlt
+{-| <i class="far fa-tablet-android"></i> -}
 tabletAndroid : Html msg
-tabletAndroid = i [] (TabletAndroid Regular)
-{-| <i class="fab far fas fal fa-tablet-android-alt"></i> -}
+tabletAndroid = i [] TabletAndroid
+{-| <i class="far fa-tablet-android-alt"></i> -}
 tabletAndroidAlt : Html msg
-tabletAndroidAlt = i [] (TabletAndroidAlt Regular)
-{-| <i class="fab far fas fal fa-tachometer"></i> -}
+tabletAndroidAlt = i [] TabletAndroidAlt
+{-| <i class="far fa-tablet-rugged"></i> -}
+tabletRugged : Html msg
+tabletRugged = i [] TabletRugged
+{-| <i class="far fa-tablets"></i> -}
+tablets : Html msg
+tablets = i [] Tablets
+{-| <i class="far fa-tachometer"></i> -}
 tachometer : Html msg
-tachometer = i [] (Tachometer Regular)
-{-| <i class="fab far fas fal fa-tachometer-alt"></i> -}
+tachometer = i [] Tachometer
+{-| <i class="far fa-tachometer-alt"></i> -}
 tachometerAlt : Html msg
-tachometerAlt = i [] (TachometerAlt Regular)
-{-| <i class="fab far fas fal fa-tag"></i> -}
+tachometerAlt = i [] TachometerAlt
+{-| <i class="far fa-tag"></i> -}
 tag : Html msg
-tag = i [] (Tag Regular)
-{-| <i class="fab far fas fal fa-tags"></i> -}
+tag = i [] Tag
+{-| <i class="far fa-tags"></i> -}
 tags : Html msg
-tags = i [] (Tags Regular)
-{-| <i class="fab far fas fal fa-tasks"></i> -}
+tags = i [] Tags
+{-| <i class="far fa-tape"></i> -}
+tape : Html msg
+tape = i [] Tape
+{-| <i class="far fa-tasks"></i> -}
 tasks : Html msg
-tasks = i [] (Tasks Regular)
-{-| <i class="fab far fas fal fa-taxi"></i> -}
+tasks = i [] Tasks
+{-| <i class="far fa-taxi"></i> -}
 taxi : Html msg
-taxi = i [] (Taxi Regular)
-{-| <i class="fab far fas fal fa-telegram"></i> -}
-telegram : Html msg
-telegram = i [] (Telegram)
-{-| <i class="fab far fas fal fa-telegram-plane"></i> -}
-telegramPlane : Html msg
-telegramPlane = i [] (TelegramPlane)
-{-| <i class="fab far fas fal fa-tencent-weibo"></i> -}
-tencentWeibo : Html msg
-tencentWeibo = i [] (TencentWeibo)
-{-| <i class="fab far fas fal fa-tennis-ball"></i> -}
+taxi = i [] Taxi
+{-| <i class="far fa-tennis-ball"></i> -}
 tennisBall : Html msg
-tennisBall = i [] (TennisBall Regular)
-{-| <i class="fab far fas fal fa-terminal"></i> -}
+tennisBall = i [] TennisBall
+{-| <i class="far fa-terminal"></i> -}
 terminal : Html msg
-terminal = i [] (Terminal Regular)
-{-| <i class="fab far fas fal fa-text-height"></i> -}
+terminal = i [] Terminal
+{-| <i class="far fa-text-height"></i> -}
 textHeight : Html msg
-textHeight = i [] (TextHeight Regular)
-{-| <i class="fab far fas fal fa-text-width"></i> -}
+textHeight = i [] TextHeight
+{-| <i class="far fa-text-width"></i> -}
 textWidth : Html msg
-textWidth = i [] (TextWidth Regular)
-{-| <i class="fab far fas fal fa-th"></i> -}
+textWidth = i [] TextWidth
+{-| <i class="far fa-th"></i> -}
 th : Html msg
-th = i [] (Th Regular)
-{-| <i class="fab far fas fal fa-th-large"></i> -}
+th = i [] Th
+{-| <i class="far fa-th-large"></i> -}
 thLarge : Html msg
-thLarge = i [] (ThLarge Regular)
-{-| <i class="fab far fas fal fa-th-list"></i> -}
+thLarge = i [] ThLarge
+{-| <i class="far fa-th-list"></i> -}
 thList : Html msg
-thList = i [] (ThList Regular)
-{-| <i class="fab far fas fal fa-themeisle"></i> -}
-themeisle : Html msg
-themeisle = i [] (Themeisle)
-{-| <i class="fab far fas fal fa-thermometer-empty"></i> -}
+thList = i [] ThList
+{-| <i class="far fa-thermometer"></i> -}
+thermometer : Html msg
+thermometer = i [] Thermometer
+{-| <i class="far fa-thermometer-empty"></i> -}
 thermometerEmpty : Html msg
-thermometerEmpty = i [] (ThermometerEmpty Regular)
-{-| <i class="fab far fas fal fa-thermometer-full"></i> -}
+thermometerEmpty = i [] ThermometerEmpty
+{-| <i class="far fa-thermometer-full"></i> -}
 thermometerFull : Html msg
-thermometerFull = i [] (ThermometerFull Regular)
-{-| <i class="fab far fas fal fa-thermometer-half"></i> -}
+thermometerFull = i [] ThermometerFull
+{-| <i class="far fa-thermometer-half"></i> -}
 thermometerHalf : Html msg
-thermometerHalf = i [] (ThermometerHalf Regular)
-{-| <i class="fab far fas fal fa-thermometer-quarter"></i> -}
+thermometerHalf = i [] ThermometerHalf
+{-| <i class="far fa-thermometer-quarter"></i> -}
 thermometerQuarter : Html msg
-thermometerQuarter = i [] (ThermometerQuarter Regular)
-{-| <i class="fab far fas fal fa-thermometer-three-quarters"></i> -}
+thermometerQuarter = i [] ThermometerQuarter
+{-| <i class="far fa-thermometer-three-quarters"></i> -}
 thermometerThreeQuarters : Html msg
-thermometerThreeQuarters = i [] (ThermometerThreeQuarters Regular)
-{-| <i class="fab far fas fal fa-thumbs-down"></i> -}
+thermometerThreeQuarters = i [] ThermometerThreeQuarters
+{-| <i class="far fa-thumbs-down"></i> -}
 thumbsDown : Html msg
-thumbsDown = i [] (ThumbsDown Regular)
-{-| <i class="fab far fas fal fa-thumbs-up"></i> -}
+thumbsDown = i [] ThumbsDown
+{-| <i class="far fa-thumbs-up"></i> -}
 thumbsUp : Html msg
-thumbsUp = i [] (ThumbsUp Regular)
-{-| <i class="fab far fas fal fa-thumbtack"></i> -}
+thumbsUp = i [] ThumbsUp
+{-| <i class="far fa-thumbtack"></i> -}
 thumbtack : Html msg
-thumbtack = i [] (Thumbtack Regular)
-{-| <i class="fab far fas fal fa-ticket"></i> -}
+thumbtack = i [] Thumbtack
+{-| <i class="far fa-ticket"></i> -}
 ticket : Html msg
-ticket = i [] (Ticket Regular)
-{-| <i class="fab far fas fal fa-ticket-alt"></i> -}
+ticket = i [] Ticket
+{-| <i class="far fa-ticket-alt"></i> -}
 ticketAlt : Html msg
-ticketAlt = i [] (TicketAlt Regular)
-{-| <i class="fab far fas fal fa-times"></i> -}
+ticketAlt = i [] TicketAlt
+{-| <i class="far fa-times"></i> -}
 times : Html msg
-times = i [] (Times Regular)
-{-| <i class="fab far fas fal fa-times-circle"></i> -}
+times = i [] Times
+{-| <i class="far fa-times-circle"></i> -}
 timesCircle : Html msg
-timesCircle = i [] (TimesCircle Regular)
-{-| <i class="fab far fas fal fa-times-hexagon"></i> -}
+timesCircle = i [] TimesCircle
+{-| <i class="far fa-times-hexagon"></i> -}
 timesHexagon : Html msg
-timesHexagon = i [] (TimesHexagon Regular)
-{-| <i class="fab far fas fal fa-times-octagon"></i> -}
+timesHexagon = i [] TimesHexagon
+{-| <i class="far fa-times-octagon"></i> -}
 timesOctagon : Html msg
-timesOctagon = i [] (TimesOctagon Regular)
-{-| <i class="fab far fas fal fa-times-square"></i> -}
+timesOctagon = i [] TimesOctagon
+{-| <i class="far fa-times-square"></i> -}
 timesSquare : Html msg
-timesSquare = i [] (TimesSquare Regular)
-{-| <i class="fab far fas fal fa-tint"></i> -}
+timesSquare = i [] TimesSquare
+{-| <i class="far fa-tint"></i> -}
 tint : Html msg
-tint = i [] (Tint Regular)
-{-| <i class="fab far fas fal fa-toggle-off"></i> -}
+tint = i [] Tint
+{-| <i class="far fa-tint-slash"></i> -}
+tintSlash : Html msg
+tintSlash = i [] TintSlash
+{-| <i class="far fa-tired"></i> -}
+tired : Html msg
+tired = i [] Tired
+{-| <i class="far fa-toggle-off"></i> -}
 toggleOff : Html msg
-toggleOff = i [] (ToggleOff Regular)
-{-| <i class="fab far fas fal fa-toggle-on"></i> -}
+toggleOff = i [] ToggleOff
+{-| <i class="far fa-toggle-on"></i> -}
 toggleOn : Html msg
-toggleOn = i [] (ToggleOn Regular)
-{-| <i class="fab far fas fal fa-trademark"></i> -}
+toggleOn = i [] ToggleOn
+{-| <i class="far fa-toolbox"></i> -}
+toolbox : Html msg
+toolbox = i [] Toolbox
+{-| <i class="far fa-tooth"></i> -}
+tooth : Html msg
+tooth = i [] Tooth
+{-| <i class="far fa-trademark"></i> -}
 trademark : Html msg
-trademark = i [] (Trademark Regular)
-{-| <i class="fab far fas fal fa-train"></i> -}
+trademark = i [] Trademark
+{-| <i class="far fa-train"></i> -}
 train : Html msg
-train = i [] (Train Regular)
-{-| <i class="fab far fas fal fa-transgender"></i> -}
+train = i [] Train
+{-| <i class="far fa-transgender"></i> -}
 transgender : Html msg
-transgender = i [] (Transgender Regular)
-{-| <i class="fab far fas fal fa-transgender-alt"></i> -}
+transgender = i [] Transgender
+{-| <i class="far fa-transgender-alt"></i> -}
 transgenderAlt : Html msg
-transgenderAlt = i [] (TransgenderAlt Regular)
-{-| <i class="fab far fas fal fa-trash"></i> -}
+transgenderAlt = i [] TransgenderAlt
+{-| <i class="far fa-trash"></i> -}
 trash : Html msg
-trash = i [] (Trash Regular)
-{-| <i class="fab far fas fal fa-trash-alt"></i> -}
+trash = i [] Trash
+{-| <i class="far fa-trash-alt"></i> -}
 trashAlt : Html msg
-trashAlt = i [] (TrashAlt Regular)
-{-| <i class="fab far fas fal fa-tree"></i> -}
+trashAlt = i [] TrashAlt
+{-| <i class="far fa-tree"></i> -}
 tree : Html msg
-tree = i [] (Tree Regular)
-{-| <i class="fab far fas fal fa-tree-alt"></i> -}
+tree = i [] Tree
+{-| <i class="far fa-tree-alt"></i> -}
 treeAlt : Html msg
-treeAlt = i [] (TreeAlt Regular)
-{-| <i class="fab far fas fal fa-trello"></i> -}
-trello : Html msg
-trello = i [] (Trello)
-{-| <i class="fab far fas fal fa-triangle"></i> -}
+treeAlt = i [] TreeAlt
+{-| <i class="far fa-triangle"></i> -}
 triangle : Html msg
-triangle = i [] (Triangle Regular)
-{-| <i class="fab far fas fal fa-tripadvisor"></i> -}
-tripadvisor : Html msg
-tripadvisor = i [] (Tripadvisor)
-{-| <i class="fab far fas fal fa-trophy"></i> -}
+triangle = i [] Triangle
+{-| <i class="far fa-trophy"></i> -}
 trophy : Html msg
-trophy = i [] (Trophy Regular)
-{-| <i class="fab far fas fal fa-trophy-alt"></i> -}
+trophy = i [] Trophy
+{-| <i class="far fa-trophy-alt"></i> -}
 trophyAlt : Html msg
-trophyAlt = i [] (TrophyAlt Regular)
-{-| <i class="fab far fas fal fa-truck"></i> -}
+trophyAlt = i [] TrophyAlt
+{-| <i class="far fa-truck"></i> -}
 truck : Html msg
-truck = i [] (Truck Regular)
-{-| <i class="fab far fas fal fa-tty"></i> -}
+truck = i [] Truck
+{-| <i class="far fa-truck-container"></i> -}
+truckContainer : Html msg
+truckContainer = i [] TruckContainer
+{-| <i class="far fa-truck-couch"></i> -}
+truckCouch : Html msg
+truckCouch = i [] TruckCouch
+{-| <i class="far fa-truck-loading"></i> -}
+truckLoading : Html msg
+truckLoading = i [] TruckLoading
+{-| <i class="far fa-truck-moving"></i> -}
+truckMoving : Html msg
+truckMoving = i [] TruckMoving
+{-| <i class="far fa-truck-ramp"></i> -}
+truckRamp : Html msg
+truckRamp = i [] TruckRamp
+{-| <i class="far fa-tshirt"></i> -}
+tshirt : Html msg
+tshirt = i [] Tshirt
+{-| <i class="far fa-tty"></i> -}
 tty : Html msg
-tty = i [] (Tty Regular)
-{-| <i class="fab far fas fal fa-tumblr"></i> -}
-tumblr : Html msg
-tumblr = i [] (Tumblr)
-{-| <i class="fab far fas fal fa-tumblr-square"></i> -}
-tumblrSquare : Html msg
-tumblrSquare = i [] (TumblrSquare)
-{-| <i class="fab far fas fal fa-tv"></i> -}
+tty = i [] Tty
+{-| <i class="far fa-tv"></i> -}
 tv : Html msg
-tv = i [] (Tv Regular)
-{-| <i class="fab far fas fal fa-tv-retro"></i> -}
+tv = i [] Tv
+{-| <i class="far fa-tv-retro"></i> -}
 tvRetro : Html msg
-tvRetro = i [] (TvRetro Regular)
-{-| <i class="fab far fas fal fa-twitch"></i> -}
-twitch : Html msg
-twitch = i [] (Twitch)
-{-| <i class="fab far fas fal fa-twitter"></i> -}
-twitter : Html msg
-twitter = i [] (Twitter)
-{-| <i class="fab far fas fal fa-twitter-square"></i> -}
-twitterSquare : Html msg
-twitterSquare = i [] (TwitterSquare)
-{-| <i class="fab far fas fal fa-typo3"></i> -}
-typo3 : Html msg
-typo3 = i [] (Typo3)
-{-| <i class="fab far fas fal fa-uber"></i> -}
-uber : Html msg
-uber = i [] (Uber)
-{-| <i class="fab far fas fal fa-uikit"></i> -}
-uikit : Html msg
-uikit = i [] (Uikit)
-{-| <i class="fab far fas fal fa-umbrella"></i> -}
+tvRetro = i [] TvRetro
+{-| <i class="far fa-umbrella"></i> -}
 umbrella : Html msg
-umbrella = i [] (Umbrella Regular)
-{-| <i class="fab far fas fal fa-underline"></i> -}
+umbrella = i [] Umbrella
+{-| <i class="far fa-umbrella-beach"></i> -}
+umbrellaBeach : Html msg
+umbrellaBeach = i [] UmbrellaBeach
+{-| <i class="far fa-underline"></i> -}
 underline : Html msg
-underline = i [] (Underline Regular)
-{-| <i class="fab far fas fal fa-undo"></i> -}
+underline = i [] Underline
+{-| <i class="far fa-undo"></i> -}
 undo : Html msg
-undo = i [] (Undo Regular)
-{-| <i class="fab far fas fal fa-undo-alt"></i> -}
+undo = i [] Undo
+{-| <i class="far fa-undo-alt"></i> -}
 undoAlt : Html msg
-undoAlt = i [] (UndoAlt Regular)
-{-| <i class="fab far fas fal fa-uniregistry"></i> -}
-uniregistry : Html msg
-uniregistry = i [] (Uniregistry)
-{-| <i class="fab far fas fal fa-universal-access"></i> -}
+undoAlt = i [] UndoAlt
+{-| <i class="far fa-universal-access"></i> -}
 universalAccess : Html msg
-universalAccess = i [] (UniversalAccess Regular)
-{-| <i class="fab far fas fal fa-university"></i> -}
+universalAccess = i [] UniversalAccess
+{-| <i class="far fa-university"></i> -}
 university : Html msg
-university = i [] (University Regular)
-{-| <i class="fab far fas fal fa-unlink"></i> -}
+university = i [] University
+{-| <i class="far fa-unlink"></i> -}
 unlink : Html msg
-unlink = i [] (Unlink Regular)
-{-| <i class="fab far fas fal fa-unlock"></i> -}
+unlink = i [] Unlink
+{-| <i class="far fa-unlock"></i> -}
 unlock : Html msg
-unlock = i [] (Unlock Regular)
-{-| <i class="fab far fas fal fa-unlock-alt"></i> -}
+unlock = i [] Unlock
+{-| <i class="far fa-unlock-alt"></i> -}
 unlockAlt : Html msg
-unlockAlt = i [] (UnlockAlt Regular)
-{-| <i class="fab far fas fal fa-untappd"></i> -}
-untappd : Html msg
-untappd = i [] (Untappd)
-{-| <i class="fab far fas fal fa-upload"></i> -}
+unlockAlt = i [] UnlockAlt
+{-| <i class="far fa-upload"></i> -}
 upload : Html msg
-upload = i [] (Upload Regular)
-{-| <i class="fab far fas fal fa-usb"></i> -}
-usb : Html msg
-usb = i [] (Usb)
-{-| <i class="fab far fas fal fa-usd-circle"></i> -}
+upload = i [] Upload
+{-| <i class="far fa-usd-circle"></i> -}
 usdCircle : Html msg
-usdCircle = i [] (UsdCircle Regular)
-{-| <i class="fab far fas fal fa-usd-square"></i> -}
+usdCircle = i [] UsdCircle
+{-| <i class="far fa-usd-square"></i> -}
 usdSquare : Html msg
-usdSquare = i [] (UsdSquare Regular)
-{-| <i class="fab far fas fal fa-user"></i> -}
+usdSquare = i [] UsdSquare
+{-| <i class="far fa-user"></i> -}
 user : Html msg
-user = i [] (User Regular)
-{-| <i class="fab far fas fal fa-user-alt"></i> -}
+user = i [] User
+{-| <i class="far fa-user-alt"></i> -}
 userAlt : Html msg
-userAlt = i [] (UserAlt Regular)
-{-| <i class="fab far fas fal fa-user-circle"></i> -}
+userAlt = i [] UserAlt
+{-| <i class="far fa-user-alt-slash"></i> -}
+userAltSlash : Html msg
+userAltSlash = i [] UserAltSlash
+{-| <i class="far fa-user-astronaut"></i> -}
+userAstronaut : Html msg
+userAstronaut = i [] UserAstronaut
+{-| <i class="far fa-user-check"></i> -}
+userCheck : Html msg
+userCheck = i [] UserCheck
+{-| <i class="far fa-user-circle"></i> -}
 userCircle : Html msg
-userCircle = i [] (UserCircle Regular)
-{-| <i class="fab far fas fal fa-user-md"></i> -}
+userCircle = i [] UserCircle
+{-| <i class="far fa-user-clock"></i> -}
+userClock : Html msg
+userClock = i [] UserClock
+{-| <i class="far fa-user-cog"></i> -}
+userCog : Html msg
+userCog = i [] UserCog
+{-| <i class="far fa-user-edit"></i> -}
+userEdit : Html msg
+userEdit = i [] UserEdit
+{-| <i class="far fa-user-friends"></i> -}
+userFriends : Html msg
+userFriends = i [] UserFriends
+{-| <i class="far fa-user-graduate"></i> -}
+userGraduate : Html msg
+userGraduate = i [] UserGraduate
+{-| <i class="far fa-user-lock"></i> -}
+userLock : Html msg
+userLock = i [] UserLock
+{-| <i class="far fa-user-md"></i> -}
 userMd : Html msg
-userMd = i [] (UserMd Regular)
-{-| <i class="fab far fas fal fa-user-plus"></i> -}
+userMd = i [] UserMd
+{-| <i class="far fa-user-minus"></i> -}
+userMinus : Html msg
+userMinus = i [] UserMinus
+{-| <i class="far fa-user-ninja"></i> -}
+userNinja : Html msg
+userNinja = i [] UserNinja
+{-| <i class="far fa-user-plus"></i> -}
 userPlus : Html msg
-userPlus = i [] (UserPlus Regular)
-{-| <i class="fab far fas fal fa-user-secret"></i> -}
+userPlus = i [] UserPlus
+{-| <i class="far fa-user-secret"></i> -}
 userSecret : Html msg
-userSecret = i [] (UserSecret Regular)
-{-| <i class="fab far fas fal fa-user-times"></i> -}
+userSecret = i [] UserSecret
+{-| <i class="far fa-user-shield"></i> -}
+userShield : Html msg
+userShield = i [] UserShield
+{-| <i class="far fa-user-slash"></i> -}
+userSlash : Html msg
+userSlash = i [] UserSlash
+{-| <i class="far fa-user-tag"></i> -}
+userTag : Html msg
+userTag = i [] UserTag
+{-| <i class="far fa-user-tie"></i> -}
+userTie : Html msg
+userTie = i [] UserTie
+{-| <i class="far fa-user-times"></i> -}
 userTimes : Html msg
-userTimes = i [] (UserTimes Regular)
-{-| <i class="fab far fas fal fa-users"></i> -}
+userTimes = i [] UserTimes
+{-| <i class="far fa-users"></i> -}
 users : Html msg
-users = i [] (Users Regular)
-{-| <i class="fab far fas fal fa-ussunnah"></i> -}
-ussunnah : Html msg
-ussunnah = i [] (Ussunnah)
-{-| <i class="fab far fas fal fa-utensil-fork"></i> -}
+users = i [] Users
+{-| <i class="far fa-users-cog"></i> -}
+usersCog : Html msg
+usersCog = i [] UsersCog
+{-| <i class="far fa-utensil-fork"></i> -}
 utensilFork : Html msg
-utensilFork = i [] (UtensilFork Regular)
-{-| <i class="fab far fas fal fa-utensil-knife"></i> -}
+utensilFork = i [] UtensilFork
+{-| <i class="far fa-utensil-knife"></i> -}
 utensilKnife : Html msg
-utensilKnife = i [] (UtensilKnife Regular)
-{-| <i class="fab far fas fal fa-utensil-spoon"></i> -}
+utensilKnife = i [] UtensilKnife
+{-| <i class="far fa-utensil-spoon"></i> -}
 utensilSpoon : Html msg
-utensilSpoon = i [] (UtensilSpoon Regular)
-{-| <i class="fab far fas fal fa-utensils"></i> -}
+utensilSpoon = i [] UtensilSpoon
+{-| <i class="far fa-utensils"></i> -}
 utensils : Html msg
-utensils = i [] (Utensils Regular)
-{-| <i class="fab far fas fal fa-utensils-alt"></i> -}
+utensils = i [] Utensils
+{-| <i class="far fa-utensils-alt"></i> -}
 utensilsAlt : Html msg
-utensilsAlt = i [] (UtensilsAlt Regular)
-{-| <i class="fab far fas fal fa-vaadin"></i> -}
-vaadin : Html msg
-vaadin = i [] (Vaadin)
-{-| <i class="fab far fas fal fa-venus"></i> -}
+utensilsAlt = i [] UtensilsAlt
+{-| <i class="far fa-vector-square"></i> -}
+vectorSquare : Html msg
+vectorSquare = i [] VectorSquare
+{-| <i class="far fa-venus"></i> -}
 venus : Html msg
-venus = i [] (Venus Regular)
-{-| <i class="fab far fas fal fa-venus-double"></i> -}
+venus = i [] Venus
+{-| <i class="far fa-venus-double"></i> -}
 venusDouble : Html msg
-venusDouble = i [] (VenusDouble Regular)
-{-| <i class="fab far fas fal fa-venus-mars"></i> -}
+venusDouble = i [] VenusDouble
+{-| <i class="far fa-venus-mars"></i> -}
 venusMars : Html msg
-venusMars = i [] (VenusMars Regular)
-{-| <i class="fab far fas fal fa-viacoin"></i> -}
-viacoin : Html msg
-viacoin = i [] (Viacoin)
-{-| <i class="fab far fas fal fa-viadeo"></i> -}
-viadeo : Html msg
-viadeo = i [] (Viadeo)
-{-| <i class="fab far fas fal fa-viadeo-square"></i> -}
-viadeoSquare : Html msg
-viadeoSquare = i [] (ViadeoSquare)
-{-| <i class="fab far fas fal fa-viber"></i> -}
-viber : Html msg
-viber = i [] (Viber)
-{-| <i class="fab far fas fal fa-video"></i> -}
+venusMars = i [] VenusMars
+{-| <i class="far fa-vial"></i> -}
+vial : Html msg
+vial = i [] Vial
+{-| <i class="far fa-vials"></i> -}
+vials : Html msg
+vials = i [] Vials
+{-| <i class="far fa-video"></i> -}
 video : Html msg
-video = i [] (Video Regular)
-{-| <i class="fab far fas fal fa-vimeo"></i> -}
-vimeo : Html msg
-vimeo = i [] (Vimeo)
-{-| <i class="fab far fas fal fa-vimeo-square"></i> -}
-vimeoSquare : Html msg
-vimeoSquare = i [] (VimeoSquare)
-{-| <i class="fab far fas fal fa-vimeo-v"></i> -}
-vimeoV : Html msg
-vimeoV = i [] (VimeoV)
-{-| <i class="fab far fas fal fa-vine"></i> -}
-vine : Html msg
-vine = i [] (Vine)
-{-| <i class="fab far fas fal fa-vk"></i> -}
-vk : Html msg
-vk = i [] (Vk)
-{-| <i class="fab far fas fal fa-vnv"></i> -}
-vnv : Html msg
-vnv = i [] (Vnv)
-{-| <i class="fab far fas fal fa-volleyball-ball"></i> -}
+video = i [] Video
+{-| <i class="far fa-video-plus"></i> -}
+videoPlus : Html msg
+videoPlus = i [] VideoPlus
+{-| <i class="far fa-video-slash"></i> -}
+videoSlash : Html msg
+videoSlash = i [] VideoSlash
+{-| <i class="far fa-volleyball-ball"></i> -}
 volleyballBall : Html msg
-volleyballBall = i [] (VolleyballBall Regular)
-{-| <i class="fab far fas fal fa-volume-down"></i> -}
+volleyballBall = i [] VolleyballBall
+{-| <i class="far fa-volume-down"></i> -}
 volumeDown : Html msg
-volumeDown = i [] (VolumeDown Regular)
-{-| <i class="fab far fas fal fa-volume-mute"></i> -}
+volumeDown = i [] VolumeDown
+{-| <i class="far fa-volume-mute"></i> -}
 volumeMute : Html msg
-volumeMute = i [] (VolumeMute Regular)
-{-| <i class="fab far fas fal fa-volume-off"></i> -}
+volumeMute = i [] VolumeMute
+{-| <i class="far fa-volume-off"></i> -}
 volumeOff : Html msg
-volumeOff = i [] (VolumeOff Regular)
-{-| <i class="fab far fas fal fa-volume-up"></i> -}
+volumeOff = i [] VolumeOff
+{-| <i class="far fa-volume-up"></i> -}
 volumeUp : Html msg
-volumeUp = i [] (VolumeUp Regular)
-{-| <i class="fab far fas fal fa-vuejs"></i> -}
-vuejs : Html msg
-vuejs = i [] (Vuejs)
-{-| <i class="fab far fas fal fa-watch"></i> -}
+volumeUp = i [] VolumeUp
+{-| <i class="far fa-walking"></i> -}
+walking : Html msg
+walking = i [] Walking
+{-| <i class="far fa-wallet"></i> -}
+wallet : Html msg
+wallet = i [] Wallet
+{-| <i class="far fa-warehouse"></i> -}
+warehouse : Html msg
+warehouse = i [] Warehouse
+{-| <i class="far fa-warehouse-alt"></i> -}
+warehouseAlt : Html msg
+warehouseAlt = i [] WarehouseAlt
+{-| <i class="far fa-watch"></i> -}
 watch : Html msg
-watch = i [] (Watch Regular)
-{-| <i class="fab far fas fal fa-weibo"></i> -}
-weibo : Html msg
-weibo = i [] (Weibo)
-{-| <i class="fab far fas fal fa-weixin"></i> -}
-weixin : Html msg
-weixin = i [] (Weixin)
-{-| <i class="fab far fas fal fa-whatsapp"></i> -}
-whatsapp : Html msg
-whatsapp = i [] (Whatsapp)
-{-| <i class="fab far fas fal fa-whatsapp-square"></i> -}
-whatsappSquare : Html msg
-whatsappSquare = i [] (WhatsappSquare)
-{-| <i class="fab far fas fal fa-wheelchair"></i> -}
+watch = i [] Watch
+{-| <i class="far fa-weight"></i> -}
+weight : Html msg
+weight = i [] Weight
+{-| <i class="far fa-weight-hanging"></i> -}
+weightHanging : Html msg
+weightHanging = i [] WeightHanging
+{-| <i class="far fa-wheelchair"></i> -}
 wheelchair : Html msg
-wheelchair = i [] (Wheelchair Regular)
-{-| <i class="fab far fas fal fa-whistle"></i> -}
+wheelchair = i [] Wheelchair
+{-| <i class="far fa-whistle"></i> -}
 whistle : Html msg
-whistle = i [] (Whistle Regular)
-{-| <i class="fab far fas fal fa-whmcs"></i> -}
-whmcs : Html msg
-whmcs = i [] (Whmcs)
-{-| <i class="fab far fas fal fa-wifi"></i> -}
+whistle = i [] Whistle
+{-| <i class="far fa-wifi"></i> -}
 wifi : Html msg
-wifi = i [] (Wifi Regular)
-{-| <i class="fab far fas fal fa-wikipedia-w"></i> -}
-wikipediaW : Html msg
-wikipediaW = i [] (WikipediaW)
-{-| <i class="fab far fas fal fa-window"></i> -}
+wifi = i [] Wifi
+{-| <i class="far fa-window"></i> -}
 window : Html msg
-window = i [] (Window Regular)
-{-| <i class="fab far fas fal fa-window-alt"></i> -}
+window = i [] Window
+{-| <i class="far fa-window-alt"></i> -}
 windowAlt : Html msg
-windowAlt = i [] (WindowAlt Regular)
-{-| <i class="fab far fas fal fa-window-close"></i> -}
+windowAlt = i [] WindowAlt
+{-| <i class="far fa-window-close"></i> -}
 windowClose : Html msg
-windowClose = i [] (WindowClose Regular)
-{-| <i class="fab far fas fal fa-window-maximize"></i> -}
+windowClose = i [] WindowClose
+{-| <i class="far fa-window-maximize"></i> -}
 windowMaximize : Html msg
-windowMaximize = i [] (WindowMaximize Regular)
-{-| <i class="fab far fas fal fa-window-minimize"></i> -}
+windowMaximize = i [] WindowMaximize
+{-| <i class="far fa-window-minimize"></i> -}
 windowMinimize : Html msg
-windowMinimize = i [] (WindowMinimize Regular)
-{-| <i class="fab far fas fal fa-window-restore"></i> -}
+windowMinimize = i [] WindowMinimize
+{-| <i class="far fa-window-restore"></i> -}
 windowRestore : Html msg
-windowRestore = i [] (WindowRestore Regular)
-{-| <i class="fab far fas fal fa-windows"></i> -}
-windows : Html msg
-windows = i [] (Windows)
-{-| <i class="fab far fas fal fa-won-sign"></i> -}
+windowRestore = i [] WindowRestore
+{-| <i class="far fa-wine-glass"></i> -}
+wineGlass : Html msg
+wineGlass = i [] WineGlass
+{-| <i class="far fa-wine-glass-alt"></i> -}
+wineGlassAlt : Html msg
+wineGlassAlt = i [] WineGlassAlt
+{-| <i class="far fa-won-sign"></i> -}
 wonSign : Html msg
-wonSign = i [] (WonSign Regular)
-{-| <i class="fab far fas fal fa-wordpress"></i> -}
-wordpress : Html msg
-wordpress = i [] (Wordpress)
-{-| <i class="fab far fas fal fa-wordpress-simple"></i> -}
-wordpressSimple : Html msg
-wordpressSimple = i [] (WordpressSimple)
-{-| <i class="fab far fas fal fa-wpbeginner"></i> -}
-wpbeginner : Html msg
-wpbeginner = i [] (Wpbeginner)
-{-| <i class="fab far fas fal fa-wpexplorer"></i> -}
-wpexplorer : Html msg
-wpexplorer = i [] (Wpexplorer)
-{-| <i class="fab far fas fal fa-wpforms"></i> -}
-wpforms : Html msg
-wpforms = i [] (Wpforms)
-{-| <i class="fab far fas fal fa-wrench"></i> -}
+wonSign = i [] WonSign
+{-| <i class="far fa-wrench"></i> -}
 wrench : Html msg
-wrench = i [] (Wrench Regular)
-{-| <i class="fab far fas fal fa-xbox"></i> -}
-xbox : Html msg
-xbox = i [] (Xbox)
-{-| <i class="fab far fas fal fa-xing"></i> -}
-xing : Html msg
-xing = i [] (Xing)
-{-| <i class="fab far fas fal fa-xing-square"></i> -}
-xingSquare : Html msg
-xingSquare = i [] (XingSquare)
-{-| <i class="fab far fas fal fa-y-combinator"></i> -}
-yCombinator : Html msg
-yCombinator = i [] (YCombinator)
-{-| <i class="fab far fas fal fa-yahoo"></i> -}
-yahoo : Html msg
-yahoo = i [] (Yahoo)
-{-| <i class="fab far fas fal fa-yandex"></i> -}
-yandex : Html msg
-yandex = i [] (Yandex)
-{-| <i class="fab far fas fal fa-yandex-international"></i> -}
-yandexInternational : Html msg
-yandexInternational = i [] (YandexInternational)
-{-| <i class="fab far fas fal fa-yelp"></i> -}
-yelp : Html msg
-yelp = i [] (Yelp)
-{-| <i class="fab far fas fal fa-yen-sign"></i> -}
+wrench = i [] Wrench
+{-| <i class="far fa-x-ray"></i> -}
+xRay : Html msg
+xRay = i [] XRay
+{-| <i class="far fa-yen-sign"></i> -}
 yenSign : Html msg
-yenSign = i [] (YenSign Regular)
-{-| <i class="fab far fas fal fa-yoast"></i> -}
-yoast : Html msg
-yoast = i [] (Yoast)
-{-| <i class="fab far fas fal fa-youtube"></i> -}
-youtube : Html msg
-youtube = i [] (Youtube)
-{-| <i class="fab far fas fal fa-youtube-square"></i> -}
-youtubeSquare : Html msg
-youtubeSquare = i [] (YoutubeSquare)
+yenSign = i [] YenSign
