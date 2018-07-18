@@ -12,7 +12,7 @@ module Icon.OpenIconic exposing (..)
 @docs i
 
 # Attributes
-@docs toAttributes
+@docs toClass, toClassName
 
 # Icons
 @docs toString, Icon 
@@ -37,7 +37,7 @@ import Char
     view model
       = div []
         [ stylesheet
-        , Icon.i Trash
+        , Icon.i [] Trash
         ]
 
 -}
@@ -45,7 +45,7 @@ stylesheet : Html msg
 stylesheet
   = Html.node "link"
     [ Attr.rel "stylesheet"
-    , Attr.href "https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css"
+    , Attr.href "https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"
     ]
     []
 
@@ -57,10 +57,10 @@ stylesheet
 
     myPaperclipIcon : Html msg
     myPaperclipIcon
-      = Icon.i Paperclip
+      = Icon.i [] Paperclip
 -}
-i : Icon -> Html msg
-i = flip Html.i [] << toAttributes
+i : List (Attribute msg) -> Icon -> Html msg
+i attrs icon = Html.i (toClass icon :: attrs) []
 
 {-| 
     Icon.toString PieChart
@@ -78,13 +78,28 @@ toString icon
             )
     in String.dropLeft 1 <| snakeCase <| Basics.toString icon
 
-{-| -}
-toAttributes : Icon -> List (Attribute msg)
-toAttributes icon =
-  [ class "oi"
-  , Attr.attribute "data-glyph"
-    <| toString icon
-  ]
+{-| 
+    Icon.toClassName ZoomOut
+    -- "oi oi-zoom-out"
+-}
+toClassName : Icon -> String
+toClassName icon
+  = let snakeCase : String -> String
+        snakeCase
+          = flip String.foldr ""
+            (\c s ->
+               case Char.isUpper c of
+                 True  -> String.cons '-' <| String.cons (Char.toLower c) <| s
+                 False ->                   String.cons               c  <| s
+            )
+    in "oi oi" ++ snakeCase (Basics.toString icon)
+
+{-| 
+    Icon.toAttribute EnvelopeOpen
+    -- Attribute.class "oi oi-envelope-open"
+-}
+toClass : Icon -> Attribute msg
+toClass = toClassName >> class
 
 {-| -}
 type Icon

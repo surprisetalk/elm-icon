@@ -76,7 +76,7 @@ import Char
     view model
       = div []
         [ stylesheet
-        , Icon.i myIconStyle Meh
+        , Icon.i [] Meh
         ]
 
 -}

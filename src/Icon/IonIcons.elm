@@ -37,7 +37,7 @@ import Char
     view model
       = div []
         [ stylesheet
-        , Icon.i Egg
+        , Icon.i [] Egg
         ]
 
 -}
@@ -57,10 +57,11 @@ stylesheet
 
     myLeafIcon : Html msg
     myLeafIcon
-      = Icon.i Leaf
+      = Icon.i [] Leaf
 -}
-i : Icon -> Html msg
-i icon = Html.i [ toClass icon ] []
+i : List (Attribute msg) -> Icon -> Html msg
+i attrs icon = Html.i (toClass icon :: attrs) []
+
 
 {-| 
     Icon.toString HelpBuoy
@@ -95,7 +96,7 @@ toClassName icon
     in "ion" ++ snakeCase (Basics.toString icon)
 
 {-| 
-    Icon.toClassName Bug
+    Icon.toClass Bug
     -- Attribute.class "ion-bug"
 -}
 toClass : Icon -> Attribute msg
