@@ -6,6 +6,26 @@ module Icon.OpenIconic exposing (..)
 {-| <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"/>
 Learn more at [Open Iconic](https://useiconic.com/open).
 
+    import Icon.OpenIconic as Icon 
+      exposing ( stylesheet
+               , Icon(Fork)
+               , fork
+               )
+
+    forkIcon1 : Html msg
+    forkIcon1 = Html.i [] Fork
+
+    forkIcon2 : Html msg
+    forkIcon2 = fork
+
+    view : Model -> Html msg
+    view model
+      = div []
+        [ stylesheet
+        , forkIcon1
+        , forkIcon2
+        ]
+
 # Stylesheet
 @docs stylesheet
 
@@ -16,8 +36,13 @@ Learn more at [Open Iconic](https://useiconic.com/open).
 @docs toClass, toClassName
 
 # Icons
-@docs toString, Icon 
+@docs toString
+
+## HTML Helpers
 @docs accountLogin, accountLogout, actionRedo, actionUndo, alignCenter, alignLeft, alignRight, aperture, arrowBottom, arrowCircleBottom, arrowCircleLeft, arrowCircleRight, arrowCircleTop, arrowLeft, arrowRight, arrowThickBottom, arrowThickLeft, arrowThickRight, arrowThickTop, arrowTop, audio, audioSpectrum, badge, ban, barChart, basket, batteryEmpty, batteryFull, beaker, bell, bluetooth, bold, bolt, book, bookmark, box, briefcase, britishPound, browser, brush, bug, bullhorn, calculator, calendar, cameraSlr, caretBottom, caretLeft, caretRight, caretTop, cart, chat, check, chevronBottom, chevronLeft, chevronRight, chevronTop, circleCheck, circleX, clipboard, clock, cloud, cloudDownload, cloudUpload, cloudy, code, cog, collapseDown, collapseLeft, collapseRight, collapseUp, command, commentSquare, compass, contrast, copywriting, creditCard, crop, dashboard, dataTransferDownload, dataTransferUpload, delete, dial, document, dollar, doubleQuoteSansLeft, doubleQuoteSansRight, doubleQuoteSerifLeft, doubleQuoteSerifRight, droplet, eject, elevator, ellipses, envelopeClosed, envelopeOpen, euro, excerpt, expandDown, expandLeft, expandRight, expandUp, externalLink, eye, eyedropper, file, fire, flag, flash, folder, fork, fullscreenEnter, fullscreenExit, globe, graph, gridFourUp, gridThreeUp, gridTwoUp, hardDrive, header, headphones, heart, home, image, inbox, infinity, info, italic, justifyCenter, justifyLeft, justifyRight, key, laptop, layers, lightbulb, linkBroken, linkIntact, list, listRich, location, lockLocked, lockUnlocked, loop, loopCircular, loopSquare, magnifyingGlass, map, mapMarker, mediaPause, mediaPlay, mediaRecord, mediaSkipBackward, mediaSkipForward, mediaStepBackward, mediaStepForward, mediaStop, medicalCross, menu, microphone, minus, monitor, moon, move, musicalNote, paperclip, pencil, people, person, phone, pieChart, pin, playCircle, plus, powerStandby, print, project, pulse, puzzlePiece, questionMark, rain, random, reload, resizeBoth, resizeHeight, resizeWidth, rss, rssAlt, script, share, shareBoxed, shield, signal, signpost, sortAscending, sortDescending, spreadsheet, star, sun, tablet, tag, tags, target, task, terminal, text, thumbDown, thumbUp, timer, transfer, trash, underline, verticalAlignBottom, verticalAlignCenter, verticalAlignTop, video, volumeHigh, volumeLow, volumeOff, warning, wifi, wrench, x, yen, zoomIn, zoomOut
+
+## Union Type
+@docs Icon
 
 -}
 
