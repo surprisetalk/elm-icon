@@ -113,5 +113,3 @@ view _
 - □ [Analog Clock Icon Font](https://github.com/jhogue/PE-Analog-Clock-icon-font)
 - □ [Weather Icons](http://erikflowers.github.io/weather-icons/)
 
-
-
