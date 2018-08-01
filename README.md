@@ -8,10 +8,7 @@ In order to get around Elm-Package's size constraints, I had to break up the mod
 - [elm-material-icons](http:/package.elm-lang.org/packages/surprisetalk/elm-material-icons/latest)
 - [elm-open-iconic](http:/package.elm-lang.org/packages/surprisetalk/elm-open-iconic/latest)
 
-
-# Elm Icons
-
-Make icon fonts easy!
+<hr/>
 
 
 ## Supported Fonts
