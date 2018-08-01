@@ -30,30 +30,8 @@ Each module comes with a stylesheet and icons:
 ```elm
 import Icon.OpenIconic as Icon 
   exposing ( stylesheet
-           , wrench
-           , accountLogin
-           , briefcase
-           )
-
-view : model -> Html msg
-view _
-    = div []
-    [ stylesheet
-    , wrench
-    , accountLogin
-    , briefcase
-    ]
-```
-
-
-### Customization
-
-All modules additionally have tools for making custom icons:
-```elm
-import Icon.OpenIconic as Icon 
-  exposing ( stylesheet
+           , Icon( Wrench, AccountLogin, Briefcase )
            , i
-           , Icon(Wrench,AccountLogin,Briefcase)
            )
 
 view : model -> Html msg
@@ -67,7 +45,7 @@ view _
 ```
 
 
-#### Styling
+### Styling
 
 Additionally, some of the modules have styling shortcuts included:
 ```elm

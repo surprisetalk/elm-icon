@@ -8,21 +8,14 @@ module Icon.MaterialDesign exposing (..)
     import Icon.MaterialDesign as Icon 
       exposing ( stylesheet
                , Icon(Trophy)
-               , trophy
+               , i
                )
-
-    trophyIcon1 : Html msg
-    trophyIcon1 = Html.i [] Trophy
-
-    trophyIcon2 : Html msg
-    trophyIcon2 = trophy
 
     view : Model -> Html msg
     view model
       = div []
         [ stylesheet
-        , trophyIcon1
-        , trophyIcon2
+        , i [] Trophy
         ]
 
 # Stylesheet

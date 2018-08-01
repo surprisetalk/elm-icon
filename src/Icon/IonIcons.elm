@@ -8,21 +8,14 @@ module Icon.IonIcons exposing (..)
     import Icon.IonIcons as Icon 
       exposing ( stylesheet
                , Icon(Spoon)
-               , spoon
+               , i
                )
-
-    spoonIcon1 : Html msg
-    spoonIcon1 = Html.i [] Spoon
-
-    spoonIcon2 : Html msg
-    spoonIcon2 = spoon
 
     view : Model -> Html msg
     view model
       = div []
         [ stylesheet
-        , spoonIcon1
-        , spoonIcon2
+        , i [] Spoon
         ]
 
 # Stylesheet

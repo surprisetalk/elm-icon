@@ -20,21 +20,14 @@ Learn more at [FontAwesome](https://fontawesome.com/).
       exposing ( stylesheet
                , Icon(Paw)
                , Weight(Solid)
-               , paw
+               , i
                )
-
-    pawIcon1 : Html msg
-    pawIcon1 = Html.i [] <| Paw Solid
-
-    pawIcon2 : Html msg
-    pawIcon2 = paw
 
     view : Model -> Html msg
     view model
       = div []
         [ stylesheet
-        , pawIcon1
-        , pawIcon2
+        , i [] <| Paw Solid
         ]
 
 # Table of Contents

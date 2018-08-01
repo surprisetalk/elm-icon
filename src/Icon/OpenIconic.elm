@@ -9,21 +9,14 @@ Learn more at [Open Iconic](https://useiconic.com/open).
     import Icon.OpenIconic as Icon 
       exposing ( stylesheet
                , Icon(Fork)
-               , fork
+               , i
                )
-
-    forkIcon1 : Html msg
-    forkIcon1 = Html.i [] Fork
-
-    forkIcon2 : Html msg
-    forkIcon2 = fork
 
     view : Model -> Html msg
     view model
       = div []
         [ stylesheet
-        , forkIcon1
-        , forkIcon2
+        , i [] Fork
         ]
 
 # Stylesheet
