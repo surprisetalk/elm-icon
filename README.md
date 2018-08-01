@@ -1,3 +1,13 @@
+# Deprecated
+
+In order to get around Elm-Package's size constraints, I had to break up the modules into subpackages. Sorry for the inconvenience!
+
+## Elm-Icon Family
+- [elm-ionicons](http:/package.elm-lang.org/packages/surprisetalk/elm-ionicons/latest)
+- [elm-font-awesome](http:/package.elm-lang.org/packages/surprisetalk/elm-font-awesome/latest)
+- [elm-material-icons](http:/package.elm-lang.org/packages/surprisetalk/elm-material-icons/latest)
+- [elm-open-iconic](http:/package.elm-lang.org/packages/surprisetalk/elm-open-iconic/latest)
+
 
 # Elm Icons
 
